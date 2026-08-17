@@ -1,0 +1,429 @@
+[
+  {
+    "word": "ephemeral",
+    "pronunciation": "ih-FEM-er-uhl",
+    "partOfSpeech": "adjective",
+    "definition": "Lasting for a very short time.",
+    "example": "The morning fog was ephemeral, gone before the first coffee."
+  },
+  {
+    "word": "ubiquitous",
+    "pronunciation": "yoo-BIK-wi-tuhs",
+    "partOfSpeech": "adjective",
+    "definition": "Present, appearing, or found everywhere.",
+    "example": "Coffee shops are ubiquitous in this part of town."
+  },
+  {
+    "word": "laconic",
+    "pronunciation": "luh-KON-ik",
+    "partOfSpeech": "adjective",
+    "definition": "Using very few words.",
+    "example": "His laconic reply was simply: \"Done.\""
+  },
+  {
+    "word": "serendipity",
+    "pronunciation": "ser-uhn-DIP-i-tee",
+    "partOfSpeech": "noun",
+    "definition": "The occurrence of happy or beneficial events by chance.",
+    "example": "Finding the bookshop in the rain was pure serendipity."
+  },
+  {
+    "word": "pragmatic",
+    "pronunciation": "prag-MAT-ik",
+    "partOfSpeech": "adjective",
+    "definition": "Dealing with things sensibly and realistically.",
+    "example": "She took a pragmatic approach and shipped the simplest version first."
+  },
+  {
+    "word": "nuance",
+    "pronunciation": "NOO-ahns",
+    "partOfSpeech": "noun",
+    "definition": "A subtle difference in meaning, expression, or sound.",
+    "example": "The translation missed every nuance of the original poem."
+  },
+  {
+    "word": "resilient",
+    "pronunciation": "ri-ZIL-yuhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Able to recover quickly from difficulty.",
+    "example": "The team proved resilient after a rough quarter."
+  },
+  {
+    "word": "candor",
+    "pronunciation": "KAN-der",
+    "partOfSpeech": "noun",
+    "definition": "The quality of being open and honest.",
+    "example": "I appreciated the candor in her feedback."
+  },
+  {
+    "word": "meticulous",
+    "pronunciation": "muh-TIK-yuh-luhs",
+    "partOfSpeech": "adjective",
+    "definition": "Showing great attention to detail; very careful and precise.",
+    "example": "He kept meticulous notes on every experiment."
+  },
+  {
+    "word": "quixotic",
+    "pronunciation": "kwik-SOT-ik",
+    "partOfSpeech": "adjective",
+    "definition": "Extremely idealistic and unrealistic in a charming way.",
+    "example": "Rebuilding the whole system in a weekend was a quixotic plan."
+  },
+  {
+    "word": "eloquent",
+    "pronunciation": "EL-uh-kwuhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Fluent and persuasive in speaking or writing.",
+    "example": "Her eloquent closing argument won the room."
+  },
+  {
+    "word": "tenacious",
+    "pronunciation": "tuh-NAY-shuhs",
+    "partOfSpeech": "adjective",
+    "definition": "Holding firmly to something; persistent.",
+    "example": "A tenacious bug survived three rewrites."
+  },
+  {
+    "word": "esoteric",
+    "pronunciation": "es-uh-TER-ik",
+    "partOfSpeech": "adjective",
+    "definition": "Understood by only a small number of people with special knowledge.",
+    "example": "The talk drifted into esoteric details of compiler design."
+  },
+  {
+    "word": "gregarious",
+    "pronunciation": "gri-GAIR-ee-uhs",
+    "partOfSpeech": "adjective",
+    "definition": "Fond of company; sociable.",
+    "example": "The most gregarious person at the table knew everyone by name."
+  },
+  {
+    "word": "juxtapose",
+    "pronunciation": "JUHK-stuh-pohz",
+    "partOfSpeech": "verb",
+    "definition": "To place two things close together for contrasting effect.",
+    "example": "The design juxtaposes hard concrete with soft light."
+  },
+  {
+    "word": "pedantic",
+    "pronunciation": "puh-DAN-tik",
+    "partOfSpeech": "adjective",
+    "definition": "Overly concerned with minor details or rules.",
+    "example": "It sounds pedantic, but the distinction actually matters here."
+  },
+  {
+    "word": "cogent",
+    "pronunciation": "KOH-juhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Clear, logical, and convincing.",
+    "example": "He made a cogent case for delaying the launch."
+  },
+  {
+    "word": "innocuous",
+    "pronunciation": "ih-NOK-yoo-uhs",
+    "partOfSpeech": "adjective",
+    "definition": "Not harmful or offensive.",
+    "example": "The change looked innocuous until it hit production."
+  },
+  {
+    "word": "alacrity",
+    "pronunciation": "uh-LAK-ri-tee",
+    "partOfSpeech": "noun",
+    "definition": "Brisk and cheerful readiness.",
+    "example": "She accepted the assignment with alacrity."
+  },
+  {
+    "word": "ostensible",
+    "pronunciation": "o-STEN-suh-buhl",
+    "partOfSpeech": "adjective",
+    "definition": "Stated or appearing to be true, but not necessarily so.",
+    "example": "The ostensible reason for the meeting was a status update."
+  },
+  {
+    "word": "myriad",
+    "pronunciation": "MIR-ee-uhd",
+    "partOfSpeech": "adjective",
+    "definition": "Countless or extremely great in number.",
+    "example": "There are myriad ways to solve it; only two are cheap."
+  },
+  {
+    "word": "prescient",
+    "pronunciation": "PRESH-uhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Having knowledge of events before they happen.",
+    "example": "His prescient warning about the outage went unread."
+  },
+  {
+    "word": "obfuscate",
+    "pronunciation": "OB-fuh-skayt",
+    "partOfSpeech": "verb",
+    "definition": "To make something unclear or hard to understand.",
+    "example": "The report seemed written to obfuscate the real numbers."
+  },
+  {
+    "word": "salient",
+    "pronunciation": "SAY-lee-uhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Most noticeable or important.",
+    "example": "Give me the three salient points before the call."
+  },
+  {
+    "word": "vicarious",
+    "pronunciation": "vy-KAIR-ee-uhs",
+    "partOfSpeech": "adjective",
+    "definition": "Experienced through the feelings or actions of another person.",
+    "example": "I get vicarious satisfaction from watching him finish a marathon."
+  },
+  {
+    "word": "amenable",
+    "pronunciation": "uh-MEE-nuh-buhl",
+    "partOfSpeech": "adjective",
+    "definition": "Open and responsive to suggestion; easily persuaded.",
+    "example": "The client was amenable to a smaller first release."
+  },
+  {
+    "word": "trepidation",
+    "pronunciation": "trep-i-DAY-shuhn",
+    "partOfSpeech": "noun",
+    "definition": "A feeling of fear or agitation about something that may happen.",
+    "example": "She opened the deploy log with some trepidation."
+  },
+  {
+    "word": "verbose",
+    "pronunciation": "ver-BOHS",
+    "partOfSpeech": "adjective",
+    "definition": "Using more words than needed.",
+    "example": "The docs are thorough but verbose."
+  },
+  {
+    "word": "astute",
+    "pronunciation": "uh-STOOT",
+    "partOfSpeech": "adjective",
+    "definition": "Having sharp judgment; shrewd.",
+    "example": "An astute observation saved us a week of work."
+  },
+  {
+    "word": "beguile",
+    "pronunciation": "bih-GYLE",
+    "partOfSpeech": "verb",
+    "definition": "To charm or enchant, sometimes deceptively.",
+    "example": "The demo beguiled the audience into ignoring the caveats."
+  },
+  {
+    "word": "arduous",
+    "pronunciation": "AR-joo-uhs",
+    "partOfSpeech": "adjective",
+    "definition": "Involving strenuous effort; difficult and tiring.",
+    "example": "Migrating the database was an arduous two-day job."
+  },
+  {
+    "word": "candid",
+    "pronunciation": "KAN-did",
+    "partOfSpeech": "adjective",
+    "definition": "Truthful and straightforward; frank.",
+    "example": "Let me be candid about the timeline."
+  },
+  {
+    "word": "diligent",
+    "pronunciation": "DIL-i-juhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Showing care and conscientiousness in one's work.",
+    "example": "Diligent review caught the off-by-one error."
+  },
+  {
+    "word": "enigma",
+    "pronunciation": "ih-NIG-muh",
+    "partOfSpeech": "noun",
+    "definition": "A person or thing that is mysterious or hard to understand.",
+    "example": "The intermittent failure remained an enigma for months."
+  },
+  {
+    "word": "fastidious",
+    "pronunciation": "fa-STID-ee-uhs",
+    "partOfSpeech": "adjective",
+    "definition": "Very attentive to accuracy and detail; hard to please.",
+    "example": "He is fastidious about naming things well."
+  },
+  {
+    "word": "germane",
+    "pronunciation": "jer-MAYN",
+    "partOfSpeech": "adjective",
+    "definition": "Relevant to a subject under consideration.",
+    "example": "That history is interesting but not germane to the decision."
+  },
+  {
+    "word": "harbinger",
+    "pronunciation": "HAR-bin-jer",
+    "partOfSpeech": "noun",
+    "definition": "A sign that something is about to happen.",
+    "example": "Rising latency was the harbinger of a bigger failure."
+  },
+  {
+    "word": "impetus",
+    "pronunciation": "IM-pi-tuhs",
+    "partOfSpeech": "noun",
+    "definition": "The force or energy that makes something happen.",
+    "example": "The outage gave fresh impetus to the rewrite."
+  },
+  {
+    "word": "judicious",
+    "pronunciation": "joo-DISH-uhs",
+    "partOfSpeech": "adjective",
+    "definition": "Showing good judgment; sensible.",
+    "example": "A judicious use of caching solved it."
+  },
+  {
+    "word": "kindle",
+    "pronunciation": "KIN-duhl",
+    "partOfSpeech": "verb",
+    "definition": "To arouse or inspire a feeling; to set alight.",
+    "example": "One good class kindled a lifelong interest."
+  },
+  {
+    "word": "lucid",
+    "pronunciation": "LOO-sid",
+    "partOfSpeech": "adjective",
+    "definition": "Expressed clearly; easy to understand.",
+    "example": "Her explanation was the most lucid I'd heard."
+  },
+  {
+    "word": "magnanimous",
+    "pronunciation": "mag-NAN-uh-muhs",
+    "partOfSpeech": "adjective",
+    "definition": "Generous or forgiving, especially toward a rival.",
+    "example": "He was magnanimous in defeat."
+  },
+  {
+    "word": "nebulous",
+    "pronunciation": "NEB-yuh-luhs",
+    "partOfSpeech": "adjective",
+    "definition": "Vague or ill-defined.",
+    "example": "The requirements are still nebulous."
+  },
+  {
+    "word": "obstinate",
+    "pronunciation": "OB-stuh-nuht",
+    "partOfSpeech": "adjective",
+    "definition": "Stubbornly refusing to change one's opinion or course.",
+    "example": "The obstinate cache refused to invalidate."
+  },
+  {
+    "word": "placate",
+    "pronunciation": "PLAY-kayt",
+    "partOfSpeech": "verb",
+    "definition": "To make someone less angry or hostile.",
+    "example": "A status page update placated most users."
+  },
+  {
+    "word": "quell",
+    "pronunciation": "KWEL",
+    "partOfSpeech": "verb",
+    "definition": "To put an end to; to subdue.",
+    "example": "The demo quelled any doubts about feasibility."
+  },
+  {
+    "word": "reticent",
+    "pronunciation": "RET-i-suhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Not revealing one's thoughts readily; reserved.",
+    "example": "He was reticent about why he left."
+  },
+  {
+    "word": "sagacious",
+    "pronunciation": "suh-GAY-shuhs",
+    "partOfSpeech": "adjective",
+    "definition": "Having keen judgment and discernment; wise.",
+    "example": "A sagacious mentor saves you years."
+  },
+  {
+    "word": "taciturn",
+    "pronunciation": "TAS-i-turn",
+    "partOfSpeech": "adjective",
+    "definition": "Saying little; reserved in speech.",
+    "example": "The taciturn engineer spoke once, and everyone listened."
+  },
+  {
+    "word": "unfettered",
+    "pronunciation": "uhn-FET-erd",
+    "partOfSpeech": "adjective",
+    "definition": "Not restricted or restrained.",
+    "example": "Give the prototype unfettered access to a test database only."
+  },
+  {
+    "word": "venerate",
+    "pronunciation": "VEN-uh-rayt",
+    "partOfSpeech": "verb",
+    "definition": "To regard with great respect.",
+    "example": "The community venerates the original maintainer."
+  },
+  {
+    "word": "wary",
+    "pronunciation": "WAIR-ee",
+    "partOfSpeech": "adjective",
+    "definition": "Feeling caution about possible dangers or problems.",
+    "example": "Be wary of benchmarks you didn't run yourself."
+  },
+  {
+    "word": "zealous",
+    "pronunciation": "ZEL-uhs",
+    "partOfSpeech": "adjective",
+    "definition": "Showing great energy or enthusiasm for a cause.",
+    "example": "A zealous reviewer left ninety comments."
+  },
+  {
+    "word": "adroit",
+    "pronunciation": "uh-DROYT",
+    "partOfSpeech": "adjective",
+    "definition": "Clever or skillful in using the hands or mind.",
+    "example": "An adroit refactor removed half the code."
+  },
+  {
+    "word": "bolster",
+    "pronunciation": "BOHL-ster",
+    "partOfSpeech": "verb",
+    "definition": "To support or strengthen.",
+    "example": "New tests bolster confidence in the release."
+  },
+  {
+    "word": "circumspect",
+    "pronunciation": "SUR-kuhm-spekt",
+    "partOfSpeech": "adjective",
+    "definition": "Careful to consider all circumstances and consequences.",
+    "example": "Be circumspect before granting production access."
+  },
+  {
+    "word": "dearth",
+    "pronunciation": "DURTH",
+    "partOfSpeech": "noun",
+    "definition": "A scarcity or lack of something.",
+    "example": "There is no dearth of opinions on tabs versus spaces."
+  },
+  {
+    "word": "equanimity",
+    "pronunciation": "ee-kwuh-NIM-i-tee",
+    "partOfSpeech": "noun",
+    "definition": "Calmness and composure, especially in a difficult situation.",
+    "example": "She handled the incident with remarkable equanimity."
+  },
+  {
+    "word": "furtive",
+    "pronunciation": "FUR-tiv",
+    "partOfSpeech": "adjective",
+    "definition": "Attempting to avoid notice; secretive.",
+    "example": "He took a furtive glance at the clock."
+  },
+  {
+    "word": "galvanize",
+    "pronunciation": "GAL-vuh-nyze",
+    "partOfSpeech": "verb",
+    "definition": "To shock or excite someone into taking action.",
+    "example": "The deadline galvanized the whole team."
+  },
+  {
+    "word": "hackneyed",
+    "pronunciation": "HAK-need",
+    "partOfSpeech": "adjective",
+    "definition": "Overused and therefore lacking impact.",
+    "example": "The slogan felt hackneyed by the third slide."
+  }
+]
