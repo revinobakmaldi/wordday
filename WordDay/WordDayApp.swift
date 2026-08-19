@@ -8,7 +8,6 @@ struct WordDayApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(learned)
-                .preferredColorScheme(.dark)
                 .tint(WordDayStyle.accent)
         }
     }

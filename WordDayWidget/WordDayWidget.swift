@@ -30,6 +30,7 @@ struct WordProvider: TimelineProvider {
 
 struct WordDayWidgetEntryView: View {
     @Environment(\.widgetFamily) private var family
+    @Environment(\.colorScheme) private var colorScheme
     var entry: WordEntry
 
     var body: some View {
@@ -60,7 +61,7 @@ struct WordDayWidgetEntryView: View {
     private var smallWidget: some View {
         VStack(alignment: .leading, spacing: 7) {
             HStack {
-                Text("NIGHT EDITION")
+                Text(editionName)
                     .font(WordDayStyle.labelFont(size: 8))
                     .tracking(1.15)
                 Spacer()
@@ -96,7 +97,7 @@ struct WordDayWidgetEntryView: View {
     private var expandedWidget: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
-                Label("NIGHT EDITION", systemImage: "moonphase.waning.crescent")
+                Label(editionName, systemImage: editionSymbol)
                     .font(WordDayStyle.labelFont(size: 8))
                     .tracking(1.1)
 
@@ -167,6 +168,14 @@ struct WordDayWidgetEntryView: View {
                 .offset(x: family == .systemSmall ? 88 : 148, y: -82)
                 .opacity(0.72)
         }
+    }
+
+    private var editionName: String {
+        colorScheme == .dark ? "NIGHT EDITION" : "DAY EDITION"
+    }
+
+    private var editionSymbol: String {
+        colorScheme == .dark ? "moonphase.waning.crescent" : "sun.max.fill"
     }
 }
 

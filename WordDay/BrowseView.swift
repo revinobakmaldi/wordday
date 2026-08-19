@@ -203,8 +203,14 @@ private struct WordDetailView: View {
     }
 }
 
-#Preview {
+#Preview("After Dark") {
     BrowseView()
         .environmentObject(LearnedStore.shared)
         .preferredColorScheme(.dark)
+}
+
+#Preview("After Dawn") {
+    BrowseView()
+        .environmentObject(LearnedStore.shared)
+        .preferredColorScheme(.light)
 }

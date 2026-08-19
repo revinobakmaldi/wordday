@@ -4,6 +4,7 @@ import SwiftUI
 struct TodayView: View {
     @EnvironmentObject private var learned: LearnedStore
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.colorScheme) private var colorScheme
     @State private var appeared = false
 
     private let today = Date()
@@ -71,7 +72,10 @@ struct TodayView: View {
     private var editionHeader: some View {
         VStack(spacing: 10) {
             HStack {
-                Label("NIGHT EDITION", systemImage: "moonphase.waning.crescent")
+                Label(
+                    colorScheme == .dark ? "NIGHT EDITION" : "DAY EDITION",
+                    systemImage: colorScheme == .dark ? "moonphase.waning.crescent" : "sun.max.fill"
+                )
                 Spacer()
                 Text("READ · 10 SEC")
             }
@@ -269,8 +273,14 @@ private struct LearnedButton: View {
     }
 }
 
-#Preview {
+#Preview("After Dark") {
     TodayView()
         .environmentObject(LearnedStore.shared)
         .preferredColorScheme(.dark)
+}
+
+#Preview("After Dawn") {
+    TodayView()
+        .environmentObject(LearnedStore.shared)
+        .preferredColorScheme(.light)
 }
