@@ -42,17 +42,10 @@ struct WordDayWidgetEntryView: View {
     private var widgetContent: some View {
         switch family {
         case .accessoryInline:
-            Text("\(entry.word.word) · \(entry.word.partOfSpeech)")
+            Text("\(entry.word.word) · \(lockScreenClue)")
 
         case .accessoryRectangular:
-            VStack(alignment: .leading, spacing: 2) {
-                Text(entry.word.word.uppercased())
-                    .font(.headline)
-                    .widgetAccentable()
-                Text(entry.word.definition)
-                    .font(.caption2)
-                    .lineLimit(2)
-            }
+            rectangularLockScreenWidget
 
         case .accessoryCircular:
             circularWidget
@@ -99,6 +92,44 @@ struct WordDayWidgetEntryView: View {
                 .frame(width: 32, height: 3)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private var rectangularLockScreenWidget: some View {
+        ZStack(alignment: .leading) {
+            AccessoryWidgetBackground()
+
+            HStack(spacing: 8) {
+                WordDayOrbit(diameter: 30, lineWidth: 4)
+                    .widgetAccentable()
+
+                VStack(alignment: .leading, spacing: 1) {
+                    HStack(spacing: 5) {
+                        Text(entry.word.word.uppercased())
+                            .font(.system(size: 15, weight: .black, design: .serif))
+                            .minimumScaleFactor(0.65)
+                            .lineLimit(1)
+
+                        Text(entry.word.partOfSpeech.uppercased())
+                            .font(.system(size: 7, weight: .bold, design: .rounded))
+                            .padding(.horizontal, 4)
+                            .padding(.vertical, 1)
+                            .background(.secondary.opacity(0.28), in: Capsule())
+                    }
+                    .widgetAccentable()
+
+                    Text(lockScreenClue)
+                        .font(.system(size: 10, weight: .semibold, design: .rounded))
+                        .foregroundStyle(.secondary)
+                        .minimumScaleFactor(0.72)
+                        .lineLimit(1)
+
+                    Capsule()
+                        .fill(.secondary.opacity(0.6))
+                        .frame(width: 34, height: 2)
+                }
+            }
+            .padding(.horizontal, 6)
+        }
     }
 
     private var circularWidget: some View {
@@ -201,6 +232,68 @@ struct WordDayWidgetEntryView: View {
 
     private var editionSymbol: String {
         colorScheme == .dark ? "moonphase.waning.crescent" : "sun.max.fill"
+    }
+
+    private var lockScreenClue: String {
+        compactDefinition(entry.word.definition)
+    }
+
+    private func compactDefinition(_ definition: String) -> String {
+        var text = definition
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .trimmingCharacters(in: CharacterSet(charactersIn: "."))
+
+        for prefix in ["A ", "An ", "The "] {
+            if text.hasPrefix(prefix) {
+                text.removeFirst(prefix.count)
+                break
+            }
+        }
+
+        let lowercased = text.lowercased()
+        if lowercased.hasPrefix("subtle difference") {
+            return "Subtle difference"
+        }
+        if lowercased.hasPrefix("the quality of being ") {
+            text.removeFirst("The quality of being ".count)
+        } else if lowercased.hasPrefix("quality of being ") {
+            text.removeFirst("Quality of being ".count)
+        } else if lowercased.hasPrefix("able to ") {
+            text.removeFirst("Able to ".count)
+        } else if lowercased.hasPrefix("using ") {
+            text.removeFirst("Using ".count)
+        }
+
+        let separators = [",", ";", " or ", " and "]
+        for separator in separators {
+            if let range = text.range(of: separator, options: [.caseInsensitive]) {
+                text = String(text[..<range.lowerBound])
+                break
+            }
+        }
+
+        return text.capitalizedWordPrefix(maxLength: 24)
+    }
+}
+
+private extension String {
+    func capitalizedWordPrefix(maxLength: Int) -> String {
+        guard count > maxLength else { return capitalizedFirst }
+
+        let words = split(separator: " ")
+        var result = ""
+        for word in words {
+            let candidate = result.isEmpty ? String(word) : "\(result) \(word)"
+            if candidate.count > maxLength { break }
+            result = candidate
+        }
+
+        return (result.isEmpty ? String(prefix(maxLength)) : result).capitalizedFirst
+    }
+
+    var capitalizedFirst: String {
+        guard let first else { return self }
+        return first.uppercased() + dropFirst()
     }
 }
 
