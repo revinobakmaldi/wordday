@@ -42,7 +42,7 @@ struct WordDayWidgetEntryView: View {
     private var widgetContent: some View {
         switch family {
         case .accessoryInline:
-            Text("\(entry.word.word) · \(lockScreenClue)")
+            Text("\(entry.word.word) · \(inlineClue)")
 
         case .accessoryRectangular:
             rectangularLockScreenWidget
@@ -96,16 +96,22 @@ struct WordDayWidgetEntryView: View {
 
     private var rectangularLockScreenWidget: some View {
         ZStack(alignment: .leading) {
-            AccessoryWidgetBackground()
+            RoundedRectangle(cornerRadius: 7, style: .continuous)
+                .fill(.primary.opacity(colorScheme == .dark ? 0.18 : 0.10))
 
-            HStack(spacing: 8) {
-                WordDayOrbit(diameter: 30, lineWidth: 4)
+            RoundedRectangle(cornerRadius: 7, style: .continuous)
+                .strokeBorder(.primary.opacity(0.24), lineWidth: 1)
+
+            HStack(spacing: 7) {
+                Capsule()
+                    .fill(.primary.opacity(0.72))
+                    .frame(width: 3)
                     .widgetAccentable()
 
-                VStack(alignment: .leading, spacing: 1) {
+                VStack(alignment: .leading, spacing: 2) {
                     HStack(spacing: 5) {
                         Text(entry.word.word.uppercased())
-                            .font(.system(size: 15, weight: .black, design: .serif))
+                            .font(.system(size: 14, weight: .black, design: .serif))
                             .minimumScaleFactor(0.65)
                             .lineLimit(1)
 
@@ -117,18 +123,17 @@ struct WordDayWidgetEntryView: View {
                     }
                     .widgetAccentable()
 
-                    Text(lockScreenClue)
-                        .font(.system(size: 10, weight: .semibold, design: .rounded))
+                    Text(lockScreenDefinition)
+                        .font(.system(size: 9.2, weight: .semibold, design: .rounded))
                         .foregroundStyle(.secondary)
-                        .minimumScaleFactor(0.72)
-                        .lineLimit(1)
-
-                    Capsule()
-                        .fill(.secondary.opacity(0.6))
-                        .frame(width: 34, height: 2)
+                        .lineSpacing(0)
+                        .minimumScaleFactor(0.82)
+                        .allowsTightening(true)
+                        .lineLimit(2)
                 }
             }
-            .padding(.horizontal, 6)
+            .padding(.horizontal, 7)
+            .padding(.vertical, 4)
         }
     }
 
@@ -234,11 +239,15 @@ struct WordDayWidgetEntryView: View {
         colorScheme == .dark ? "moonphase.waning.crescent" : "sun.max.fill"
     }
 
-    private var lockScreenClue: String {
-        compactDefinition(entry.word.definition)
+    private var inlineClue: String {
+        compactDefinition(entry.word.definition, maxLength: 28)
     }
 
-    private func compactDefinition(_ definition: String) -> String {
+    private var lockScreenDefinition: String {
+        compactDefinition(entry.word.definition, maxLength: 52)
+    }
+
+    private func compactDefinition(_ definition: String, maxLength: Int) -> String {
         var text = definition
             .trimmingCharacters(in: .whitespacesAndNewlines)
             .trimmingCharacters(in: CharacterSet(charactersIn: "."))
@@ -252,7 +261,7 @@ struct WordDayWidgetEntryView: View {
 
         let lowercased = text.lowercased()
         if lowercased.hasPrefix("subtle difference") {
-            return "Subtle difference"
+            text = "Subtle difference in meaning or expression"
         }
         if lowercased.hasPrefix("the quality of being ") {
             text.removeFirst("The quality of being ".count)
@@ -264,7 +273,12 @@ struct WordDayWidgetEntryView: View {
             text.removeFirst("Using ".count)
         }
 
-        let separators = [",", ";", " or ", " and "]
+        text = text
+            .replacingOccurrences(of: ", or ", with: " or ")
+            .replacingOccurrences(of: ", and ", with: " and ")
+            .replacingOccurrences(of: "; ", with: " - ")
+
+        let separators = [";"]
         for separator in separators {
             if let range = text.range(of: separator, options: [.caseInsensitive]) {
                 text = String(text[..<range.lowerBound])
@@ -272,7 +286,7 @@ struct WordDayWidgetEntryView: View {
             }
         }
 
-        return text.capitalizedWordPrefix(maxLength: 24)
+        return text.capitalizedWordPrefix(maxLength: maxLength)
     }
 }
 
