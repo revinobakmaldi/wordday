@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WordDay — Adaptive Appearance Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #ece8df; color: #241b26; font-family: "Bricolage Grotesque", sans-serif; }
+    main { width: 1320px; margin: 0 auto; padding: 52px 64px 58px; }
+    header { display: grid; grid-template-columns: 1.2fr .8fr; gap: 72px; align-items: end; padding-bottom: 24px; border-bottom: 1px solid #cfc6ba; }
+    .eyebrow, .label { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    .eyebrow { margin: 0 0 12px; color: #5f7408; }
+    h1 { max-width: 690px; margin: 0; font-family: "Newsreader", serif; font-size: 58px; font-weight: 400; line-height: .97; letter-spacing: -.035em; }
+    header p:last-child { margin: 0; color: #665c66; font-size: 15px; line-height: 1.55; }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 42px; margin-top: 34px; }
+    .mode-heading { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 13px; }
+    h2 { margin: 0; font-size: 22px; letter-spacing: -.02em; }
+    .system-label { color: #746b73; font-size: 10px; font-weight: 750; letter-spacing: .1em; text-transform: uppercase; }
+    .stage { --bg:#110a13; --surface:#1c1220; --ink:#f6ecd5; --muted:#b7a3b4; --accent:#c2e633; --accentInk:#0d1305; --rule:#735778; --orbit:#4d5c1b; min-height: 714px; padding: 20px; border-radius: 28px; background: var(--stage); }
+    .dark { --stage:#241428; }
+    .light { --stage:#ded2bd; --bg:#f4ecd9; --surface:#e6d8bd; --ink:#251126; --muted:#674e66; --accent:#566f08; --accentInk:#f9f0da; --rule:#806880; --orbit:#a9a050; }
+    .preview-row { display: grid; grid-template-columns: 305px 1fr; gap: 18px; align-items: start; }
+    .phone { position: relative; width: 305px; height: 654px; padding: 8px; border-radius: 48px; background: #151216; box-shadow: 0 20px 38px rgba(29,16,30,.22); }
+    .screen { position: relative; height: 100%; overflow: hidden; padding: 45px 18px 66px; border-radius: 40px; color: var(--ink); background: var(--bg); }
+    .island { position: absolute; z-index: 3; top: 10px; left: 50%; width: 88px; height: 24px; transform: translateX(-50%); border-radius: 20px; background: #0b090b; }
+    .status { position: absolute; z-index: 2; top: 15px; left: 20px; right: 20px; display: flex; justify-content: space-between; font-size: 9px; font-weight: 800; }
+    .orbit { position: absolute; top: -60px; right: -78px; width: 156px; height: 156px; border: 20px solid var(--orbit); border-radius: 50%; }
+    .top { position: relative; display: flex; justify-content: space-between; align-items: center; }
+    .brand { font-size: 11px; font-weight: 800; letter-spacing: .16em; }
+    .mode-icon { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--rule); border-radius: 50%; color: var(--accent); }
+    .edition { display: flex; justify-content: space-between; margin-top: 22px; padding-bottom: 9px; border-bottom: 1px solid var(--rule); color: var(--accent); font-size: 8px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+    .word { margin-top: 28px; font-size: 40px; font-weight: 800; line-height: .9; letter-spacing: -.055em; text-transform: uppercase; }
+    .pron { display: flex; gap: 9px; align-items: center; margin-top: 13px; color: var(--muted); font-size: 9px; font-weight: 700; text-transform: uppercase; }
+    .pron i { width: 24px; height: 2px; background: var(--accent); }
+    .definition { margin: 27px 0 0; font-family: "Newsreader", serif; font-size: 19px; line-height: 1.28; }
+    .example { margin: 19px 0 0; color: var(--muted); font-family: "Newsreader", serif; font-size: 13px; font-style: italic; line-height: 1.4; }
+    .pager { display: flex; gap: 6px; margin-top: 22px; }
+    .pager i { width: 5px; height: 5px; border-radius: 5px; background: var(--rule); }
+    .pager i:first-child { width: 21px; background: var(--accent); }
+    .action { position: absolute; left: 18px; right: 18px; bottom: 76px; display: flex; justify-content: space-between; align-items: center; height: 48px; padding: 0 14px; border: 1px solid var(--accent); color: var(--accent); font-size: 9px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .tabs { position: absolute; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: 1fr 1fr; height: 60px; border-top: 1px solid var(--rule); background: var(--surface); }
+    .tab { display: grid; place-items: center; align-content: center; gap: 3px; color: var(--muted); font-size: 8px; font-weight: 700; }
+    .tab:first-child { color: var(--accent); }
+    .side { display: flex; min-width: 0; flex-direction: column; gap: 14px; }
+    .swatches { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .swatch { min-height: 66px; padding: 9px; border: 1px solid var(--rule); color: var(--ink); background: var(--color); }
+    .swatch span { display: block; margin-top: 29px; font-size: 8px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .widget { position: relative; min-height: 142px; overflow: hidden; padding: 14px; border: 1px solid var(--rule); border-radius: 24px; color: var(--ink); background: var(--bg); }
+    .widget .orbit { top: -56px; right: -56px; width: 112px; height: 112px; border-width: 15px; }
+    .widget-top { position: relative; display: flex; justify-content: space-between; color: var(--accent); font-size: 7px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .widget-word { position: relative; margin-top: 13px; font-size: 23px; font-weight: 800; text-transform: uppercase; }
+    .widget-def { position: relative; margin-top: 7px; color: var(--muted); font-family: "Newsreader", serif; font-size: 10px; line-height: 1.3; }
+    .note { padding-top: 12px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; line-height: 1.45; }
+    .note strong { display: block; margin-bottom: 4px; color: var(--accent); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+    footer { display: flex; justify-content: space-between; margin-top: 28px; padding-top: 18px; border-top: 1px solid #cfc6ba; color: #746b73; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div><p class="eyebrow">WordDay · Adaptive appearance</p><h1>After Dark,<br>from dusk to dawn.</h1></div>
+      <p>The approved identity now follows the iPhone system setting. The light companion preserves the same editorial hierarchy and orbital signature with warm parchment, aubergine ink, and contrast-safe olive cues.</p>
+    </header>
+    <section class="pair">
+      <article>
+        <div class="mode-heading"><h2>After Dark</h2><span class="system-label">System · Dark</span></div>
+        <div class="stage dark">
+          <div class="preview-row">
+            <div class="phone"><div class="screen"><div class="island"></div><div class="status"><span>9:41</span><span>● ▰</span></div><div class="orbit"></div><div class="top"><span class="brand">WORDDAY</span><span class="mode-icon">◒</span></div><div class="edition"><span>Night edition</span><span>Read · 10 sec</span></div><div class="word">petrichor</div><div class="pron"><span>PET-ri-kor</span><i></i><span>noun</span></div><p class="definition">The earthy scent produced when rain falls on dry soil.</p><p class="example">“The first storm of the season filled the street with petrichor.”</p><div class="pager"><i></i><i></i><i></i><i></i></div><div class="action"><span>＋ Add to my words</span><span>↗</span></div><div class="tabs"><div class="tab">◉<span>Today</span></div><div class="tab">▥<span>Archive</span></div></div></div></div>
+            <aside class="side"><div class="swatches"><div class="swatch" style="--color:var(--bg)"><span>Ground</span></div><div class="swatch" style="--color:var(--surface)"><span>Surface</span></div><div class="swatch" style="--color:var(--ink)"><span style="color:var(--bg)">Ink</span></div><div class="swatch" style="--color:var(--accent)"><span style="color:var(--accentInk)">Signal</span></div></div><div class="widget"><div class="orbit"></div><div class="widget-top"><span>Night edition</span><span>Wed 19</span></div><div class="widget-word">petrichor</div><div class="widget-def">The earthy scent produced when rain falls on dry soil.</div></div><div class="note"><strong>Character</strong>Immersive, focused, and cinematic without decorative glow.</div></aside>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="mode-heading"><h2>After Dawn</h2><span class="system-label">System · Light</span></div>
+        <div class="stage light">
+          <div class="preview-row">
+            <div class="phone"><div class="screen"><div class="island"></div><div class="status"><span>9:41</span><span>● ▰</span></div><div class="orbit"></div><div class="top"><span class="brand">WORDDAY</span><span class="mode-icon">☀</span></div><div class="edition"><span>Day edition</span><span>Read · 10 sec</span></div><div class="word">petrichor</div><div class="pron"><span>PET-ri-kor</span><i></i><span>noun</span></div><p class="definition">The earthy scent produced when rain falls on dry soil.</p><p class="example">“The first storm of the season filled the street with petrichor.”</p><div class="pager"><i></i><i></i><i></i><i></i></div><div class="action"><span>＋ Add to my words</span><span>↗</span></div><div class="tabs"><div class="tab">◉<span>Today</span></div><div class="tab">▥<span>Archive</span></div></div></div></div>
+            <aside class="side"><div class="swatches"><div class="swatch" style="--color:var(--bg)"><span>Ground</span></div><div class="swatch" style="--color:var(--surface)"><span>Surface</span></div><div class="swatch" style="--color:var(--ink)"><span style="color:var(--bg)">Ink</span></div><div class="swatch" style="--color:var(--accent)"><span style="color:var(--accentInk)">Signal</span></div></div><div class="widget"><div class="orbit"></div><div class="widget-top"><span>Day edition</span><span>Wed 19</span></div><div class="widget-word">petrichor</div><div class="widget-def">The earthy scent produced when rain falls on dry soil.</div></div><div class="note"><strong>Character</strong>Warm, literary, and daylight-readable without becoming generic white UI.</div></aside>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer><span>One identity · two environment-aware palettes</span><span>Switch source: iOS system appearance</span></footer>
+  </main>
+</body>
+</html>

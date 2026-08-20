@@ -13,6 +13,7 @@ definition, an example sentence, or to mark the word as learned.
 | **Home Screen widget** | Small, medium and large sizes. Word, pronunciation, part of speech, definition — and an example sentence on the large size. |
 | **Lock Screen widget** | Inline and rectangular accessory families. |
 | **App** | Today's word in full, a browsable/searchable list of every word, and a "learned" filter. |
+| **Adaptive design** | After Dark and its warm After Dawn counterpart automatically follow the iPhone system appearance. |
 | **Word list** | 61 words in `Shared/words.json`. Add your own — it's plain JSON. |
 
 The word for a given day is derived from the date itself, so the app and the
