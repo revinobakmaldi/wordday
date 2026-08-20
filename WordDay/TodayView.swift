@@ -26,6 +26,8 @@ struct TodayView: View {
                         editionHeader
                         WordCard(word: word)
                             .padding(.top, 28)
+                        LearningGuideView(word: word)
+                            .padding(.top, 28)
                         collectionProgress
                             .padding(.top, 28)
                         LearnedButton(word: word)
@@ -226,6 +228,99 @@ struct WordCard: View {
     private var wordNumber: String {
         let index = (WordLibrary.all.firstIndex(of: word) ?? 0) + 1
         return String(format: "%02d", index)
+    }
+}
+
+struct LearningGuideView: View {
+    let word: Word
+
+    private let phraseColumns = [
+        GridItem(.adaptive(minimum: 118), spacing: 8, alignment: .leading)
+    ]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 18) {
+            HStack(alignment: .firstTextBaseline) {
+                Text("LEARN GUIDE")
+                    .font(WordDayStyle.labelFont(size: 9))
+                    .tracking(1.25)
+                    .foregroundStyle(WordDayStyle.accent)
+
+                Spacer()
+
+                Text(word.partOfSpeech.uppercased())
+                    .font(WordDayStyle.labelFont(size: 8))
+                    .tracking(0.9)
+                    .foregroundStyle(WordDayStyle.mutedInk)
+            }
+
+            GuideSection(title: "How to use it") {
+                Text(word.learningTip)
+                    .font(WordDayStyle.bodyFont(size: 15))
+                    .lineSpacing(3)
+                    .foregroundStyle(WordDayStyle.ink)
+            }
+
+            GuideSection(title: "Example usages") {
+                VStack(alignment: .leading, spacing: 12) {
+                    ForEach(Array(word.learningExamples.prefix(3).enumerated()), id: \.offset) { index, example in
+                        HStack(alignment: .top, spacing: 10) {
+                            Text(String(format: "%02d", index + 1))
+                                .font(WordDayStyle.labelFont(size: 8))
+                                .monospacedDigit()
+                                .foregroundStyle(WordDayStyle.accent)
+                                .frame(width: 22, alignment: .leading)
+
+                            Text(example)
+                                .font(WordDayStyle.italicFont(size: 14))
+                                .lineSpacing(3)
+                                .foregroundStyle(WordDayStyle.mutedInk)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                    }
+                }
+            }
+
+            GuideSection(title: "Common phrases") {
+                LazyVGrid(columns: phraseColumns, alignment: .leading, spacing: 8) {
+                    ForEach(word.learningPhrases.prefix(6), id: \.self) { phrase in
+                        Text(phrase)
+                            .font(WordDayStyle.labelFont(size: 9))
+                            .tracking(0.3)
+                            .foregroundStyle(WordDayStyle.accent)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.78)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 7)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .background(WordDayStyle.surface, in: Capsule())
+                    }
+                }
+            }
+        }
+        .padding(.top, 18)
+        .overlay(alignment: .top) {
+            Rectangle()
+                .fill(WordDayStyle.rule)
+                .frame(height: 1)
+        }
+        .accessibilityElement(children: .contain)
+    }
+}
+
+private struct GuideSection<Content: View>: View {
+    let title: String
+    @ViewBuilder var content: Content
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 9) {
+            Text(title.uppercased())
+                .font(WordDayStyle.labelFont(size: 8))
+                .tracking(1.05)
+                .foregroundStyle(WordDayStyle.mutedInk)
+
+            content
+        }
     }
 }
 

@@ -13,6 +13,10 @@ struct BrowseView: View {
                 guard !query.isEmpty else { return true }
                 return word.word.localizedCaseInsensitiveContains(query)
                     || word.definition.localizedCaseInsensitiveContains(query)
+                    || word.example.localizedCaseInsensitiveContains(query)
+                    || word.learningTip.localizedCaseInsensitiveContains(query)
+                    || word.learningExamples.contains { $0.localizedCaseInsensitiveContains(query) }
+                    || word.learningPhrases.contains { $0.localizedCaseInsensitiveContains(query) }
             }
             .sorted { $0.word < $1.word }
     }
@@ -175,6 +179,7 @@ private struct WordDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 26) {
                 WordCard(word: word, trailingLabel: "ARCHIVE")
+                LearningGuideView(word: word)
 
                 if isLearned {
                     Label("IN YOUR COLLECTION", systemImage: "checkmark.circle.fill")

@@ -4,426 +4,1835 @@
     "pronunciation": "ih-FEM-er-uhl",
     "partOfSpeech": "adjective",
     "definition": "Lasting for a very short time.",
-    "example": "The morning fog was ephemeral, gone before the first coffee."
+    "example": "The morning fog was ephemeral, gone before the first coffee.",
+    "usageExamples": [
+      "The excitement around the teaser was ephemeral, fading by lunch.",
+      "Use ephemeral storage only for data you can afford to lose."
+    ],
+    "commonPhrases": [
+      "ephemeral moment",
+      "ephemeral joy",
+      "ephemeral storage",
+      "ephemeral trend"
+    ],
+    "usageTip": "Use it for something brief by nature, especially when its short life matters."
   },
   {
     "word": "ubiquitous",
     "pronunciation": "yoo-BIK-wi-tuhs",
     "partOfSpeech": "adjective",
     "definition": "Present, appearing, or found everywhere.",
-    "example": "Coffee shops are ubiquitous in this part of town."
+    "example": "Coffee shops are ubiquitous in this part of town.",
+    "usageExamples": [
+      "QR menus became ubiquitous after restaurants changed their service model.",
+      "The icon is so ubiquitous that users recognize it without a label."
+    ],
+    "commonPhrases": [
+      "ubiquitous technology",
+      "ubiquitous presence",
+      "become ubiquitous",
+      "nearly ubiquitous"
+    ],
+    "usageTip": "Use it when something appears almost everywhere, not merely when it is popular."
   },
   {
     "word": "laconic",
     "pronunciation": "luh-KON-ik",
     "partOfSpeech": "adjective",
     "definition": "Using very few words.",
-    "example": "His laconic reply was simply: \"Done.\""
+    "example": "His laconic reply was simply: \"Done.\"",
+    "usageExamples": [
+      "His laconic update said only what the team needed to know.",
+      "A laconic reply can sound confident, but it can also seem cold."
+    ],
+    "commonPhrases": [
+      "laconic reply",
+      "laconic style",
+      "laconic answer",
+      "remain laconic"
+    ],
+    "usageTip": "Use it for speech or writing that is extremely brief, especially when the brevity has a noticeable tone."
   },
   {
     "word": "serendipity",
     "pronunciation": "ser-uhn-DIP-i-tee",
     "partOfSpeech": "noun",
     "definition": "The occurrence of happy or beneficial events by chance.",
-    "example": "Finding the bookshop in the rain was pure serendipity."
+    "example": "Finding the bookshop in the rain was pure serendipity.",
+    "usageExamples": [
+      "Serendipity led her to the article that solved the problem.",
+      "The partnership began through pure serendipity at a small conference."
+    ],
+    "commonPhrases": [
+      "pure serendipity",
+      "happy serendipity",
+      "moment of serendipity",
+      "by serendipity"
+    ],
+    "usageTip": "Use it for a lucky discovery or event that was not planned."
   },
   {
     "word": "pragmatic",
     "pronunciation": "prag-MAT-ik",
     "partOfSpeech": "adjective",
     "definition": "Dealing with things sensibly and realistically.",
-    "example": "She took a pragmatic approach and shipped the simplest version first."
+    "example": "She took a pragmatic approach and shipped the simplest version first.",
+    "usageExamples": [
+      "A pragmatic plan focused on what could ship this week.",
+      "She stayed pragmatic when the discussion became too theoretical."
+    ],
+    "commonPhrases": [
+      "pragmatic approach",
+      "pragmatic choice",
+      "pragmatic leader",
+      "remain pragmatic"
+    ],
+    "usageTip": "Use it when someone chooses what works in reality rather than what sounds ideal."
   },
   {
     "word": "nuance",
     "pronunciation": "NOO-ahns",
     "partOfSpeech": "noun",
     "definition": "A subtle difference in meaning, expression, or sound.",
-    "example": "The translation missed every nuance of the original poem."
+    "example": "The translation missed every nuance of the original poem.",
+    "usageExamples": [
+      "Her comment added nuance to a decision that first looked obvious.",
+      "The translation preserved the nuance of the original phrase."
+    ],
+    "commonPhrases": [
+      "add nuance",
+      "subtle nuance",
+      "the nuance of",
+      "miss the nuance"
+    ],
+    "usageTip": "Use it when the small difference matters; nuance is about precision, not decoration."
   },
   {
     "word": "resilient",
     "pronunciation": "ri-ZIL-yuhnt",
     "partOfSpeech": "adjective",
     "definition": "Able to recover quickly from difficulty.",
-    "example": "The team proved resilient after a rough quarter."
+    "example": "The team proved resilient after a rough quarter.",
+    "usageExamples": [
+      "A resilient process kept running even after the data source failed.",
+      "The team stayed resilient during a difficult migration."
+    ],
+    "commonPhrases": [
+      "resilient team",
+      "resilient system",
+      "resilient mindset",
+      "remain resilient"
+    ],
+    "usageTip": "Use it for people, systems, or plans that recover well after stress or failure."
   },
   {
     "word": "candor",
     "pronunciation": "KAN-der",
     "partOfSpeech": "noun",
     "definition": "The quality of being open and honest.",
-    "example": "I appreciated the candor in her feedback."
+    "example": "I appreciated the candor in her feedback.",
+    "usageExamples": [
+      "Her candor made the difficult feedback easier to trust.",
+      "The team needed candor more than reassurance."
+    ],
+    "commonPhrases": [
+      "refreshing candor",
+      "with candor",
+      "radical candor",
+      "appreciate the candor"
+    ],
+    "usageTip": "Use it for honest directness, usually when someone says the truth plainly."
   },
   {
     "word": "meticulous",
     "pronunciation": "muh-TIK-yuh-luhs",
     "partOfSpeech": "adjective",
     "definition": "Showing great attention to detail; very careful and precise.",
-    "example": "He kept meticulous notes on every experiment."
+    "example": "He kept meticulous notes on every experiment.",
+    "usageExamples": [
+      "Her meticulous notes made the audit easy to follow.",
+      "A meticulous review caught the small error before release."
+    ],
+    "commonPhrases": [
+      "meticulous notes",
+      "meticulous review",
+      "meticulous planning",
+      "meticulous attention"
+    ],
+    "usageTip": "Use it when careful attention to detail is the point, often as praise."
   },
   {
     "word": "quixotic",
     "pronunciation": "kwik-SOT-ik",
     "partOfSpeech": "adjective",
     "definition": "Extremely idealistic and unrealistic in a charming way.",
-    "example": "Rebuilding the whole system in a weekend was a quixotic plan."
+    "example": "Rebuilding the whole system in a weekend was a quixotic plan.",
+    "usageExamples": [
+      "The quixotic plan inspired the team, even if it was impossible.",
+      "His quixotic campaign ignored every practical constraint."
+    ],
+    "commonPhrases": [
+      "quixotic dream",
+      "quixotic plan",
+      "quixotic quest",
+      "quixotic effort"
+    ],
+    "usageTip": "Use it for idealistic efforts that are charming but unrealistic."
   },
   {
     "word": "eloquent",
     "pronunciation": "EL-uh-kwuhnt",
     "partOfSpeech": "adjective",
     "definition": "Fluent and persuasive in speaking or writing.",
-    "example": "Her eloquent closing argument won the room."
+    "example": "Her eloquent closing argument won the room.",
+    "usageExamples": [
+      "Her eloquent summary gave shape to a messy debate.",
+      "The chart was an eloquent argument for simplifying the product."
+    ],
+    "commonPhrases": [
+      "eloquent speech",
+      "eloquent defense",
+      "eloquent summary",
+      "eloquent silence"
+    ],
+    "usageTip": "Use it for expression that is fluent, persuasive, or meaningfully clear."
   },
   {
     "word": "tenacious",
     "pronunciation": "tuh-NAY-shuhs",
     "partOfSpeech": "adjective",
     "definition": "Holding firmly to something; persistent.",
-    "example": "A tenacious bug survived three rewrites."
+    "example": "A tenacious bug survived three rewrites.",
+    "usageExamples": [
+      "A tenacious analyst kept tracing the issue until the source appeared.",
+      "The startup survived because its founders were tenacious."
+    ],
+    "commonPhrases": [
+      "tenacious effort",
+      "tenacious grip",
+      "tenacious competitor",
+      "remain tenacious"
+    ],
+    "usageTip": "Use it for persistence that refuses to let go."
   },
   {
     "word": "esoteric",
     "pronunciation": "es-uh-TER-ik",
     "partOfSpeech": "adjective",
     "definition": "Understood by only a small number of people with special knowledge.",
-    "example": "The talk drifted into esoteric details of compiler design."
+    "example": "The talk drifted into esoteric details of compiler design.",
+    "usageExamples": [
+      "The meeting drifted into esoteric database tuning details.",
+      "Her explanation made an esoteric topic feel practical."
+    ],
+    "commonPhrases": [
+      "esoteric knowledge",
+      "esoteric detail",
+      "esoteric subject",
+      "esoteric reference"
+    ],
+    "usageTip": "Use it for knowledge understood by a small specialized group."
   },
   {
     "word": "gregarious",
     "pronunciation": "gri-GAIR-ee-uhs",
     "partOfSpeech": "adjective",
     "definition": "Fond of company; sociable.",
-    "example": "The most gregarious person at the table knew everyone by name."
+    "example": "The most gregarious person at the table knew everyone by name.",
+    "usageExamples": [
+      "His gregarious style made the new team comfortable quickly.",
+      "A gregarious host can change the energy of a quiet room."
+    ],
+    "commonPhrases": [
+      "gregarious personality",
+      "gregarious host",
+      "gregarious nature",
+      "gregarious colleague"
+    ],
+    "usageTip": "Use it for someone who enjoys being around people and draws energy from company."
   },
   {
     "word": "juxtapose",
     "pronunciation": "JUHK-stuh-pohz",
     "partOfSpeech": "verb",
     "definition": "To place two things close together for contrasting effect.",
-    "example": "The design juxtaposes hard concrete with soft light."
+    "example": "The design juxtaposes hard concrete with soft light.",
+    "usageExamples": [
+      "The report juxtaposed forecast and actual sales to show the gap.",
+      "The film juxtaposes private grief with public celebration."
+    ],
+    "commonPhrases": [
+      "juxtapose ideas",
+      "juxtapose images",
+      "juxtapose two views",
+      "sharply juxtapose"
+    ],
+    "usageTip": "Use it when two things are placed side by side so their contrast becomes clearer."
   },
   {
     "word": "pedantic",
     "pronunciation": "puh-DAN-tik",
     "partOfSpeech": "adjective",
     "definition": "Overly concerned with minor details or rules.",
-    "example": "It sounds pedantic, but the distinction actually matters here."
+    "example": "It sounds pedantic, but the distinction actually matters here.",
+    "usageExamples": [
+      "The review became pedantic when it focused on commas instead of risk.",
+      "A pedantic explanation can frustrate people who need the main point."
+    ],
+    "commonPhrases": [
+      "pedantic correction",
+      "pedantic tone",
+      "pedantic detail",
+      "sound pedantic"
+    ],
+    "usageTip": "Use it for overdone attention to rules or small details, usually as criticism."
   },
   {
     "word": "cogent",
     "pronunciation": "KOH-juhnt",
     "partOfSpeech": "adjective",
     "definition": "Clear, logical, and convincing.",
-    "example": "He made a cogent case for delaying the launch."
+    "example": "He made a cogent case for delaying the launch.",
+    "usageExamples": [
+      "Her cogent argument changed the budget discussion.",
+      "A cogent memo can make a complicated decision feel manageable."
+    ],
+    "commonPhrases": [
+      "cogent argument",
+      "cogent case",
+      "cogent explanation",
+      "cogent analysis"
+    ],
+    "usageTip": "Use it for reasoning that is clear, logical, and convincing."
   },
   {
     "word": "innocuous",
     "pronunciation": "ih-NOK-yoo-uhs",
     "partOfSpeech": "adjective",
     "definition": "Not harmful or offensive.",
-    "example": "The change looked innocuous until it hit production."
+    "example": "The change looked innocuous until it hit production.",
+    "usageExamples": [
+      "The innocuous setting created a serious reporting error later.",
+      "His comment sounded innocuous, but the timing made it awkward."
+    ],
+    "commonPhrases": [
+      "innocuous comment",
+      "innocuous question",
+      "seem innocuous",
+      "apparently innocuous"
+    ],
+    "usageTip": "Use it for something that appears harmless or unlikely to offend."
   },
   {
     "word": "alacrity",
     "pronunciation": "uh-LAK-ri-tee",
     "partOfSpeech": "noun",
     "definition": "Brisk and cheerful readiness.",
-    "example": "She accepted the assignment with alacrity."
+    "example": "She accepted the assignment with alacrity.",
+    "usageExamples": [
+      "She accepted the urgent assignment with alacrity.",
+      "The support team responded with unusual alacrity after the outage."
+    ],
+    "commonPhrases": [
+      "with alacrity",
+      "respond with alacrity",
+      "accept with alacrity",
+      "show alacrity"
+    ],
+    "usageTip": "Use it for cheerful speed or eager readiness."
   },
   {
     "word": "ostensible",
     "pronunciation": "o-STEN-suh-buhl",
     "partOfSpeech": "adjective",
     "definition": "Stated or appearing to be true, but not necessarily so.",
-    "example": "The ostensible reason for the meeting was a status update."
+    "example": "The ostensible reason for the meeting was a status update.",
+    "usageExamples": [
+      "The ostensible reason was cost, but the real issue was trust.",
+      "His ostensible role was advisor, though he made most decisions."
+    ],
+    "commonPhrases": [
+      "ostensible reason",
+      "ostensible purpose",
+      "ostensible leader",
+      "ostensible goal"
+    ],
+    "usageTip": "Use it when something is stated as true but may hide a different reality."
   },
   {
     "word": "myriad",
     "pronunciation": "MIR-ee-uhd",
     "partOfSpeech": "adjective",
     "definition": "Countless or extremely great in number.",
-    "example": "There are myriad ways to solve it; only two are cheap."
+    "example": "There are myriad ways to solve it; only two are cheap.",
+    "usageExamples": [
+      "The migration created myriad small decisions for the team.",
+      "There are myriad reasons a forecast can miss the mark."
+    ],
+    "commonPhrases": [
+      "myriad reasons",
+      "myriad ways",
+      "myriad problems",
+      "a myriad of"
+    ],
+    "usageTip": "Use it for a very large number or variety of things."
   },
   {
     "word": "prescient",
     "pronunciation": "PRESH-uhnt",
     "partOfSpeech": "adjective",
     "definition": "Having knowledge of events before they happen.",
-    "example": "His prescient warning about the outage went unread."
+    "example": "His prescient warning about the outage went unread.",
+    "usageExamples": [
+      "Her prescient warning saved the team from a costly rewrite.",
+      "The early memo now looks prescient after the market shift."
+    ],
+    "commonPhrases": [
+      "prescient warning",
+      "prescient observation",
+      "prescient call",
+      "seem prescient"
+    ],
+    "usageTip": "Use it when someone appears to understand what will happen before others do."
   },
   {
     "word": "obfuscate",
     "pronunciation": "OB-fuh-skayt",
     "partOfSpeech": "verb",
     "definition": "To make something unclear or hard to understand.",
-    "example": "The report seemed written to obfuscate the real numbers."
+    "example": "The report seemed written to obfuscate the real numbers.",
+    "usageExamples": [
+      "The vendor used jargon to obfuscate the pricing change.",
+      "Extra metrics can obfuscate the real customer problem."
+    ],
+    "commonPhrases": [
+      "obfuscate meaning",
+      "obfuscate the issue",
+      "deliberately obfuscate",
+      "obfuscate responsibility"
+    ],
+    "usageTip": "Use it when something makes meaning harder to understand, often intentionally."
   },
   {
     "word": "salient",
     "pronunciation": "SAY-lee-uhnt",
     "partOfSpeech": "adjective",
     "definition": "Most noticeable or important.",
-    "example": "Give me the three salient points before the call."
+    "example": "Give me the three salient points before the call.",
+    "usageExamples": [
+      "The salient point was not growth, but retention.",
+      "She pulled the salient facts from a long messy thread."
+    ],
+    "commonPhrases": [
+      "salient point",
+      "salient feature",
+      "salient facts",
+      "most salient"
+    ],
+    "usageTip": "Use it for the part that stands out as most relevant or important."
   },
   {
     "word": "vicarious",
     "pronunciation": "vy-KAIR-ee-uhs",
     "partOfSpeech": "adjective",
     "definition": "Experienced through the feelings or actions of another person.",
-    "example": "I get vicarious satisfaction from watching him finish a marathon."
+    "example": "I get vicarious satisfaction from watching him finish a marathon.",
+    "usageExamples": [
+      "He felt vicarious pride when his mentee presented the work.",
+      "Travel writing offers a vicarious taste of unfamiliar places."
+    ],
+    "commonPhrases": [
+      "vicarious pleasure",
+      "vicarious thrill",
+      "vicarious experience",
+      "live vicariously"
+    ],
+    "usageTip": "Use it when someone experiences something through another person."
   },
   {
     "word": "amenable",
     "pronunciation": "uh-MEE-nuh-buhl",
     "partOfSpeech": "adjective",
     "definition": "Open and responsive to suggestion; easily persuaded.",
-    "example": "The client was amenable to a smaller first release."
+    "example": "The client was amenable to a smaller first release.",
+    "usageExamples": [
+      "The team was amenable to a smaller release if it reduced risk.",
+      "The dataset is amenable to simple segmentation."
+    ],
+    "commonPhrases": [
+      "amenable to change",
+      "amenable to suggestion",
+      "amenable to analysis",
+      "remain amenable"
+    ],
+    "usageTip": "Use it for willingness, openness, or suitability to a method."
   },
   {
     "word": "trepidation",
     "pronunciation": "trep-i-DAY-shuhn",
     "partOfSpeech": "noun",
     "definition": "A feeling of fear or agitation about something that may happen.",
-    "example": "She opened the deploy log with some trepidation."
+    "example": "She opened the deploy log with some trepidation.",
+    "usageExamples": [
+      "She opened the incident report with trepidation.",
+      "There was some trepidation before the first executive review."
+    ],
+    "commonPhrases": [
+      "with trepidation",
+      "feel trepidation",
+      "some trepidation",
+      "sense of trepidation"
+    ],
+    "usageTip": "Use it for anxious anticipation before something uncertain or risky."
   },
   {
     "word": "verbose",
     "pronunciation": "ver-BOHS",
     "partOfSpeech": "adjective",
     "definition": "Using more words than needed.",
-    "example": "The docs are thorough but verbose."
+    "example": "The docs are thorough but verbose.",
+    "usageExamples": [
+      "The verbose email hid the decision in paragraph seven.",
+      "A verbose interface can make simple actions feel heavy."
+    ],
+    "commonPhrases": [
+      "verbose explanation",
+      "verbose email",
+      "too verbose",
+      "verbose style"
+    ],
+    "usageTip": "Use it when there are more words than needed."
   },
   {
     "word": "astute",
     "pronunciation": "uh-STOOT",
     "partOfSpeech": "adjective",
     "definition": "Having sharp judgment; shrewd.",
-    "example": "An astute observation saved us a week of work."
+    "example": "An astute observation saved us a week of work.",
+    "usageExamples": [
+      "Her astute question exposed the weak assumption.",
+      "An astute investor noticed the signal before the market did."
+    ],
+    "commonPhrases": [
+      "astute observation",
+      "astute question",
+      "astute decision",
+      "astute reader"
+    ],
+    "usageTip": "Use it for sharp judgment, especially when someone notices what others miss."
   },
   {
     "word": "beguile",
     "pronunciation": "bih-GYLE",
     "partOfSpeech": "verb",
     "definition": "To charm or enchant, sometimes deceptively.",
-    "example": "The demo beguiled the audience into ignoring the caveats."
+    "example": "The demo beguiled the audience into ignoring the caveats.",
+    "usageExamples": [
+      "The polished demo beguiled the room into ignoring the missing data.",
+      "The story beguiled readers with warmth before revealing its sadness."
+    ],
+    "commonPhrases": [
+      "beguile the audience",
+      "beguile with charm",
+      "easily beguiled",
+      "beguile readers"
+    ],
+    "usageTip": "Use it when charm attracts or deceives someone."
   },
   {
     "word": "arduous",
     "pronunciation": "AR-joo-uhs",
     "partOfSpeech": "adjective",
     "definition": "Involving strenuous effort; difficult and tiring.",
-    "example": "Migrating the database was an arduous two-day job."
+    "example": "Migrating the database was an arduous two-day job.",
+    "usageExamples": [
+      "The migration was arduous, but it left the system cleaner.",
+      "An arduous approval process slowed every urgent request."
+    ],
+    "commonPhrases": [
+      "arduous task",
+      "arduous journey",
+      "arduous process",
+      "arduous work"
+    ],
+    "usageTip": "Use it for work that is difficult, tiring, and sustained."
   },
   {
     "word": "candid",
     "pronunciation": "KAN-did",
     "partOfSpeech": "adjective",
     "definition": "Truthful and straightforward; frank.",
-    "example": "Let me be candid about the timeline."
+    "example": "Let me be candid about the timeline.",
+    "usageExamples": [
+      "His candid answer saved the meeting from polite confusion.",
+      "A candid review can be kind if it is specific."
+    ],
+    "commonPhrases": [
+      "candid feedback",
+      "candid answer",
+      "candid conversation",
+      "be candid"
+    ],
+    "usageTip": "Use it when someone is direct and honest without hiding the difficult part."
   },
   {
     "word": "diligent",
     "pronunciation": "DIL-i-juhnt",
     "partOfSpeech": "adjective",
     "definition": "Showing care and conscientiousness in one's work.",
-    "example": "Diligent review caught the off-by-one error."
+    "example": "Diligent review caught the off-by-one error.",
+    "usageExamples": [
+      "Her diligent follow-up prevented the issue from returning.",
+      "A diligent analyst checks the boring edge cases too."
+    ],
+    "commonPhrases": [
+      "diligent work",
+      "diligent effort",
+      "diligent student",
+      "remain diligent"
+    ],
+    "usageTip": "Use it for steady, careful effort over time."
   },
   {
     "word": "enigma",
     "pronunciation": "ih-NIG-muh",
     "partOfSpeech": "noun",
     "definition": "A person or thing that is mysterious or hard to understand.",
-    "example": "The intermittent failure remained an enigma for months."
+    "example": "The intermittent failure remained an enigma for months.",
+    "usageExamples": [
+      "The sudden churn spike remained an enigma for weeks.",
+      "To outsiders, the founder was an enigma."
+    ],
+    "commonPhrases": [
+      "remain an enigma",
+      "political enigma",
+      "solve the enigma",
+      "an enigma to"
+    ],
+    "usageTip": "Use it for a person, event, or thing that is difficult to understand."
   },
   {
     "word": "fastidious",
     "pronunciation": "fa-STID-ee-uhs",
     "partOfSpeech": "adjective",
     "definition": "Very attentive to accuracy and detail; hard to please.",
-    "example": "He is fastidious about naming things well."
+    "example": "He is fastidious about naming things well.",
+    "usageExamples": [
+      "The designer was fastidious about spacing and alignment.",
+      "A fastidious reviewer caught details everyone else missed."
+    ],
+    "commonPhrases": [
+      "fastidious attention",
+      "fastidious reviewer",
+      "fastidious about",
+      "fastidious standards"
+    ],
+    "usageTip": "Use it for very exacting attention to detail, sometimes admiring and sometimes critical."
   },
   {
     "word": "germane",
     "pronunciation": "jer-MAYN",
     "partOfSpeech": "adjective",
     "definition": "Relevant to a subject under consideration.",
-    "example": "That history is interesting but not germane to the decision."
+    "example": "That history is interesting but not germane to the decision.",
+    "usageExamples": [
+      "Her question was germane to the budget decision.",
+      "The old benchmark was no longer germane after the architecture changed."
+    ],
+    "commonPhrases": [
+      "germane to",
+      "germane question",
+      "directly germane",
+      "not germane"
+    ],
+    "usageTip": "Use it for information that is relevant to the subject under discussion."
   },
   {
     "word": "harbinger",
     "pronunciation": "HAR-bin-jer",
     "partOfSpeech": "noun",
     "definition": "A sign that something is about to happen.",
-    "example": "Rising latency was the harbinger of a bigger failure."
+    "example": "Rising latency was the harbinger of a bigger failure.",
+    "usageExamples": [
+      "The first cancellation was a harbinger of wider dissatisfaction.",
+      "Longer delivery times became a harbinger of supply trouble."
+    ],
+    "commonPhrases": [
+      "harbinger of change",
+      "harbinger of trouble",
+      "early harbinger",
+      "dark harbinger"
+    ],
+    "usageTip": "Use it for an early sign that something bigger may be coming."
   },
   {
     "word": "impetus",
     "pronunciation": "IM-pi-tuhs",
     "partOfSpeech": "noun",
     "definition": "The force or energy that makes something happen.",
-    "example": "The outage gave fresh impetus to the rewrite."
+    "example": "The outage gave fresh impetus to the rewrite.",
+    "usageExamples": [
+      "The audit gave new impetus to the cleanup project.",
+      "Customer complaints provided the impetus for redesigning onboarding."
+    ],
+    "commonPhrases": [
+      "new impetus",
+      "provide impetus",
+      "impetus for change",
+      "gain impetus"
+    ],
+    "usageTip": "Use it for the force or reason that starts action or increases momentum."
   },
   {
     "word": "judicious",
     "pronunciation": "joo-DISH-uhs",
     "partOfSpeech": "adjective",
     "definition": "Showing good judgment; sensible.",
-    "example": "A judicious use of caching solved it."
+    "example": "A judicious use of caching solved it.",
+    "usageExamples": [
+      "A judicious edit made the report shorter and stronger.",
+      "The team made judicious use of automation instead of automating everything."
+    ],
+    "commonPhrases": [
+      "judicious use",
+      "judicious choice",
+      "judicious edit",
+      "remain judicious"
+    ],
+    "usageTip": "Use it for decisions that show careful, sensible judgment."
   },
   {
     "word": "kindle",
     "pronunciation": "KIN-duhl",
     "partOfSpeech": "verb",
     "definition": "To arouse or inspire a feeling; to set alight.",
-    "example": "One good class kindled a lifelong interest."
+    "example": "One good class kindled a lifelong interest.",
+    "usageExamples": [
+      "The prototype kindled interest from the sales team.",
+      "A single story can kindle urgency better than a dashboard."
+    ],
+    "commonPhrases": [
+      "kindle interest",
+      "kindle hope",
+      "kindle debate",
+      "kindle enthusiasm"
+    ],
+    "usageTip": "Use it when something starts or awakens a feeling."
   },
   {
     "word": "lucid",
     "pronunciation": "LOO-sid",
     "partOfSpeech": "adjective",
     "definition": "Expressed clearly; easy to understand.",
-    "example": "Her explanation was the most lucid I'd heard."
+    "example": "Her explanation was the most lucid I'd heard.",
+    "usageExamples": [
+      "Her lucid explanation made the model less intimidating.",
+      "A lucid memo can do more than a beautiful but vague deck."
+    ],
+    "commonPhrases": [
+      "lucid explanation",
+      "lucid prose",
+      "lucid thinking",
+      "remain lucid"
+    ],
+    "usageTip": "Use it for thinking, writing, or speech that feels clear and well organized."
   },
   {
     "word": "magnanimous",
     "pronunciation": "mag-NAN-uh-muhs",
     "partOfSpeech": "adjective",
     "definition": "Generous or forgiving, especially toward a rival.",
-    "example": "He was magnanimous in defeat."
+    "example": "He was magnanimous in defeat.",
+    "usageExamples": [
+      "She was magnanimous after winning the debate.",
+      "A magnanimous leader shared credit with the quieter contributors."
+    ],
+    "commonPhrases": [
+      "magnanimous gesture",
+      "magnanimous winner",
+      "magnanimous response",
+      "be magnanimous"
+    ],
+    "usageTip": "Use it when someone is generous or forgiving from a position of strength."
   },
   {
     "word": "nebulous",
     "pronunciation": "NEB-yuh-luhs",
     "partOfSpeech": "adjective",
     "definition": "Vague or ill-defined.",
-    "example": "The requirements are still nebulous."
+    "example": "The requirements are still nebulous.",
+    "usageExamples": [
+      "The strategy sounded nebulous until the team named the trade-offs.",
+      "A nebulous requirement is hard to estimate."
+    ],
+    "commonPhrases": [
+      "nebulous idea",
+      "nebulous goal",
+      "nebulous concept",
+      "remain nebulous"
+    ],
+    "usageTip": "Use it for ideas or plans that are vague and hard to pin down."
   },
   {
     "word": "obstinate",
     "pronunciation": "OB-stuh-nuht",
     "partOfSpeech": "adjective",
     "definition": "Stubbornly refusing to change one's opinion or course.",
-    "example": "The obstinate cache refused to invalidate."
+    "example": "The obstinate cache refused to invalidate.",
+    "usageExamples": [
+      "The tool was obstinate about accepting the new format.",
+      "An obstinate negotiator refused every compromise."
+    ],
+    "commonPhrases": [
+      "obstinate refusal",
+      "obstinate resistance",
+      "remain obstinate",
+      "obstinate problem"
+    ],
+    "usageTip": "Use it for stubborn refusal to change, usually with a negative tone."
   },
   {
     "word": "placate",
     "pronunciation": "PLAY-kayt",
     "partOfSpeech": "verb",
     "definition": "To make someone less angry or hostile.",
-    "example": "A status page update placated most users."
+    "example": "A status page update placated most users.",
+    "usageExamples": [
+      "The apology did little to placate frustrated customers.",
+      "A partial refund helped placate the most vocal critics."
+    ],
+    "commonPhrases": [
+      "placate customers",
+      "placate critics",
+      "try to placate",
+      "placate concerns"
+    ],
+    "usageTip": "Use it when someone tries to calm anger or hostility."
   },
   {
     "word": "quell",
     "pronunciation": "KWEL",
     "partOfSpeech": "verb",
     "definition": "To put an end to; to subdue.",
-    "example": "The demo quelled any doubts about feasibility."
+    "example": "The demo quelled any doubts about feasibility.",
+    "usageExamples": [
+      "The manager quelled the rumor with one clear update.",
+      "Better monitoring helped quell fears about reliability."
+    ],
+    "commonPhrases": [
+      "quell fears",
+      "quell rumors",
+      "quell unrest",
+      "help quell"
+    ],
+    "usageTip": "Use it when something suppresses, calms, or puts an end to disturbance."
   },
   {
     "word": "reticent",
     "pronunciation": "RET-i-suhnt",
     "partOfSpeech": "adjective",
     "definition": "Not revealing one's thoughts readily; reserved.",
-    "example": "He was reticent about why he left."
+    "example": "He was reticent about why he left.",
+    "usageExamples": [
+      "The client was reticent about sharing the real budget.",
+      "She remained reticent until the room felt safe."
+    ],
+    "commonPhrases": [
+      "reticent about",
+      "remain reticent",
+      "reticent speaker",
+      "reticent child"
+    ],
+    "usageTip": "Use it when someone is reluctant to speak or reveal thoughts."
   },
   {
     "word": "sagacious",
     "pronunciation": "suh-GAY-shuhs",
     "partOfSpeech": "adjective",
     "definition": "Having keen judgment and discernment; wise.",
-    "example": "A sagacious mentor saves you years."
+    "example": "A sagacious mentor saves you years.",
+    "usageExamples": [
+      "Her sagacious advice kept the team from chasing a flashy distraction.",
+      "The board wanted a sagacious leader, not just a charismatic one."
+    ],
+    "commonPhrases": [
+      "sagacious advice",
+      "sagacious leader",
+      "sagacious decision",
+      "sound sagacious"
+    ],
+    "usageTip": "Use it for wisdom that comes with sharp judgment and experience."
   },
   {
     "word": "taciturn",
     "pronunciation": "TAS-i-turn",
     "partOfSpeech": "adjective",
     "definition": "Saying little; reserved in speech.",
-    "example": "The taciturn engineer spoke once, and everyone listened."
+    "example": "The taciturn engineer spoke once, and everyone listened.",
+    "usageExamples": [
+      "The taciturn engineer wrote brilliant notes but rarely spoke in meetings.",
+      "His taciturn manner made the praise feel especially meaningful."
+    ],
+    "commonPhrases": [
+      "taciturn colleague",
+      "taciturn manner",
+      "remain taciturn",
+      "taciturn nature"
+    ],
+    "usageTip": "Use it for a person who naturally says little."
   },
   {
     "word": "unfettered",
     "pronunciation": "uhn-FET-erd",
     "partOfSpeech": "adjective",
     "definition": "Not restricted or restrained.",
-    "example": "Give the prototype unfettered access to a test database only."
+    "example": "Give the prototype unfettered access to a test database only.",
+    "usageExamples": [
+      "Unfettered access made the experiment fast but risky.",
+      "The team wanted unfettered freedom to explore the prototype."
+    ],
+    "commonPhrases": [
+      "unfettered access",
+      "unfettered freedom",
+      "unfettered growth",
+      "remain unfettered"
+    ],
+    "usageTip": "Use it when limits or restraints have been removed."
   },
   {
     "word": "venerate",
     "pronunciation": "VEN-uh-rayt",
     "partOfSpeech": "verb",
     "definition": "To regard with great respect.",
-    "example": "The community venerates the original maintainer."
+    "example": "The community venerates the original maintainer.",
+    "usageExamples": [
+      "The community venerates the founder but still questions old decisions.",
+      "Some teams venerate process so much that they forget outcomes."
+    ],
+    "commonPhrases": [
+      "venerate tradition",
+      "venerate a leader",
+      "widely venerate",
+      "venerate the past"
+    ],
+    "usageTip": "Use it for deep respect that can feel almost ceremonial."
   },
   {
     "word": "wary",
     "pronunciation": "WAIR-ee",
     "partOfSpeech": "adjective",
     "definition": "Feeling caution about possible dangers or problems.",
-    "example": "Be wary of benchmarks you didn't run yourself."
+    "example": "Be wary of benchmarks you didn't run yourself.",
+    "usageExamples": [
+      "Be wary of metrics that improve when customers complain more.",
+      "She remained wary after the vendor avoided direct answers."
+    ],
+    "commonPhrases": [
+      "wary of",
+      "remain wary",
+      "wary investor",
+      "wary response"
+    ],
+    "usageTip": "Use it when caution comes from possible risk or suspicion."
   },
   {
     "word": "zealous",
     "pronunciation": "ZEL-uhs",
     "partOfSpeech": "adjective",
     "definition": "Showing great energy or enthusiasm for a cause.",
-    "example": "A zealous reviewer left ninety comments."
+    "example": "A zealous reviewer left ninety comments.",
+    "usageExamples": [
+      "A zealous advocate can energize a stalled project.",
+      "The rollout failed when zealous enforcement ignored local context."
+    ],
+    "commonPhrases": [
+      "zealous supporter",
+      "zealous advocate",
+      "zealous reformer",
+      "overly zealous"
+    ],
+    "usageTip": "Use it for intense enthusiasm, often with a hint that it may go too far."
   },
   {
     "word": "adroit",
     "pronunciation": "uh-DROYT",
     "partOfSpeech": "adjective",
     "definition": "Clever or skillful in using the hands or mind.",
-    "example": "An adroit refactor removed half the code."
+    "example": "An adroit refactor removed half the code.",
+    "usageExamples": [
+      "Her adroit handling of the question protected the relationship.",
+      "An adroit analyst can explain complexity without showing off."
+    ],
+    "commonPhrases": [
+      "adroit handling",
+      "adroit maneuver",
+      "adroit response",
+      "adroit at"
+    ],
+    "usageTip": "Use it for skillful, clever handling of a difficult task."
   },
   {
     "word": "bolster",
     "pronunciation": "BOHL-ster",
     "partOfSpeech": "verb",
     "definition": "To support or strengthen.",
-    "example": "New tests bolster confidence in the release."
+    "example": "New tests bolster confidence in the release.",
+    "usageExamples": [
+      "The extra evidence bolstered the recommendation.",
+      "Hiring two analysts will bolster the team's delivery capacity."
+    ],
+    "commonPhrases": [
+      "bolster confidence",
+      "bolster support",
+      "bolster the case",
+      "help bolster"
+    ],
+    "usageTip": "Use it when something strengthens support, confidence, or capacity."
   },
   {
     "word": "circumspect",
     "pronunciation": "SUR-kuhm-spekt",
     "partOfSpeech": "adjective",
     "definition": "Careful to consider all circumstances and consequences.",
-    "example": "Be circumspect before granting production access."
+    "example": "Be circumspect before granting production access.",
+    "usageExamples": [
+      "Be circumspect before sharing early results with executives.",
+      "Her circumspect answer acknowledged risk without creating panic."
+    ],
+    "commonPhrases": [
+      "circumspect approach",
+      "circumspect response",
+      "remain circumspect",
+      "circumspect about"
+    ],
+    "usageTip": "Use it for careful behavior that considers consequences before acting."
   },
   {
     "word": "dearth",
     "pronunciation": "DURTH",
     "partOfSpeech": "noun",
     "definition": "A scarcity or lack of something.",
-    "example": "There is no dearth of opinions on tabs versus spaces."
+    "example": "There is no dearth of opinions on tabs versus spaces.",
+    "usageExamples": [
+      "A dearth of reliable data made the model hard to trust.",
+      "There is no dearth of ideas, only a dearth of focus."
+    ],
+    "commonPhrases": [
+      "dearth of evidence",
+      "dearth of data",
+      "relative dearth",
+      "no dearth of"
+    ],
+    "usageTip": "Use it for a lack or shortage, especially in formal writing."
   },
   {
     "word": "equanimity",
     "pronunciation": "ee-kwuh-NIM-i-tee",
     "partOfSpeech": "noun",
     "definition": "Calmness and composure, especially in a difficult situation.",
-    "example": "She handled the incident with remarkable equanimity."
+    "example": "She handled the incident with remarkable equanimity.",
+    "usageExamples": [
+      "She handled the incident with remarkable equanimity.",
+      "Equanimity helped the team think clearly during the outage."
+    ],
+    "commonPhrases": [
+      "with equanimity",
+      "maintain equanimity",
+      "remarkable equanimity",
+      "sense of equanimity"
+    ],
+    "usageTip": "Use it for calm composure under pressure."
   },
   {
     "word": "furtive",
     "pronunciation": "FUR-tiv",
     "partOfSpeech": "adjective",
     "definition": "Attempting to avoid notice; secretive.",
-    "example": "He took a furtive glance at the clock."
+    "example": "He took a furtive glance at the clock.",
+    "usageExamples": [
+      "He gave a furtive look at the dashboard during dinner.",
+      "The furtive change to the policy raised more questions than it answered."
+    ],
+    "commonPhrases": [
+      "furtive glance",
+      "furtive movement",
+      "furtive attempt",
+      "look furtive"
+    ],
+    "usageTip": "Use it for actions that seem secretive or meant to avoid notice."
   },
   {
     "word": "galvanize",
     "pronunciation": "GAL-vuh-nyze",
     "partOfSpeech": "verb",
     "definition": "To shock or excite someone into taking action.",
-    "example": "The deadline galvanized the whole team."
+    "example": "The deadline galvanized the whole team.",
+    "usageExamples": [
+      "The deadline galvanized the team into action.",
+      "The customer story galvanized support for the redesign."
+    ],
+    "commonPhrases": [
+      "galvanize support",
+      "galvanize action",
+      "galvanize the team",
+      "help galvanize"
+    ],
+    "usageTip": "Use it when something jolts people into action or commitment."
   },
   {
     "word": "hackneyed",
     "pronunciation": "HAK-need",
     "partOfSpeech": "adjective",
     "definition": "Overused and therefore lacking impact.",
-    "example": "The slogan felt hackneyed by the third slide."
+    "example": "The slogan felt hackneyed by the third slide.",
+    "usageExamples": [
+      "The presentation opened with a hackneyed quote about innovation.",
+      "A hackneyed slogan can make a serious product feel generic."
+    ],
+    "commonPhrases": [
+      "hackneyed phrase",
+      "hackneyed slogan",
+      "hackneyed idea",
+      "sound hackneyed"
+    ],
+    "usageTip": "Use it for expressions or ideas so overused that they have lost impact."
+  },
+  {
+    "word": "ameliorate",
+    "pronunciation": "uh-MEEL-yuh-rayt",
+    "partOfSpeech": "verb",
+    "definition": "To make a bad or difficult situation better.",
+    "example": "The new checklist helped ameliorate the release chaos.",
+    "usageExamples": [
+      "Small process changes can ameliorate recurring team friction.",
+      "The policy was designed to ameliorate the impact of sudden price changes."
+    ],
+    "commonPhrases": [
+      "ameliorate the problem",
+      "ameliorate the impact",
+      "help ameliorate",
+      "ameliorate conditions"
+    ],
+    "usageTip": "Use it when something improves a negative situation; it sounds more formal than \"fix.\""
+  },
+  {
+    "word": "anachronism",
+    "pronunciation": "uh-NAK-ruh-niz-uhm",
+    "partOfSpeech": "noun",
+    "definition": "Something that belongs to a different time period.",
+    "example": "The fax number felt like an anachronism on the startup website.",
+    "usageExamples": [
+      "Manual approvals became an anachronism after the workflow was automated.",
+      "The old policy was an anachronism in a remote-first company."
+    ],
+    "commonPhrases": [
+      "historical anachronism",
+      "feel like an anachronism",
+      "modern anachronism",
+      "an anachronism in"
+    ],
+    "usageTip": "Use it for something that seems out of place because it belongs to another era."
+  },
+  {
+    "word": "apocryphal",
+    "pronunciation": "uh-POK-ruh-fuhl",
+    "partOfSpeech": "adjective",
+    "definition": "Widely told but probably not true.",
+    "example": "The apocryphal origin story appeared in every company onboarding deck.",
+    "usageExamples": [
+      "An apocryphal quote can still shape how people remember a leader.",
+      "The team treated the apocryphal warning as folklore, not evidence."
+    ],
+    "commonPhrases": [
+      "apocryphal story",
+      "apocryphal quote",
+      "apocryphal tale",
+      "largely apocryphal"
+    ],
+    "usageTip": "Use it for stories that circulate as truth but have doubtful evidence."
+  },
+  {
+    "word": "bellwether",
+    "pronunciation": "BEL-weth-er",
+    "partOfSpeech": "noun",
+    "definition": "A sign or indicator of a larger trend.",
+    "example": "Renewal rates became a bellwether for customer trust.",
+    "usageExamples": [
+      "Hiring freezes can be a bellwether for wider budget pressure.",
+      "The first market often acts as a bellwether for the rest."
+    ],
+    "commonPhrases": [
+      "bellwether indicator",
+      "market bellwether",
+      "a bellwether for",
+      "political bellwether"
+    ],
+    "usageTip": "Use it for an early signal that hints at what may happen more broadly."
+  },
+  {
+    "word": "bucolic",
+    "pronunciation": "byoo-KOL-ik",
+    "partOfSpeech": "adjective",
+    "definition": "Relating to the peaceful countryside.",
+    "example": "The offsite was held in a bucolic village outside the city.",
+    "usageExamples": [
+      "A bucolic setting made the retreat feel far from office noise.",
+      "The campaign used bucolic images to suggest simplicity and trust."
+    ],
+    "commonPhrases": [
+      "bucolic setting",
+      "bucolic scene",
+      "bucolic charm",
+      "bucolic village"
+    ],
+    "usageTip": "Use it for rural scenes that feel calm, pleasant, or idealized."
+  },
+  {
+    "word": "cadence",
+    "pronunciation": "KAY-dens",
+    "partOfSpeech": "noun",
+    "definition": "A rhythm, pattern, or regular sequence.",
+    "example": "The team moved to a weekly planning cadence.",
+    "usageExamples": [
+      "A steady cadence made stakeholder updates easier to follow.",
+      "Her speech had a calm cadence that lowered the tension."
+    ],
+    "commonPhrases": [
+      "weekly cadence",
+      "regular cadence",
+      "cadence of work",
+      "meeting cadence"
+    ],
+    "usageTip": "Use it for rhythm in sound, communication, meetings, or repeated work."
+  },
+  {
+    "word": "catalyze",
+    "pronunciation": "KAT-uh-lyze",
+    "partOfSpeech": "verb",
+    "definition": "To cause or speed up an important change.",
+    "example": "The outage catalyzed a serious conversation about reliability.",
+    "usageExamples": [
+      "A bold prototype can catalyze alignment faster than another memo.",
+      "The new regulation catalyzed investment in compliance tooling."
+    ],
+    "commonPhrases": [
+      "catalyze change",
+      "catalyze growth",
+      "help catalyze",
+      "catalyze debate"
+    ],
+    "usageTip": "Use it when one event starts or accelerates a larger reaction."
+  },
+  {
+    "word": "chimera",
+    "pronunciation": "ky-MEER-uh",
+    "partOfSpeech": "noun",
+    "definition": "An illusion or wildly unrealistic idea.",
+    "example": "A dashboard that answered every question was a chimera.",
+    "usageExamples": [
+      "Perfect certainty is often a chimera in strategic decisions.",
+      "The plan looked impressive, but its timeline was a chimera."
+    ],
+    "commonPhrases": [
+      "a political chimera",
+      "technological chimera",
+      "mere chimera",
+      "chase a chimera"
+    ],
+    "usageTip": "Use it for an imagined goal that is seductive but unlikely or impossible."
+  },
+  {
+    "word": "confluence",
+    "pronunciation": "KON-floo-ens",
+    "partOfSpeech": "noun",
+    "definition": "A coming together of things, ideas, or events.",
+    "example": "The launch succeeded through a confluence of timing, demand, and luck.",
+    "usageExamples": [
+      "A confluence of small risks created the incident.",
+      "The city grew at the confluence of two trade routes."
+    ],
+    "commonPhrases": [
+      "a confluence of",
+      "confluence of events",
+      "at the confluence",
+      "rare confluence"
+    ],
+    "usageTip": "Use it when several forces meet and together create an outcome."
+  },
+  {
+    "word": "convivial",
+    "pronunciation": "kuhn-VIV-ee-uhl",
+    "partOfSpeech": "adjective",
+    "definition": "Friendly, lively, and enjoyable.",
+    "example": "The workshop had a convivial mood despite the hard topic.",
+    "usageExamples": [
+      "A convivial dinner helped the two teams rebuild trust.",
+      "Her convivial style made newcomers feel included."
+    ],
+    "commonPhrases": [
+      "convivial atmosphere",
+      "convivial host",
+      "convivial mood",
+      "convivial gathering"
+    ],
+    "usageTip": "Use it for warm social situations, especially meals, gatherings, or groups."
+  },
+  {
+    "word": "deleterious",
+    "pronunciation": "del-uh-TEER-ee-us",
+    "partOfSpeech": "adjective",
+    "definition": "Causing harm or damage.",
+    "example": "Too many urgent requests had a deleterious effect on quality.",
+    "usageExamples": [
+      "The delay had deleterious consequences for customer trust.",
+      "A toxic metric can be deleterious even when it looks precise."
+    ],
+    "commonPhrases": [
+      "deleterious effect",
+      "deleterious consequences",
+      "deleterious impact",
+      "potentially deleterious"
+    ],
+    "usageTip": "Use it for formal writing when the harm is serious or systemic."
+  },
+  {
+    "word": "demur",
+    "pronunciation": "dih-MUR",
+    "partOfSpeech": "verb",
+    "definition": "To object politely or hesitate to agree.",
+    "example": "She demurred when asked to approve the vague proposal.",
+    "usageExamples": [
+      "A careful reviewer may demur until the assumptions are clear.",
+      "He demurred at first, then accepted the narrower scope."
+    ],
+    "commonPhrases": [
+      "demur at",
+      "politely demur",
+      "demur from",
+      "demur when asked"
+    ],
+    "usageTip": "Use it for gentle resistance, not loud disagreement."
+  },
+  {
+    "word": "dichotomy",
+    "pronunciation": "dy-KOT-uh-mee",
+    "partOfSpeech": "noun",
+    "definition": "A division between two sharply different things.",
+    "example": "The debate created a false dichotomy between speed and quality.",
+    "usageExamples": [
+      "The dichotomy between strategy and execution is often overstated.",
+      "Her essay explored the dichotomy between public confidence and private doubt."
+    ],
+    "commonPhrases": [
+      "false dichotomy",
+      "sharp dichotomy",
+      "dichotomy between",
+      "create a dichotomy"
+    ],
+    "usageTip": "Use it when two ideas are presented as separate or opposing categories."
+  },
+  {
+    "word": "effervescent",
+    "pronunciation": "ef-er-VES-uhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Lively, enthusiastic, and full of energy.",
+    "example": "Her effervescent pitch woke up the afternoon room.",
+    "usageExamples": [
+      "The host had an effervescent charm that made the event feel easy.",
+      "An effervescent brand voice can work if the product is playful."
+    ],
+    "commonPhrases": [
+      "effervescent personality",
+      "effervescent charm",
+      "effervescent mood",
+      "effervescent energy"
+    ],
+    "usageTip": "Use it for bright energy in people, moods, or styles."
+  },
+  {
+    "word": "elicit",
+    "pronunciation": "ih-LIS-it",
+    "partOfSpeech": "verb",
+    "definition": "To draw out a response, answer, or reaction.",
+    "example": "The prototype elicited sharper feedback than the slide deck.",
+    "usageExamples": [
+      "Good interview questions elicit stories, not slogans.",
+      "The announcement elicited concern from the support team."
+    ],
+    "commonPhrases": [
+      "elicit a response",
+      "elicit feedback",
+      "elicit concern",
+      "try to elicit"
+    ],
+    "usageTip": "Use it when something brings out a reaction that was not directly given before."
+  },
+  {
+    "word": "heuristic",
+    "pronunciation": "hyoo-RIS-tik",
+    "partOfSpeech": "noun",
+    "definition": "A practical rule of thumb for solving a problem.",
+    "example": "The team used a simple heuristic to prioritize the backlog.",
+    "usageExamples": [
+      "A heuristic helps when perfect information would take too long.",
+      "The rule was useful as a heuristic, not as a law."
+    ],
+    "commonPhrases": [
+      "simple heuristic",
+      "useful heuristic",
+      "rule-of-thumb heuristic",
+      "use a heuristic"
+    ],
+    "usageTip": "Use it for practical shortcuts that guide decisions without guaranteeing perfection."
+  },
+  {
+    "word": "inexorable",
+    "pronunciation": "in-EK-ser-uh-buhl",
+    "partOfSpeech": "adjective",
+    "definition": "Impossible to stop or prevent.",
+    "example": "The inexorable growth of support tickets forced a tooling rethink.",
+    "usageExamples": [
+      "The deadline felt inexorable once the campaign went public.",
+      "An inexorable trend is difficult to reverse with small fixes."
+    ],
+    "commonPhrases": [
+      "inexorable rise",
+      "inexorable decline",
+      "inexorable march",
+      "seem inexorable"
+    ],
+    "usageTip": "Use it when a force keeps moving forward despite resistance."
+  },
+  {
+    "word": "liminal",
+    "pronunciation": "LIM-uh-nuhl",
+    "partOfSpeech": "adjective",
+    "definition": "Existing in a threshold or transitional state.",
+    "example": "The team spent a liminal month between old and new systems.",
+    "usageExamples": [
+      "A liminal phase can feel uncomfortable because roles are not settled.",
+      "Airports have a strangely liminal atmosphere."
+    ],
+    "commonPhrases": [
+      "liminal space",
+      "liminal phase",
+      "liminal moment",
+      "liminal state"
+    ],
+    "usageTip": "Use it for in-between states, places, or moments where transition is the main feeling."
+  },
+  {
+    "word": "maelstrom",
+    "pronunciation": "MAYL-struhm",
+    "partOfSpeech": "noun",
+    "definition": "A powerful whirl of confusion or turmoil.",
+    "example": "The product launch became a maelstrom of last-minute requests.",
+    "usageExamples": [
+      "Social media turned the announcement into a maelstrom.",
+      "She stayed calm in the maelstrom of competing priorities."
+    ],
+    "commonPhrases": [
+      "a maelstrom of",
+      "political maelstrom",
+      "media maelstrom",
+      "in the maelstrom"
+    ],
+    "usageTip": "Use it for intense confusion, motion, or conflict, especially when many forces collide."
+  },
+  {
+    "word": "nascent",
+    "pronunciation": "NAY-suhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Just beginning to exist or develop.",
+    "example": "The nascent analytics practice needed habits before headcount.",
+    "usageExamples": [
+      "A nascent market can change faster than forecasts suggest.",
+      "The idea was nascent, but the early signal was strong."
+    ],
+    "commonPhrases": [
+      "nascent industry",
+      "nascent idea",
+      "nascent stage",
+      "nascent market"
+    ],
+    "usageTip": "Use it for something new that has started but is not mature yet."
+  },
+  {
+    "word": "obdurate",
+    "pronunciation": "OB-doo-rit",
+    "partOfSpeech": "adjective",
+    "definition": "Stubbornly refusing to change an opinion or action.",
+    "example": "The vendor remained obdurate after three rounds of negotiation.",
+    "usageExamples": [
+      "An obdurate stakeholder can stall a simple decision.",
+      "The rule was obdurate even when the context had changed."
+    ],
+    "commonPhrases": [
+      "obdurate refusal",
+      "obdurate resistance",
+      "remain obdurate",
+      "obdurate opponent"
+    ],
+    "usageTip": "Use it for stubbornness that feels hard, fixed, or unreasonable."
+  },
+  {
+    "word": "opulent",
+    "pronunciation": "OP-yuh-luhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Luxurious, rich, and expensive-looking.",
+    "example": "The hotel lobby was opulent enough to make the budget team nervous.",
+    "usageExamples": [
+      "An opulent design can impress, but it can also distract.",
+      "The banquet felt opulent compared with the modest conference room."
+    ],
+    "commonPhrases": [
+      "opulent decor",
+      "opulent lifestyle",
+      "opulent setting",
+      "opulent hotel"
+    ],
+    "usageTip": "Use it when richness or luxury is visually obvious."
+  },
+  {
+    "word": "panacea",
+    "pronunciation": "pan-uh-SEE-uh",
+    "partOfSpeech": "noun",
+    "definition": "A supposed cure for every problem.",
+    "example": "Automation is useful, but it is not a panacea.",
+    "usageExamples": [
+      "A new tool rarely acts as a panacea for poor process.",
+      "The reform was sold as a panacea, then met real-world complexity."
+    ],
+    "commonPhrases": [
+      "not a panacea",
+      "panacea for",
+      "treated as a panacea",
+      "universal panacea"
+    ],
+    "usageTip": "Use it when warning that one solution cannot fix everything."
+  },
+  {
+    "word": "paragon",
+    "pronunciation": "PAIR-uh-gon",
+    "partOfSpeech": "noun",
+    "definition": "A model of excellence or perfection.",
+    "example": "The report became a paragon of clear executive writing.",
+    "usageExamples": [
+      "She was held up as a paragon of disciplined leadership.",
+      "The building is a paragon of quiet, functional design."
+    ],
+    "commonPhrases": [
+      "paragon of virtue",
+      "paragon of excellence",
+      "held up as a paragon",
+      "paragon of clarity"
+    ],
+    "usageTip": "Use it for someone or something treated as an ideal example."
+  },
+  {
+    "word": "paucity",
+    "pronunciation": "PAW-suh-tee",
+    "partOfSpeech": "noun",
+    "definition": "A small or insufficient amount.",
+    "example": "A paucity of clean data made the forecast fragile.",
+    "usageExamples": [
+      "The committee faced a paucity of credible options.",
+      "A paucity of evidence should slow the conclusion."
+    ],
+    "commonPhrases": [
+      "paucity of evidence",
+      "paucity of data",
+      "relative paucity",
+      "paucity of options"
+    ],
+    "usageTip": "Use it in formal contexts for a lack or shortage of something important."
+  },
+  {
+    "word": "peripatetic",
+    "pronunciation": "pair-uh-puh-TET-ik",
+    "partOfSpeech": "adjective",
+    "definition": "Traveling from place to place, especially for work.",
+    "example": "Her peripatetic consulting life made home feel temporary.",
+    "usageExamples": [
+      "A peripatetic teacher carried the same lesson across many towns.",
+      "The role became unexpectedly peripatetic after the expansion."
+    ],
+    "commonPhrases": [
+      "peripatetic life",
+      "peripatetic career",
+      "peripatetic teacher",
+      "peripatetic lifestyle"
+    ],
+    "usageTip": "Use it for a lifestyle or job marked by frequent movement."
+  },
+  {
+    "word": "piquant",
+    "pronunciation": "PEE-kuhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Pleasantly sharp, spicy, or interesting.",
+    "example": "The critique added a piquant edge to an otherwise polite panel.",
+    "usageExamples": [
+      "A piquant sauce made the simple meal memorable.",
+      "Her piquant aside broke the tension without derailing the meeting."
+    ],
+    "commonPhrases": [
+      "piquant flavor",
+      "piquant detail",
+      "piquant remark",
+      "piquant edge"
+    ],
+    "usageTip": "Use it for a pleasant sharpness in taste, humor, or detail."
+  },
+  {
+    "word": "quotidian",
+    "pronunciation": "kwoh-TID-ee-uhn",
+    "partOfSpeech": "adjective",
+    "definition": "Ordinary or occurring every day.",
+    "example": "The app turned a quotidian habit into a small ritual.",
+    "usageExamples": [
+      "Quotidian work can still reveal important patterns.",
+      "The novel finds beauty in quotidian details."
+    ],
+    "commonPhrases": [
+      "quotidian routine",
+      "quotidian detail",
+      "quotidian life",
+      "quotidian task"
+    ],
+    "usageTip": "Use it when ordinary daily things deserve a more thoughtful word."
+  },
+  {
+    "word": "recalcitrant",
+    "pronunciation": "rih-KAL-sih-truhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Stubbornly resisting authority or control.",
+    "example": "A recalcitrant integration refused to follow the new schema.",
+    "usageExamples": [
+      "The recalcitrant process ignored every clean exception path.",
+      "A recalcitrant student may resist rules but still need structure."
+    ],
+    "commonPhrases": [
+      "recalcitrant child",
+      "recalcitrant system",
+      "remain recalcitrant",
+      "recalcitrant process"
+    ],
+    "usageTip": "Use it when resistance is active, stubborn, and hard to manage."
+  },
+  {
+    "word": "sanguine",
+    "pronunciation": "SAN-gwin",
+    "partOfSpeech": "adjective",
+    "definition": "Optimistic or confident, especially in a difficult situation.",
+    "example": "She remained sanguine about the migration despite the delay.",
+    "usageExamples": [
+      "Investors were less sanguine after the second missed forecast.",
+      "His sanguine tone helped the room breathe again."
+    ],
+    "commonPhrases": [
+      "remain sanguine",
+      "sanguine outlook",
+      "sanguine about",
+      "sanguine tone"
+    ],
+    "usageTip": "Use it for optimism that persists even when the facts are not easy."
+  },
+  {
+    "word": "schism",
+    "pronunciation": "SIZ-uhm",
+    "partOfSpeech": "noun",
+    "definition": "A split or division between groups or beliefs.",
+    "example": "The roadmap debate revealed a schism inside the leadership team.",
+    "usageExamples": [
+      "A schism formed between the product and platform teams.",
+      "The vote exposed a deeper ideological schism."
+    ],
+    "commonPhrases": [
+      "deep schism",
+      "schism between",
+      "religious schism",
+      "create a schism"
+    ],
+    "usageTip": "Use it for a serious split, not a minor disagreement."
+  },
+  {
+    "word": "trenchant",
+    "pronunciation": "TREN-chuhnt",
+    "partOfSpeech": "adjective",
+    "definition": "Sharp, clear, and forceful in expression.",
+    "example": "Her trenchant critique improved the strategy immediately.",
+    "usageExamples": [
+      "A trenchant question can reveal a weak assumption.",
+      "The essay offered a trenchant analysis of power."
+    ],
+    "commonPhrases": [
+      "trenchant critique",
+      "trenchant analysis",
+      "trenchant question",
+      "trenchant remark"
+    ],
+    "usageTip": "Use it for criticism or analysis that is both sharp and effective."
+  },
+  {
+    "word": "verisimilitude",
+    "pronunciation": "vair-uh-sih-MIL-ih-tood",
+    "partOfSpeech": "noun",
+    "definition": "The appearance of being real or true.",
+    "example": "The prototype had enough verisimilitude for users to react honestly.",
+    "usageExamples": [
+      "Good fiction often depends on emotional verisimilitude.",
+      "The mockup lacked verisimilitude because every state was perfect."
+    ],
+    "commonPhrases": [
+      "sense of verisimilitude",
+      "emotional verisimilitude",
+      "create verisimilitude",
+      "lack verisimilitude"
+    ],
+    "usageTip": "Use it when something feels real even if it is constructed or fictional."
+  },
+  {
+    "word": "visceral",
+    "pronunciation": "VIS-er-uhl",
+    "partOfSpeech": "adjective",
+    "definition": "Felt deeply and instinctively rather than intellectually.",
+    "example": "The incident produced a visceral reaction from customers.",
+    "usageExamples": [
+      "A visceral story can move people faster than a chart.",
+      "The design created a visceral sense of urgency."
+    ],
+    "commonPhrases": [
+      "visceral reaction",
+      "visceral response",
+      "visceral feeling",
+      "visceral sense"
+    ],
+    "usageTip": "Use it for reactions that feel bodily, immediate, or instinctive."
+  },
+  {
+    "word": "vociferous",
+    "pronunciation": "voh-SIF-er-us",
+    "partOfSpeech": "adjective",
+    "definition": "Loud, forceful, and strongly expressed.",
+    "example": "The change met vociferous opposition from power users.",
+    "usageExamples": [
+      "A vociferous minority dominated the feedback channel.",
+      "The proposal drew vociferous support from the field team."
+    ],
+    "commonPhrases": [
+      "vociferous opposition",
+      "vociferous support",
+      "vociferous critic",
+      "vociferous protest"
+    ],
+    "usageTip": "Use it when the volume or force of expression is part of the meaning."
+  },
+  {
+    "word": "watershed",
+    "pronunciation": "WAW-ter-shed",
+    "partOfSpeech": "noun",
+    "definition": "A turning point after which things change significantly.",
+    "example": "The first profitable quarter was a watershed for the company.",
+    "usageExamples": [
+      "The ruling became a watershed in privacy law.",
+      "The failed launch was a painful watershed for the product team."
+    ],
+    "commonPhrases": [
+      "watershed moment",
+      "watershed event",
+      "a watershed for",
+      "historical watershed"
+    ],
+    "usageTip": "Use it for moments that divide before from after."
+  },
+  {
+    "word": "winsome",
+    "pronunciation": "WIN-suhm",
+    "partOfSpeech": "adjective",
+    "definition": "Attractive or charming in a fresh, innocent way.",
+    "example": "The onboarding flow had a winsome simplicity.",
+    "usageExamples": [
+      "Her winsome humor made the speech feel human.",
+      "A winsome illustration can soften a technical product."
+    ],
+    "commonPhrases": [
+      "winsome smile",
+      "winsome charm",
+      "winsome simplicity",
+      "winsome style"
+    ],
+    "usageTip": "Use it for charm that feels gentle, fresh, or unforced."
+  },
+  {
+    "word": "zeitgeist",
+    "pronunciation": "ZYTE-guyste",
+    "partOfSpeech": "noun",
+    "definition": "The defining spirit or mood of a particular time.",
+    "example": "The product caught the AI zeitgeist at exactly the right moment.",
+    "usageExamples": [
+      "A slogan can reveal the zeitgeist better than a survey.",
+      "The film captured the anxious zeitgeist of the decade."
+    ],
+    "commonPhrases": [
+      "cultural zeitgeist",
+      "capture the zeitgeist",
+      "AI zeitgeist",
+      "spirit of the zeitgeist"
+    ],
+    "usageTip": "Use it for the mood, assumptions, or obsessions that define an era."
+  },
+  {
+    "word": "tacit",
+    "pronunciation": "TAS-it",
+    "partOfSpeech": "adjective",
+    "definition": "Understood or implied without being directly stated.",
+    "example": "There was tacit agreement to keep the first release small.",
+    "usageExamples": [
+      "A tacit rule can shape behavior more than an official policy.",
+      "Her silence gave tacit approval to the compromise."
+    ],
+    "commonPhrases": [
+      "tacit agreement",
+      "tacit approval",
+      "tacit understanding",
+      "tacit rule"
+    ],
+    "usageTip": "Use it when something is accepted or understood without being said aloud."
+  },
+  {
+    "word": "umbrage",
+    "pronunciation": "UM-brij",
+    "partOfSpeech": "noun",
+    "definition": "Offense or annoyance at a slight or insult.",
+    "example": "He took umbrage at the implication that the team had been careless.",
+    "usageExamples": [
+      "Stakeholders may take umbrage when feedback sounds dismissive.",
+      "She took no umbrage at the correction because it was specific."
+    ],
+    "commonPhrases": [
+      "take umbrage",
+      "give umbrage",
+      "umbrage at",
+      "no umbrage"
+    ],
+    "usageTip": "Use it mostly in the phrase \"take umbrage,\" meaning to feel offended."
+  },
+  {
+    "word": "aplomb",
+    "pronunciation": "uh-PLOM",
+    "partOfSpeech": "noun",
+    "definition": "Confident composure in a difficult situation.",
+    "example": "She handled the hostile Q&A with aplomb.",
+    "usageExamples": [
+      "The facilitator managed the conflict with quiet aplomb.",
+      "Aplomb matters when the room is nervous and watching closely."
+    ],
+    "commonPhrases": [
+      "with aplomb",
+      "show aplomb",
+      "remarkable aplomb",
+      "handle with aplomb"
+    ],
+    "usageTip": "Use it for graceful confidence under pressure."
   }
 ]
