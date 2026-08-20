@@ -34,6 +34,12 @@ struct WordDayWidgetEntryView: View {
     var entry: WordEntry
 
     var body: some View {
+        widgetContent
+            .containerBackground(for: .widget) { widgetBackground }
+    }
+
+    @ViewBuilder
+    private var widgetContent: some View {
         switch family {
         case .accessoryInline:
             Text("\(entry.word.word) · \(entry.word.partOfSpeech)")
@@ -48,13 +54,14 @@ struct WordDayWidgetEntryView: View {
                     .lineLimit(2)
             }
 
+        case .accessoryCircular:
+            circularWidget
+
         case .systemSmall:
             smallWidget
-                .containerBackground(for: .widget) { widgetBackground }
 
         default:
             expandedWidget
-                .containerBackground(for: .widget) { widgetBackground }
         }
     }
 
@@ -92,6 +99,24 @@ struct WordDayWidgetEntryView: View {
                 .frame(width: 32, height: 3)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private var circularWidget: some View {
+        ZStack {
+            AccessoryWidgetBackground()
+
+            VStack(spacing: 1) {
+                Text(String(entry.word.word.prefix(1)).uppercased())
+                    .font(.system(size: 24, weight: .black, design: .serif))
+                    .minimumScaleFactor(0.7)
+
+                Text(entry.word.partOfSpeech.prefix(4).uppercased())
+                    .font(.system(size: 8, weight: .bold, design: .rounded))
+                    .minimumScaleFactor(0.55)
+                    .lineLimit(1)
+            }
+            .widgetAccentable()
+        }
     }
 
     private var expandedWidget: some View {
@@ -193,6 +218,7 @@ struct WordDayWidget: Widget {
             .systemMedium,
             .systemLarge,
             .accessoryInline,
+            .accessoryCircular,
             .accessoryRectangular
         ])
     }

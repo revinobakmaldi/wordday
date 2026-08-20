@@ -7,7 +7,7 @@ import WidgetKit
 /// read and write the same data.
 final class LearnedStore: ObservableObject {
     /// Must match the App Group in both `.entitlements` files.
-    static let appGroupID = "group.com.example.wordday"
+    static let appGroupID = "group.com.revinobakmaldi.wordday"
 
     static let shared = LearnedStore()
 
