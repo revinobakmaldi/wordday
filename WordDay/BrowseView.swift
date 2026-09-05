@@ -169,7 +169,7 @@ private struct ArchiveRow: View {
                     .font(.system(size: 14, weight: .semibold))
                     .foregroundStyle(WordDayStyle.success)
                     .padding(.top, 5)
-                    .accessibilityLabel("Collected")
+                    .accessibilityLabel("Saved")
             }
         }
         .padding(.vertical, 15)
@@ -185,6 +185,7 @@ private struct WordDetailView: View {
             VStack(alignment: .leading, spacing: 26) {
                 WordCard(word: word, trailingLabel: "BANK")
                 LearningGuideView(word: word)
+                LearnWithAIButton(word: word)
 
                 if isLearned {
                     Label("SAVED TO YOUR BANK", systemImage: "checkmark.circle.fill")

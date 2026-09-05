@@ -32,6 +32,8 @@ struct TodayView: View {
                             .padding(.top, 28)
                         LearnedButton(word: word)
                             .padding(.top, 20)
+                        LearnWithAIButton(word: word)
+                            .padding(.top, 10)
                         tomorrowPreview
                             .padding(.top, 34)
                     }
@@ -373,6 +375,44 @@ private struct LearnedButton: View {
         .contentShape(Rectangle())
         .accessibilityLabel(isLearned ? "Remove \(word.phrase) from saved chunks" : "Save \(word.phrase)")
         .accessibilityHint("Updates your saved chunk count")
+    }
+}
+
+struct LearnWithAIButton: View {
+    let word: Word
+
+    var body: some View {
+        ShareLink(
+            item: word.aiLearningPrompt,
+            subject: Text("Learn this English chunk")
+        ) {
+            HStack(spacing: 10) {
+                Image(systemName: "sparkles")
+                    .font(.system(size: 12, weight: .black))
+
+                Text("LEARN WITH AI")
+                    .font(WordDayStyle.labelFont(size: 10))
+                    .tracking(1.1)
+
+                Spacer()
+
+                Image(systemName: "square.and.arrow.up")
+                    .font(.system(size: 11, weight: .bold))
+                    .accessibilityHidden(true)
+            }
+            .foregroundStyle(WordDayStyle.accent)
+            .padding(.horizontal, 16)
+            .frame(minHeight: 54)
+            .background(WordDayStyle.background)
+            .overlay {
+                Rectangle()
+                    .stroke(WordDayStyle.rule, lineWidth: 1)
+            }
+        }
+        .buttonStyle(.plain)
+        .contentShape(Rectangle())
+        .accessibilityLabel("Share \(word.phrase) with an AI app")
+        .accessibilityHint("Opens the share sheet with a learning prompt")
     }
 }
 

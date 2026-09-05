@@ -30,6 +30,35 @@ struct Phrase: Decodable, Identifiable, Hashable {
         meaning
     }
 
+    var aiLearningPrompt: String {
+        var sections = [
+            "I am learning practical English for daily and business conversations.",
+            "",
+            "Help me deeply understand this reusable English chunk:",
+            "",
+            "Chunk: \"\(phrase)\"",
+            "Context: \(contextLabel)",
+            "Tone: \(tone)",
+            "Meaning: \(meaning)",
+            "",
+            "Examples:",
+            learningExamples.prefix(3).map { "- \($0)" }.joined(separator: "\n"),
+            "",
+            "Variants:",
+            learningPhrases.prefix(5).map { "- \($0)" }.joined(separator: "\n")
+        ]
+
+        if let avoidWhen {
+            sections.append("")
+            sections.append("Use carefully: \(avoidWhen)")
+        }
+
+        sections.append("")
+        sections.append("Please explain when to use it, when not to use it, common mistakes, 5 natural business examples, 3 casual examples, and give me a short practice exercise. If helpful, compare the nuance with Indonesian.")
+
+        return sections.joined(separator: "\n")
+    }
+
     /// Compatibility aliases while the app shell keeps the original WordDay names.
     var word: String { phrase }
     var pronunciation: String { label }
