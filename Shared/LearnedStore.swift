@@ -13,14 +13,14 @@ final class LearnedStore: ObservableObject {
 
     private let defaults: UserDefaults
     private let key = "savedChunks"
-    private let legacyKey = "learnedWords"
 
     @Published private(set) var learned: Set<String>
 
     init(defaults: UserDefaults? = nil) {
         let store = defaults ?? UserDefaults(suiteName: Self.appGroupID) ?? .standard
         self.defaults = store
-        self.learned = Set(store.stringArray(forKey: key) ?? store.stringArray(forKey: legacyKey) ?? [])
+        self.learned = Set(store.stringArray(forKey: key) ?? [])
+            .intersection(Set(WordLibrary.all.map(\.id)))
     }
 
     func isLearned(_ word: Word) -> Bool {
