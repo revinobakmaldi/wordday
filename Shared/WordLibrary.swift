@@ -1,6 +1,6 @@
 import Foundation
 
-/// A word paired with the day it belongs to.
+/// A phrase paired with the day it belongs to.
 struct DayWord: Identifiable, Hashable {
     let date: Date
     let word: Word
@@ -8,14 +8,14 @@ struct DayWord: Identifiable, Hashable {
     var id: Date { date }
 }
 
-/// Loads the bundled word list and maps calendar days onto it.
+/// Loads the bundled phrase list and maps calendar days onto it.
 ///
-/// The mapping is deterministic: the same day always resolves to the same word,
+/// The mapping is deterministic: the same day always resolves to the same phrase,
 /// in the app and in the widget, without any shared state or network call.
 enum WordLibrary {
     static let all: [Word] = load()
 
-    /// The word for a given day.
+    /// The phrase for a given day.
     static func word(for date: Date, calendar: Calendar = .current) -> Word {
         guard !all.isEmpty else { return .placeholder }
         return all[index(for: date, calendar: calendar)]
@@ -39,13 +39,17 @@ enum WordLibrary {
     }
 
     private static func load() -> [Word] {
-        guard let url = Bundle.main.url(forResource: "words", withExtension: "json"),
-              let data = try? Data(contentsOf: url),
-              let words = try? JSONDecoder().decode([Word].self, from: data),
-              !words.isEmpty
-        else {
-            return [.placeholder]
+        for resource in ["phrases", "words"] {
+            guard let url = Bundle.main.url(forResource: resource, withExtension: "json"),
+                  let data = try? Data(contentsOf: url),
+                  let words = try? JSONDecoder().decode([Word].self, from: data),
+                  !words.isEmpty
+            else {
+                continue
+            }
+            return words
         }
-        return words
+
+        return [.placeholder]
     }
 }

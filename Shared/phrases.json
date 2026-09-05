@@ -1,0 +1,776 @@
+[
+  {
+    "phrase": "Let me make sure I understand.",
+    "label": "Business",
+    "intent": "Clarify",
+    "meaning": "Use this before responding, so you can confirm the point without sounding hesitant.",
+    "example": "Let me make sure I understand. The main concern is the timeline, right?",
+    "usageExamples": [
+      "Let me make sure I understand before we decide.",
+      "Let me make sure I understand the constraint first."
+    ],
+    "variants": [
+      "Just to make sure I got this right...",
+      "So what you're saying is...",
+      "Let me restate that quickly."
+    ],
+    "tone": "Calm, professional, careful",
+    "avoidWhen": "Avoid overusing it when the point is already obvious."
+  },
+  {
+    "phrase": "Can we align on the next step?",
+    "label": "Business",
+    "intent": "Align",
+    "meaning": "Use this when a discussion is ending and you want clear ownership or action.",
+    "example": "Can we align on the next step before we close the meeting?",
+    "usageExamples": [
+      "Can we align on the next step and the owner?",
+      "Before we move on, can we align on the next step?"
+    ],
+    "variants": [
+      "What should be the next step?",
+      "Can we agree on the next action?",
+      "What do we want to do after this?"
+    ],
+    "tone": "Structured, calm, action-oriented",
+    "avoidWhen": "Avoid using it when the next step has already been clearly assigned."
+  },
+  {
+    "phrase": "I see your point.",
+    "label": "Business",
+    "intent": "Acknowledge",
+    "meaning": "Use this to show you understand someone's view before adding your own thought.",
+    "example": "I see your point. My concern is the impact on the rollout timeline.",
+    "usageExamples": [
+      "I see your point, and I think there is another angle to consider.",
+      "I see your point. The trade-off is cost versus speed."
+    ],
+    "variants": [
+      "That makes sense.",
+      "I understand where you're coming from.",
+      "I get the logic."
+    ],
+    "tone": "Respectful, open, balanced",
+    "avoidWhen": "Avoid saying it if you are not going to address the point afterward."
+  },
+  {
+    "phrase": "I would look at it differently.",
+    "label": "Business",
+    "intent": "Disagree",
+    "meaning": "Use this to disagree softly while keeping the discussion collaborative.",
+    "example": "I would look at it differently. The issue may be adoption, not data quality.",
+    "usageExamples": [
+      "I would look at it differently based on the user feedback.",
+      "I would look at it differently because the root cause seems operational."
+    ],
+    "variants": [
+      "I see it a bit differently.",
+      "My read is slightly different.",
+      "I have a different take."
+    ],
+    "tone": "Soft, thoughtful, professional",
+    "avoidWhen": "Avoid using it as a vague objection. Follow it with your actual reasoning."
+  },
+  {
+    "phrase": "Let me think through the trade-off.",
+    "label": "Business",
+    "intent": "Pause",
+    "meaning": "Use this when you need a moment to compare options before giving an answer.",
+    "example": "Let me think through the trade-off between speed and maintainability.",
+    "usageExamples": [
+      "Let me think through the trade-off before we commit.",
+      "Let me think through the trade-off from the team's capacity side."
+    ],
+    "variants": [
+      "Let me weigh the options.",
+      "Let me think about the implications.",
+      "Give me a second to think this through."
+    ],
+    "tone": "Analytical, careful, composed",
+    "avoidWhen": "Avoid using it when a quick operational answer is expected."
+  },
+  {
+    "phrase": "I'm not fully convinced yet.",
+    "label": "Business",
+    "intent": "Push back",
+    "meaning": "Use this when you disagree but want to keep the door open for more evidence.",
+    "example": "I'm not fully convinced yet. Do we have data from the last rollout?",
+    "usageExamples": [
+      "I'm not fully convinced yet, but I am open to the argument.",
+      "I'm not fully convinced yet because the sample size is still small."
+    ],
+    "variants": [
+      "I'm not sure I'm convinced.",
+      "I still have some concerns.",
+      "I need a bit more evidence."
+    ],
+    "tone": "Direct, fair, evidence-seeking",
+    "avoidWhen": "Avoid using it without explaining what would convince you."
+  },
+  {
+    "phrase": "That makes sense to me.",
+    "label": "Business",
+    "intent": "Agree",
+    "meaning": "Use this when you want to agree naturally without sounding too formal.",
+    "example": "That makes sense to me. Let's proceed with that option.",
+    "usageExamples": [
+      "That makes sense to me from a business perspective.",
+      "That makes sense to me given the timeline."
+    ],
+    "variants": [
+      "That sounds reasonable.",
+      "I agree with that direction.",
+      "I'm aligned with that."
+    ],
+    "tone": "Natural, positive, professional",
+    "avoidWhen": "Avoid using it as automatic agreement if there are unresolved risks."
+  },
+  {
+    "phrase": "Can you walk me through it?",
+    "label": "Business",
+    "intent": "Understand",
+    "meaning": "Use this when you want someone to explain their logic or process step by step.",
+    "example": "Can you walk me through it? I want to understand how we got this number.",
+    "usageExamples": [
+      "Can you walk me through the assumption behind this forecast?",
+      "Can you walk me through what changed in the dashboard?"
+    ],
+    "variants": [
+      "Can you explain the flow?",
+      "Can you show me how it works?",
+      "Can you take me through the logic?"
+    ],
+    "tone": "Curious, collaborative, precise",
+    "avoidWhen": "Avoid using it when you only need a yes or no answer."
+  },
+  {
+    "phrase": "What is the main constraint?",
+    "label": "Business",
+    "intent": "Diagnose",
+    "meaning": "Use this to move a vague discussion toward the real limitation.",
+    "example": "What is the main constraint: data availability, capacity, or approval?",
+    "usageExamples": [
+      "What is the main constraint if we want to finish this month?",
+      "What is the main constraint from the user side?"
+    ],
+    "variants": [
+      "What is blocking us?",
+      "What is the biggest limitation?",
+      "Where are we most constrained?"
+    ],
+    "tone": "Focused, practical, managerial",
+    "avoidWhen": "Avoid using it too early if people have not explained the situation yet."
+  },
+  {
+    "phrase": "Let's separate the two issues.",
+    "label": "Business",
+    "intent": "Structure",
+    "meaning": "Use this when a conversation mixes different problems and needs clearer framing.",
+    "example": "Let's separate the two issues: data accuracy and dashboard usability.",
+    "usageExamples": [
+      "Let's separate the two issues before we decide on the solution.",
+      "Let's separate the two issues because they need different owners."
+    ],
+    "variants": [
+      "Let's break this down.",
+      "There are two different issues here.",
+      "Let's handle these separately."
+    ],
+    "tone": "Structured, calm, clarifying",
+    "avoidWhen": "Avoid using it if the issues are actually tightly connected."
+  },
+  {
+    "phrase": "I need more context first.",
+    "label": "Business",
+    "intent": "Pause",
+    "meaning": "Use this when answering too quickly could create confusion or a poor decision.",
+    "example": "I need more context first. What problem is the user trying to solve?",
+    "usageExamples": [
+      "I need more context first before I can commit to the timeline.",
+      "I need more context first. Who will use this output?"
+    ],
+    "variants": [
+      "I need a bit more background.",
+      "Can you give me more context?",
+      "I need to understand the situation first."
+    ],
+    "tone": "Careful, honest, professional",
+    "avoidWhen": "Avoid using it repeatedly without asking a specific follow-up question."
+  },
+  {
+    "phrase": "Let me rephrase that.",
+    "label": "Business",
+    "intent": "Repair",
+    "meaning": "Use this when your first wording was unclear and you want to explain it better.",
+    "example": "Let me rephrase that. The dashboard is not wrong, but the metric definition changed.",
+    "usageExamples": [
+      "Let me rephrase that because I made it sound too broad.",
+      "Let me rephrase that in a simpler way."
+    ],
+    "variants": [
+      "Let me say that differently.",
+      "Maybe a better way to put it is...",
+      "What I mean is..."
+    ],
+    "tone": "Natural, self-correcting, clear",
+    "avoidWhen": "Avoid using it as a filler when your point was already clear."
+  },
+  {
+    "phrase": "I want to be mindful of timing.",
+    "label": "Business",
+    "intent": "Time",
+    "meaning": "Use this to keep a meeting moving without sounding abrupt.",
+    "example": "I want to be mindful of timing. Can we focus on the decision first?",
+    "usageExamples": [
+      "I want to be mindful of timing, so let's park the technical details for now.",
+      "I want to be mindful of timing and make sure we cover the key point."
+    ],
+    "variants": [
+      "Given the time, let's focus.",
+      "To respect everyone's time...",
+      "We may need to time-box this."
+    ],
+    "tone": "Polite, facilitative, efficient",
+    "avoidWhen": "Avoid using it if the conversation needs more time for an important concern."
+  },
+  {
+    "phrase": "Let's park this for now.",
+    "label": "Business",
+    "intent": "Defer",
+    "meaning": "Use this when a topic is valid but not useful for the current discussion.",
+    "example": "Let's park this for now and come back after we confirm the data source.",
+    "usageExamples": [
+      "Let's park this for now because it is outside today's scope.",
+      "Let's park this for now and capture it as a follow-up."
+    ],
+    "variants": [
+      "Let's come back to this later.",
+      "Let's put a pin in this.",
+      "Let's keep this as a follow-up."
+    ],
+    "tone": "Polite, focused, meeting-friendly",
+    "avoidWhen": "Avoid using it to dismiss a concern that needs an immediate answer."
+  },
+  {
+    "phrase": "What does success look like?",
+    "label": "Business",
+    "intent": "Define",
+    "meaning": "Use this when a project or request needs a clearer outcome.",
+    "example": "Before we build the dashboard, what does success look like for the users?",
+    "usageExamples": [
+      "What does success look like after the first month?",
+      "What does success look like from the business team's side?"
+    ],
+    "variants": [
+      "How will we know this worked?",
+      "What outcome are we aiming for?",
+      "What should improve after this?"
+    ],
+    "tone": "Strategic, clear, outcome-focused",
+    "avoidWhen": "Avoid using it when the goal has already been formally defined."
+  },
+  {
+    "phrase": "What problem are we solving?",
+    "label": "Business",
+    "intent": "Focus",
+    "meaning": "Use this when a request jumps to a solution before the problem is clear.",
+    "example": "What problem are we solving with this new report?",
+    "usageExamples": [
+      "Before choosing the tool, what problem are we solving?",
+      "What problem are we solving for the branch manager?"
+    ],
+    "variants": [
+      "What is the actual problem?",
+      "What decision should this support?",
+      "What user pain are we addressing?"
+    ],
+    "tone": "Strategic, practical, grounding",
+    "avoidWhen": "Avoid saying it in a way that sounds like you are rejecting the request."
+  },
+  {
+    "phrase": "Let me take that offline.",
+    "label": "Business",
+    "intent": "Follow up",
+    "meaning": "Use this when a topic needs separate checking after the meeting.",
+    "example": "Let me take that offline and confirm the number with the data owner.",
+    "usageExamples": [
+      "Let me take that offline and get back to you after lunch.",
+      "Let me take that offline with the analyst first."
+    ],
+    "variants": [
+      "Let me follow up separately.",
+      "I'll check that after this.",
+      "Let's handle that after the meeting."
+    ],
+    "tone": "Professional, efficient, accountable",
+    "avoidWhen": "Avoid using it if people need the answer to make a decision now."
+  },
+  {
+    "phrase": "I can take the first pass.",
+    "label": "Business",
+    "intent": "Volunteer",
+    "meaning": "Use this when you want to own an initial draft or exploration without overcommitting.",
+    "example": "I can take the first pass and share a draft by Thursday.",
+    "usageExamples": [
+      "I can take the first pass on the problem framing.",
+      "I can take the first pass, then we can refine it together."
+    ],
+    "variants": [
+      "I can draft something first.",
+      "I can start with an initial version.",
+      "I can put together a rough outline."
+    ],
+    "tone": "Helpful, proactive, bounded",
+    "avoidWhen": "Avoid using it if you cannot realistically make time for the work."
+  },
+  {
+    "phrase": "Can we make this more concrete?",
+    "label": "Business",
+    "intent": "Clarify",
+    "meaning": "Use this when the discussion is too abstract and needs examples, numbers, or next actions.",
+    "example": "Can we make this more concrete? Which users are affected?",
+    "usageExamples": [
+      "Can we make this more concrete with one business example?",
+      "Can we make this more concrete before we estimate the effort?"
+    ],
+    "variants": [
+      "Can we be more specific?",
+      "Can we ground this in an example?",
+      "What would this look like in practice?"
+    ],
+    "tone": "Practical, clear, collaborative",
+    "avoidWhen": "Avoid using it if someone is still brainstorming freely."
+  },
+  {
+    "phrase": "I want to pressure-test this.",
+    "label": "Business",
+    "intent": "Challenge",
+    "meaning": "Use this when you want to test an idea for risks without sounding negative.",
+    "example": "I want to pressure-test this. What happens if the source data is late?",
+    "usageExamples": [
+      "I want to pressure-test this before we present it to leadership.",
+      "I want to pressure-test the assumption behind the target."
+    ],
+    "variants": [
+      "Let's test the assumption.",
+      "Let's check the weak points.",
+      "What could break this?"
+    ],
+    "tone": "Analytical, constructive, rigorous",
+    "avoidWhen": "Avoid using it when people are expecting a quick approval only."
+  },
+  {
+    "phrase": "My concern is the timeline.",
+    "label": "Business",
+    "intent": "Raise risk",
+    "meaning": "Use this to state a concern directly without making it personal.",
+    "example": "My concern is the timeline. We still need validation from two teams.",
+    "usageExamples": [
+      "My concern is the timeline if we add another data source.",
+      "My concern is the timeline, not the idea itself."
+    ],
+    "variants": [
+      "The timeline is my main concern.",
+      "I'm worried about the timing.",
+      "The main risk I see is timing."
+    ],
+    "tone": "Clear, calm, risk-aware",
+    "avoidWhen": "Avoid using it without offering what would reduce the risk."
+  },
+  {
+    "phrase": "This might be too broad.",
+    "label": "Business",
+    "intent": "Scope",
+    "meaning": "Use this when a request or discussion needs a narrower focus.",
+    "example": "This might be too broad for one dashboard. Can we start with sales visibility?",
+    "usageExamples": [
+      "This might be too broad for the first phase.",
+      "This might be too broad unless we define the user group."
+    ],
+    "variants": [
+      "The scope may be too wide.",
+      "We may need to narrow this.",
+      "Let's make the scope smaller."
+    ],
+    "tone": "Practical, honest, focused",
+    "avoidWhen": "Avoid saying it without suggesting a narrower alternative."
+  },
+  {
+    "phrase": "Can we start with the outcome?",
+    "label": "Business",
+    "intent": "Frame",
+    "meaning": "Use this when the conversation starts with tasks instead of the result people need.",
+    "example": "Can we start with the outcome? What decision should this dashboard support?",
+    "usageExamples": [
+      "Can we start with the outcome before discussing the data source?",
+      "Can we start with the outcome and work backward?"
+    ],
+    "variants": [
+      "Let's start with the result.",
+      "Let's work backward from the decision.",
+      "What outcome do we need?"
+    ],
+    "tone": "Strategic, structured, leadership-oriented",
+    "avoidWhen": "Avoid using it when the task is small and already well understood."
+  },
+  {
+    "phrase": "I need to check the details.",
+    "label": "Business",
+    "intent": "Verify",
+    "meaning": "Use this when you do not want to guess or answer before verifying.",
+    "example": "I need to check the details before I confirm the number.",
+    "usageExamples": [
+      "I need to check the details with the analyst first.",
+      "I need to check the details in the source table."
+    ],
+    "variants": [
+      "Let me verify that first.",
+      "Let me confirm the details.",
+      "I do not want to guess on that."
+    ],
+    "tone": "Careful, responsible, trustworthy",
+    "avoidWhen": "Avoid using it to delay decisions you already have enough information to make."
+  },
+  {
+    "phrase": "That is a fair question.",
+    "label": "Business",
+    "intent": "Respond",
+    "meaning": "Use this when someone asks something challenging and you want to stay composed.",
+    "example": "That is a fair question. The short answer is that the baseline changed.",
+    "usageExamples": [
+      "That is a fair question. We should separate accuracy from completeness.",
+      "That is a fair question, and I do not want to oversimplify the answer."
+    ],
+    "variants": [
+      "That's a good question.",
+      "That's fair.",
+      "I understand why you are asking that."
+    ],
+    "tone": "Composed, respectful, mature",
+    "avoidWhen": "Avoid using it if you do not answer the question afterward."
+  },
+  {
+    "phrase": "Can I add one thought?",
+    "label": "Business",
+    "intent": "Enter",
+    "meaning": "Use this to enter a discussion politely when several people are talking.",
+    "example": "Can I add one thought? The user adoption risk may be bigger than the technical risk.",
+    "usageExamples": [
+      "Can I add one thought before we finalize the plan?",
+      "Can I add one thought from the data team's side?"
+    ],
+    "variants": [
+      "Can I jump in for a second?",
+      "Can I add something here?",
+      "One thing I would add is..."
+    ],
+    "tone": "Polite, confident, collaborative",
+    "avoidWhen": "Avoid using it to interrupt someone who has not finished an important point."
+  },
+  {
+    "phrase": "I may be missing something.",
+    "label": "Business",
+    "intent": "Hedge",
+    "meaning": "Use this before a question or challenge when you want to sound humble but engaged.",
+    "example": "I may be missing something, but why are we prioritizing this over adoption?",
+    "usageExamples": [
+      "I may be missing something, but the numbers do not seem to match.",
+      "I may be missing something, so please correct me if I am wrong."
+    ],
+    "variants": [
+      "Maybe I missed this, but...",
+      "Correct me if I am wrong...",
+      "I might be misunderstanding this..."
+    ],
+    "tone": "Humble, careful, non-confrontational",
+    "avoidWhen": "Avoid overusing it because it can make you sound less confident."
+  },
+  {
+    "phrase": "Let's keep it simple.",
+    "label": "Business",
+    "intent": "Simplify",
+    "meaning": "Use this when a solution is becoming more complex than the problem requires.",
+    "example": "Let's keep it simple for the first version and add automation later.",
+    "usageExamples": [
+      "Let's keep it simple until we know the users actually need it.",
+      "Let's keep it simple and focus on the main decision."
+    ],
+    "variants": [
+      "Let's not overcomplicate it.",
+      "Can we simplify this?",
+      "The simpler version may be enough."
+    ],
+    "tone": "Practical, grounded, efficient",
+    "avoidWhen": "Avoid using it to shut down necessary nuance."
+  },
+  {
+    "phrase": "Can we define the owner?",
+    "label": "Business",
+    "intent": "Ownership",
+    "meaning": "Use this when an action needs a clear person responsible for moving it forward.",
+    "example": "Can we define the owner for the validation before Friday?",
+    "usageExamples": [
+      "Can we define the owner and the deadline?",
+      "Can we define the owner for each follow-up item?"
+    ],
+    "variants": [
+      "Who owns this next?",
+      "Who should drive this?",
+      "Who will take this forward?"
+    ],
+    "tone": "Clear, operational, accountable",
+    "avoidWhen": "Avoid saying it in a blaming tone when something went wrong."
+  },
+  {
+    "phrase": "I agree with the direction.",
+    "label": "Business",
+    "intent": "Agree",
+    "meaning": "Use this when you support the idea but may still want to discuss details.",
+    "example": "I agree with the direction. We just need to adjust the rollout plan.",
+    "usageExamples": [
+      "I agree with the direction, but the scope needs to be clearer.",
+      "I agree with the direction from a product perspective."
+    ],
+    "variants": [
+      "The direction makes sense.",
+      "I'm aligned with the direction.",
+      "I support the general direction."
+    ],
+    "tone": "Supportive, balanced, professional",
+    "avoidWhen": "Avoid using it if you actually disagree with the core idea."
+  },
+  {
+    "phrase": "The risk is manageable.",
+    "label": "Business",
+    "intent": "Assess",
+    "meaning": "Use this when you acknowledge a risk but do not think it should block progress.",
+    "example": "The risk is manageable if we validate the data weekly during the first month.",
+    "usageExamples": [
+      "The risk is manageable with a manual fallback.",
+      "The risk is manageable if the business owner signs off."
+    ],
+    "variants": [
+      "I think we can manage the risk.",
+      "This is not risk-free, but it is manageable.",
+      "The risk does not seem too high."
+    ],
+    "tone": "Balanced, confident, pragmatic",
+    "avoidWhen": "Avoid using it when the risk has not been properly understood."
+  },
+  {
+    "phrase": "Let's not optimize too early.",
+    "label": "Business",
+    "intent": "Prioritize",
+    "meaning": "Use this when people are perfecting something before proving it matters.",
+    "example": "Let's not optimize too early. We should first confirm that users need this metric.",
+    "usageExamples": [
+      "Let's not optimize too early before the workflow is stable.",
+      "Let's not optimize too early. The first goal is adoption."
+    ],
+    "variants": [
+      "Let's validate first.",
+      "We can improve it later.",
+      "Let's avoid premature optimization."
+    ],
+    "tone": "Practical, product-minded, focused",
+    "avoidWhen": "Avoid using it when quality is critical from day one."
+  },
+  {
+    "phrase": "Can we make a quick decision?",
+    "label": "Business",
+    "intent": "Decide",
+    "meaning": "Use this when the team has enough information and the discussion is circling.",
+    "example": "Can we make a quick decision on the first version and revisit after feedback?",
+    "usageExamples": [
+      "Can we make a quick decision so the team can move?",
+      "Can we make a quick decision between these two options?"
+    ],
+    "variants": [
+      "Can we decide on this now?",
+      "Do we have enough to decide?",
+      "Let's choose a direction."
+    ],
+    "tone": "Decisive, respectful, efficient",
+    "avoidWhen": "Avoid using it if people still lack important information."
+  },
+  {
+    "phrase": "I want to avoid confusion.",
+    "label": "Business",
+    "intent": "Clarify",
+    "meaning": "Use this before simplifying definitions, roles, or next steps.",
+    "example": "I want to avoid confusion, so let's use one definition for active outlet.",
+    "usageExamples": [
+      "I want to avoid confusion between revenue and net sales.",
+      "I want to avoid confusion, so let's document the decision."
+    ],
+    "variants": [
+      "Let's make this clear.",
+      "Let's avoid mixed interpretation.",
+      "Let's be precise here."
+    ],
+    "tone": "Clear, careful, professional",
+    "avoidWhen": "Avoid using it if the wording sounds like you are blaming others for being confused."
+  },
+  {
+    "phrase": "I can work with that.",
+    "label": "Business",
+    "intent": "Accept",
+    "meaning": "Use this when a solution is not perfect but acceptable enough to move forward.",
+    "example": "I can work with that if we keep the first phase limited to sales data.",
+    "usageExamples": [
+      "I can work with that timeline if we reduce the scope.",
+      "I can work with that as a temporary approach."
+    ],
+    "variants": [
+      "That works for me.",
+      "That is acceptable for now.",
+      "I think that is workable."
+    ],
+    "tone": "Flexible, practical, cooperative",
+    "avoidWhen": "Avoid using it when you need to formally approve something."
+  },
+  {
+    "phrase": "Let's make the ask clearer.",
+    "label": "Business",
+    "intent": "Request",
+    "meaning": "Use this when a message, proposal, or stakeholder request needs sharper wording.",
+    "example": "Let's make the ask clearer: we need one data owner and one business approver.",
+    "usageExamples": [
+      "Let's make the ask clearer before sending it to Finance.",
+      "Let's make the ask clearer so leadership can decide quickly."
+    ],
+    "variants": [
+      "Let's clarify what we need.",
+      "The request needs to be more specific.",
+      "Let's state the ask directly."
+    ],
+    "tone": "Direct, structured, helpful",
+    "avoidWhen": "Avoid using it when the ask is already explicit."
+  },
+  {
+    "phrase": "I am leaning toward option two.",
+    "label": "Business",
+    "intent": "Choose",
+    "meaning": "Use this when you have a preference but are still open to discussion.",
+    "example": "I am leaning toward option two because it gives us faster user feedback.",
+    "usageExamples": [
+      "I am leaning toward option two, but I want to hear the risk from IT.",
+      "I am leaning toward option two based on the timeline."
+    ],
+    "variants": [
+      "My preference is option two.",
+      "Option two feels stronger to me.",
+      "I would probably choose option two."
+    ],
+    "tone": "Decisive, open, analytical",
+    "avoidWhen": "Avoid using it if a firm decision has already been made."
+  },
+  {
+    "phrase": "Let's revisit this after feedback.",
+    "label": "Business",
+    "intent": "Iterate",
+    "meaning": "Use this when you want to move forward now and improve after real input.",
+    "example": "Let's revisit this after feedback from the sales managers.",
+    "usageExamples": [
+      "Let's revisit this after feedback instead of debating every detail now.",
+      "Let's revisit this after feedback from the pilot users."
+    ],
+    "variants": [
+      "Let's review it after the pilot.",
+      "Let's improve it after users try it.",
+      "Let's come back after we have feedback."
+    ],
+    "tone": "Product-minded, practical, iterative",
+    "avoidWhen": "Avoid using it for risks that must be solved before launch."
+  },
+  {
+    "phrase": "Can we confirm the assumption?",
+    "label": "Business",
+    "intent": "Verify",
+    "meaning": "Use this when a plan depends on something that may not be true.",
+    "example": "Can we confirm the assumption that all regions use the same sales definition?",
+    "usageExamples": [
+      "Can we confirm the assumption before building the report?",
+      "Can we confirm the assumption with the business owner?"
+    ],
+    "variants": [
+      "Let's validate the assumption.",
+      "Do we know if this assumption is true?",
+      "What is this based on?"
+    ],
+    "tone": "Analytical, careful, evidence-based",
+    "avoidWhen": "Avoid using it for minor details that will not affect the decision."
+  },
+  {
+    "phrase": "I do not want to overpromise.",
+    "label": "Business",
+    "intent": "Expectation",
+    "meaning": "Use this when you need to set a realistic boundary around delivery or capability.",
+    "example": "I do not want to overpromise. We can share a prototype first, not the final report.",
+    "usageExamples": [
+      "I do not want to overpromise on the timeline before checking capacity.",
+      "I do not want to overpromise because the source data is still changing."
+    ],
+    "variants": [
+      "I want to set the expectation clearly.",
+      "Let's be realistic about this.",
+      "I want to be careful with the commitment."
+    ],
+    "tone": "Responsible, honest, measured",
+    "avoidWhen": "Avoid using it so often that you sound unwilling to commit."
+  },
+  {
+    "phrase": "Thanks for flagging that.",
+    "label": "Daily",
+    "intent": "Respond",
+    "meaning": "Use this when someone points out an issue, risk, or mistake.",
+    "example": "Thanks for flagging that. I will check whether the filter affected last week's number.",
+    "usageExamples": [
+      "Thanks for flagging that. It is worth checking before we publish.",
+      "Thanks for flagging that. I missed the dependency."
+    ],
+    "variants": [
+      "Good catch.",
+      "Thanks for pointing that out.",
+      "I appreciate you raising that."
+    ],
+    "tone": "Appreciative, natural, accountable",
+    "avoidWhen": "Avoid using it if you are not going to act on the issue."
+  },
+  {
+    "phrase": "Let me get back to you.",
+    "label": "Daily",
+    "intent": "Follow up",
+    "meaning": "Use this when you need time to check something before answering.",
+    "example": "Let me get back to you after I confirm the number with the team.",
+    "usageExamples": [
+      "Let me get back to you by the end of the day.",
+      "Let me get back to you after I check the file."
+    ],
+    "variants": [
+      "I will follow up on that.",
+      "Let me check and come back to you.",
+      "I need to confirm first."
+    ],
+    "tone": "Natural, responsible, polite",
+    "avoidWhen": "Avoid using it without giving a clear follow-up time when urgency matters."
+  },
+  {
+    "phrase": "No worries at all.",
+    "label": "Daily",
+    "intent": "Reassure",
+    "meaning": "Use this when someone apologizes or causes a small inconvenience.",
+    "example": "No worries at all. We can move the discussion to tomorrow.",
+    "usageExamples": [
+      "No worries at all. Thanks for letting me know.",
+      "No worries at all. We still have time."
+    ],
+    "variants": [
+      "No problem.",
+      "That's okay.",
+      "All good."
+    ],
+    "tone": "Warm, casual, reassuring",
+    "avoidWhen": "Avoid using it for serious mistakes that need clear accountability."
+  }
+]

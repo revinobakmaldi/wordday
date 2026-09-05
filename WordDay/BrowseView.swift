@@ -11,9 +11,12 @@ struct BrowseView: View {
             .filter { !showLearnedOnly || learned.isLearned($0) }
             .filter { word in
                 guard !query.isEmpty else { return true }
-                return word.word.localizedCaseInsensitiveContains(query)
-                    || word.definition.localizedCaseInsensitiveContains(query)
+                return word.phrase.localizedCaseInsensitiveContains(query)
+                    || word.label.localizedCaseInsensitiveContains(query)
+                    || word.intent.localizedCaseInsensitiveContains(query)
+                    || word.meaning.localizedCaseInsensitiveContains(query)
                     || word.example.localizedCaseInsensitiveContains(query)
+                    || word.tone.localizedCaseInsensitiveContains(query)
                     || word.learningTip.localizedCaseInsensitiveContains(query)
                     || word.learningExamples.contains { $0.localizedCaseInsensitiveContains(query) }
                     || word.learningPhrases.contains { $0.localizedCaseInsensitiveContains(query) }
@@ -47,9 +50,9 @@ struct BrowseView: View {
                     }
                 } header: {
                     HStack {
-                        Text(showLearnedOnly ? "COLLECTED" : "FULL LEXICON")
+                        Text(showLearnedOnly ? "SAVED" : "PHRASE BANK")
                         Spacer()
-                        Text("\(results.count) WORDS")
+                        Text("\(results.count) CHUNKS")
                             .monospacedDigit()
                     }
                     .font(WordDayStyle.labelFont(size: 9))
@@ -74,7 +77,7 @@ struct BrowseView: View {
             .navigationDestination(for: Word.self) { word in
                 WordDetailView(word: word, isLearned: learned.isLearned(word))
             }
-            .searchable(text: $query, prompt: "Find a word or meaning")
+            .searchable(text: $query, prompt: "Find a phrase or situation")
             .toolbarBackground(WordDayStyle.background, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
@@ -94,7 +97,7 @@ struct BrowseView: View {
                             .foregroundStyle(showLearnedOnly ? WordDayStyle.success : WordDayStyle.accent)
                             .frame(width: 44, height: 44)
                     }
-                    .accessibilityLabel(showLearnedOnly ? "Show all words" : "Show collected words only")
+                    .accessibilityLabel(showLearnedOnly ? "Show all chunks" : "Show saved chunks only")
                 }
             }
         }
@@ -102,18 +105,18 @@ struct BrowseView: View {
 
     private var emptyState: some View {
         VStack(alignment: .leading, spacing: 11) {
-            Text(showLearnedOnly ? "YOUR SHELF IS WAITING" : "NOT IN THIS EDITION")
+            Text(showLearnedOnly ? "YOUR BANK IS WAITING" : "NOT IN THIS EDITION")
                 .font(WordDayStyle.labelFont(size: 9))
                 .tracking(1.2)
                 .foregroundStyle(WordDayStyle.accent)
 
-            Text(showLearnedOnly ? "Collect your first word." : "Try another search.")
+            Text(showLearnedOnly ? "Save your first chunk." : "Try another search.")
                 .font(WordDayStyle.displayFont(size: 28))
                 .foregroundStyle(WordDayStyle.ink)
 
             Text(showLearnedOnly
-                 ? "Open Today and keep the word if it belongs in your vocabulary."
-                 : "Search by spelling or by a phrase from the definition.")
+                 ? "Open Today and save the phrase if it belongs in your speaking toolkit."
+                 : "Search by phrase, situation, intent, or example.")
                 .font(WordDayStyle.bodyFont(size: 15))
                 .lineSpacing(3)
                 .foregroundStyle(WordDayStyle.mutedInk)
@@ -138,19 +141,21 @@ private struct ArchiveRow: View {
 
             VStack(alignment: .leading, spacing: 5) {
                 HStack(alignment: .firstTextBaseline, spacing: 8) {
-                    Text(word.word.uppercased())
-                        .font(WordDayStyle.displayFont(size: 22))
-                        .tracking(-0.35)
+                    Text(word.phrase)
+                        .font(WordDayStyle.displayFont(size: 20))
                         .foregroundStyle(WordDayStyle.ink)
-                        .accessibilityLabel(word.word)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.8)
+                        .accessibilityLabel(word.phrase)
 
-                    Text(word.partOfSpeech.uppercased())
+                    Text(word.contextLabel.uppercased())
                         .font(WordDayStyle.labelFont(size: 8))
                         .tracking(0.6)
                         .foregroundStyle(WordDayStyle.accent)
+                        .lineLimit(1)
                 }
 
-                Text(word.definition)
+                Text(word.meaning)
                     .font(WordDayStyle.bodyFont(size: 13))
                     .lineSpacing(2)
                     .foregroundStyle(WordDayStyle.mutedInk)
@@ -178,11 +183,11 @@ private struct WordDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 26) {
-                WordCard(word: word, trailingLabel: "ARCHIVE")
+                WordCard(word: word, trailingLabel: "BANK")
                 LearningGuideView(word: word)
 
                 if isLearned {
-                    Label("IN YOUR COLLECTION", systemImage: "checkmark.circle.fill")
+                    Label("SAVED TO YOUR BANK", systemImage: "checkmark.circle.fill")
                         .font(WordDayStyle.labelFont(size: 10))
                         .tracking(1.05)
                         .foregroundStyle(WordDayStyle.success)
@@ -201,7 +206,7 @@ private struct WordDetailView: View {
             }
             .ignoresSafeArea()
         }
-        .navigationTitle(word.word)
+        .navigationTitle(word.phrase)
         .navigationBarTitleDisplayMode(.inline)
         .toolbarBackground(WordDayStyle.background, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)

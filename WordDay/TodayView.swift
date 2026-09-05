@@ -79,7 +79,7 @@ struct TodayView: View {
                     systemImage: colorScheme == .dark ? "moonphase.waning.crescent" : "sun.max.fill"
                 )
                 Spacer()
-                Text("READ · 10 SEC")
+                Text("PRACTICE · 10 SEC")
             }
             .font(WordDayStyle.labelFont(size: 10))
             .tracking(1.35)
@@ -96,7 +96,7 @@ struct TodayView: View {
     private var collectionProgress: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack(alignment: .firstTextBaseline) {
-                Text("COLLECTED")
+                Text("SAVED")
                     .tracking(1.25)
                 Spacer()
                 Text("\(learned.learned.count) / \(WordLibrary.all.count)")
@@ -117,7 +117,7 @@ struct TodayView: View {
             .accessibilityHidden(true)
         }
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(learned.learned.count) of \(WordLibrary.all.count) words collected")
+        .accessibilityLabel("\(learned.learned.count) of \(WordLibrary.all.count) chunks saved")
     }
 
     private var learnedProgress: CGFloat {
@@ -133,7 +133,7 @@ struct TodayView: View {
                     .tracking(1.2)
                     .foregroundStyle(WordDayStyle.accent)
 
-                Text("A fresh word lands at midnight.")
+                Text("A fresh chunk lands at midnight.")
                     .font(WordDayStyle.bodyFont(size: 14))
                     .foregroundStyle(WordDayStyle.mutedInk)
             }
@@ -155,7 +155,7 @@ struct TodayView: View {
     }
 }
 
-/// The core reading surface used by Today and word detail screens.
+/// The core reading surface used by Today and phrase detail screens.
 struct WordCard: View {
     let word: Word
     var trailingLabel: String? = nil
@@ -163,7 +163,7 @@ struct WordCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack {
-                Text("WORD · \(wordNumber)")
+                Text("CHUNK · \(wordNumber)")
                 Spacer()
                 Text(trailingLabel ?? Date().formatted(.dateTime.month(.twoDigits).day(.twoDigits)))
                     .monospacedDigit()
@@ -172,38 +172,37 @@ struct WordCard: View {
             .tracking(1.3)
             .foregroundStyle(WordDayStyle.mutedInk)
 
-            Text(word.word.uppercased())
-                .font(WordDayStyle.displayFont(size: 50))
+            Text(word.phrase)
+                .font(WordDayStyle.displayFont(size: 44))
                 .fontWeight(.semibold)
-                .tracking(-1.8)
-                .minimumScaleFactor(0.52)
-                .lineLimit(1)
+                .minimumScaleFactor(0.64)
+                .lineLimit(3)
                 .foregroundStyle(WordDayStyle.ink)
                 .padding(.top, 13)
                 .accessibilityAddTraits(.isHeader)
-                .accessibilityLabel(word.word)
+                .accessibilityLabel(word.phrase)
 
             HStack(spacing: 10) {
-                Text(word.pronunciation)
+                Text(word.label.uppercased())
                 Rectangle()
                     .fill(WordDayStyle.accent)
                     .frame(width: 26, height: 2)
                     .accessibilityHidden(true)
-                Text(word.partOfSpeech.uppercased())
+                Text(word.intent.uppercased())
             }
             .font(WordDayStyle.labelFont(size: 10))
             .tracking(0.65)
             .foregroundStyle(WordDayStyle.mutedInk)
             .padding(.top, 9)
 
-            Text(word.definition)
+            Text(word.meaning)
                 .font(WordDayStyle.bodyFont(size: 21))
                 .fontWeight(.regular)
                 .lineSpacing(6)
                 .foregroundStyle(WordDayStyle.ink)
                 .padding(.top, 27)
 
-            Text("“\(word.example)”")
+            Text("\"\(word.example)\"")
                 .font(WordDayStyle.italicFont(size: 15))
                 .lineSpacing(4)
                 .foregroundStyle(WordDayStyle.mutedInk)
@@ -241,14 +240,14 @@ struct LearningGuideView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
             HStack(alignment: .firstTextBaseline) {
-                Text("LEARN GUIDE")
+                Text("PRACTICE GUIDE")
                     .font(WordDayStyle.labelFont(size: 9))
                     .tracking(1.25)
                     .foregroundStyle(WordDayStyle.accent)
 
                 Spacer()
 
-                Text(word.partOfSpeech.uppercased())
+                Text(word.tone.uppercased())
                     .font(WordDayStyle.labelFont(size: 8))
                     .tracking(0.9)
                     .foregroundStyle(WordDayStyle.mutedInk)
@@ -261,7 +260,7 @@ struct LearningGuideView: View {
                     .foregroundStyle(WordDayStyle.ink)
             }
 
-            GuideSection(title: "Example usages") {
+            GuideSection(title: "Examples") {
                 VStack(alignment: .leading, spacing: 12) {
                     ForEach(Array(word.learningExamples.prefix(3).enumerated()), id: \.offset) { index, example in
                         HStack(alignment: .top, spacing: 10) {
@@ -281,7 +280,7 @@ struct LearningGuideView: View {
                 }
             }
 
-            GuideSection(title: "Common phrases") {
+            GuideSection(title: "Variants") {
                 LazyVGrid(columns: phraseColumns, alignment: .leading, spacing: 8) {
                     ForEach(word.learningPhrases.prefix(6), id: \.self) { phrase in
                         Text(phrase)
@@ -295,6 +294,15 @@ struct LearningGuideView: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .background(WordDayStyle.surface, in: Capsule())
                     }
+                }
+            }
+
+            if let avoidWhen = word.avoidWhen {
+                GuideSection(title: "Use carefully") {
+                    Text(avoidWhen)
+                        .font(WordDayStyle.bodyFont(size: 15))
+                        .lineSpacing(3)
+                        .foregroundStyle(WordDayStyle.mutedInk)
                 }
             }
         }
@@ -342,7 +350,7 @@ private struct LearnedButton: View {
                 Image(systemName: isLearned ? "checkmark" : "plus")
                     .font(.system(size: 12, weight: .black))
 
-                Text(isLearned ? "COLLECTED" : "ADD TO MY WORDS")
+                Text(isLearned ? "SAVED" : "SAVE CHUNK")
                     .font(WordDayStyle.labelFont(size: 10))
                     .tracking(1.1)
 
@@ -363,8 +371,8 @@ private struct LearnedButton: View {
         }
         .buttonStyle(.plain)
         .contentShape(Rectangle())
-        .accessibilityLabel(isLearned ? "Remove \(word.word) from my words" : "Add \(word.word) to my words")
-        .accessibilityHint("Updates your collected word count")
+        .accessibilityLabel(isLearned ? "Remove \(word.phrase) from saved chunks" : "Save \(word.phrase)")
+        .accessibilityHint("Updates your saved chunk count")
     }
 }
 

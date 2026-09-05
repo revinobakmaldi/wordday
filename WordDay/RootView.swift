@@ -7,7 +7,7 @@ struct RootView: View {
                 .tabItem { Label("Today", systemImage: "circle.inset.filled") }
 
             BrowseView()
-                .tabItem { Label("Archive", systemImage: "rectangle.stack.fill") }
+                .tabItem { Label("Bank", systemImage: "rectangle.stack.fill") }
         }
         .tint(WordDayStyle.accent)
         .toolbarBackground(WordDayStyle.surface, for: .tabBar)

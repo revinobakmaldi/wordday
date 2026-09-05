@@ -42,7 +42,7 @@ struct WordDayWidgetEntryView: View {
     private var widgetContent: some View {
         switch family {
         case .accessoryInline:
-            Text("\(entry.word.word) · \(inlineClue)")
+            Text("\(entry.word.phrase) · \(entry.word.intent)")
 
         case .accessoryRectangular:
             rectangularLockScreenWidget
@@ -59,11 +59,13 @@ struct WordDayWidgetEntryView: View {
     }
 
     private var smallWidget: some View {
-        VStack(alignment: .leading, spacing: 7) {
+        VStack(alignment: .leading, spacing: 8) {
             HStack {
-                Text(editionName)
-                    .font(WordDayStyle.labelFont(size: 8))
-                    .tracking(1.15)
+                Text(entry.word.contextLabel.uppercased())
+                    .font(WordDayStyle.labelFont(size: 7))
+                    .tracking(0.65)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
                 Spacer()
                 Circle()
                     .fill(WordDayStyle.accent)
@@ -71,19 +73,13 @@ struct WordDayWidgetEntryView: View {
             }
             .foregroundStyle(WordDayStyle.accent)
 
-            Text(entry.word.word.uppercased())
-                .font(WordDayStyle.displayFont(size: 26))
+            Text(entry.word.phrase)
+                .font(WordDayStyle.displayFont(size: 28))
                 .fontWeight(.semibold)
-                .tracking(-0.7)
                 .foregroundStyle(WordDayStyle.ink)
-                .minimumScaleFactor(0.5)
-                .lineLimit(2)
-
-            Text(entry.word.definition)
-                .font(WordDayStyle.bodyFont(size: 11))
-                .foregroundStyle(WordDayStyle.mutedInk)
-                .lineLimit(3)
-                .lineSpacing(1)
+                .minimumScaleFactor(0.52)
+                .lineLimit(4)
+                .allowsTightening(true)
 
             Spacer(minLength: 0)
 
@@ -109,21 +105,13 @@ struct WordDayWidgetEntryView: View {
                     .widgetAccentable()
 
                 VStack(alignment: .leading, spacing: 2) {
-                    HStack(spacing: 5) {
-                        Text(entry.word.word.uppercased())
-                            .font(.system(size: 14, weight: .black, design: .serif))
-                            .minimumScaleFactor(0.65)
-                            .lineLimit(1)
+                    Text(entry.word.phrase)
+                        .font(.system(size: 13.4, weight: .black, design: .serif))
+                        .minimumScaleFactor(0.66)
+                        .lineLimit(1)
+                        .widgetAccentable()
 
-                        Text(entry.word.partOfSpeech.uppercased())
-                            .font(.system(size: 7, weight: .bold, design: .rounded))
-                            .padding(.horizontal, 4)
-                            .padding(.vertical, 1)
-                            .background(.secondary.opacity(0.28), in: Capsule())
-                    }
-                    .widgetAccentable()
-
-                    Text(lockScreenDefinition)
+                    Text(entry.word.contextLabel.uppercased())
                         .font(.system(size: 9.2, weight: .semibold, design: .rounded))
                         .foregroundStyle(.secondary)
                         .lineSpacing(0)
@@ -142,12 +130,12 @@ struct WordDayWidgetEntryView: View {
             AccessoryWidgetBackground()
 
             VStack(spacing: 1) {
-                Text(String(entry.word.word.prefix(1)).uppercased())
-                    .font(.system(size: 24, weight: .black, design: .serif))
+                Text("\"")
+                    .font(.system(size: 25, weight: .black, design: .serif))
                     .minimumScaleFactor(0.7)
 
-                Text(entry.word.partOfSpeech.prefix(4).uppercased())
-                    .font(.system(size: 8, weight: .bold, design: .rounded))
+                Text(entry.word.intent.prefix(5).uppercased())
+                    .font(.system(size: 7, weight: .bold, design: .rounded))
                     .minimumScaleFactor(0.55)
                     .lineLimit(1)
             }
@@ -158,14 +146,16 @@ struct WordDayWidgetEntryView: View {
     private var expandedWidget: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
-                Label(editionName, systemImage: editionSymbol)
-                    .font(WordDayStyle.labelFont(size: 8))
-                    .tracking(1.1)
+                Text(entry.word.contextLabel.uppercased())
+                    .font(WordDayStyle.labelFont(size: 7))
+                    .tracking(0.8)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.72)
 
                 Spacer()
 
                 Text(entry.date, format: .dateTime.weekday(.abbreviated).day())
-                    .font(WordDayStyle.labelFont(size: 8))
+                    .font(WordDayStyle.labelFont(size: 7))
                     .monospacedDigit()
             }
             .foregroundStyle(WordDayStyle.accent)
@@ -174,32 +164,22 @@ struct WordDayWidgetEntryView: View {
                 .fill(WordDayStyle.rule)
                 .frame(height: 1)
 
-            Text(entry.word.word.uppercased())
-                .font(WordDayStyle.displayFont(size: 31))
+            Text(entry.word.phrase)
+                .font(WordDayStyle.displayFont(size: family == .systemLarge ? 36 : 30))
                 .fontWeight(.semibold)
-                .tracking(-0.8)
                 .foregroundStyle(WordDayStyle.ink)
-                .minimumScaleFactor(0.52)
-                .lineLimit(1)
+                .minimumScaleFactor(0.56)
+                .lineLimit(family == .systemLarge ? 3 : 2)
+                .allowsTightening(true)
 
-            HStack(spacing: 8) {
-                Text(entry.word.pronunciation)
-                Rectangle()
-                    .fill(WordDayStyle.accent)
-                    .frame(width: 18, height: 2)
-                Text(entry.word.partOfSpeech.uppercased())
-            }
-            .font(WordDayStyle.labelFont(size: 8))
-            .foregroundStyle(WordDayStyle.mutedInk)
-
-            Text(entry.word.definition)
+            Text(entry.word.meaning)
                 .font(WordDayStyle.bodyFont(size: 14))
                 .foregroundStyle(WordDayStyle.ink)
                 .lineLimit(family == .systemLarge ? 4 : 2)
                 .lineSpacing(2)
 
             if family == .systemLarge {
-                Text("“\(entry.word.example)”")
+                Text("\"\(entry.word.example)\"")
                     .font(WordDayStyle.italicFont(size: 12))
                     .foregroundStyle(WordDayStyle.mutedInk)
                     .lineLimit(3)
@@ -210,7 +190,7 @@ struct WordDayWidgetEntryView: View {
             Spacer(minLength: 0)
 
             HStack {
-                Text("ONE WORD · TEN SECONDS")
+                Text(family == .systemLarge ? "ONE CHUNK · PRACTICE TODAY" : "ONE CHUNK · TEN SECONDS")
                     .font(WordDayStyle.labelFont(size: 8))
                     .tracking(0.9)
                 Spacer()
@@ -231,84 +211,6 @@ struct WordDayWidgetEntryView: View {
         }
     }
 
-    private var editionName: String {
-        colorScheme == .dark ? "NIGHT EDITION" : "DAY EDITION"
-    }
-
-    private var editionSymbol: String {
-        colorScheme == .dark ? "moonphase.waning.crescent" : "sun.max.fill"
-    }
-
-    private var inlineClue: String {
-        compactDefinition(entry.word.definition, maxLength: 28)
-    }
-
-    private var lockScreenDefinition: String {
-        compactDefinition(entry.word.definition, maxLength: 52)
-    }
-
-    private func compactDefinition(_ definition: String, maxLength: Int) -> String {
-        var text = definition
-            .trimmingCharacters(in: .whitespacesAndNewlines)
-            .trimmingCharacters(in: CharacterSet(charactersIn: "."))
-
-        for prefix in ["A ", "An ", "The "] {
-            if text.hasPrefix(prefix) {
-                text.removeFirst(prefix.count)
-                break
-            }
-        }
-
-        let lowercased = text.lowercased()
-        if lowercased.hasPrefix("subtle difference") {
-            text = "Subtle difference in meaning or expression"
-        }
-        if lowercased.hasPrefix("the quality of being ") {
-            text.removeFirst("The quality of being ".count)
-        } else if lowercased.hasPrefix("quality of being ") {
-            text.removeFirst("Quality of being ".count)
-        } else if lowercased.hasPrefix("able to ") {
-            text.removeFirst("Able to ".count)
-        } else if lowercased.hasPrefix("using ") {
-            text.removeFirst("Using ".count)
-        }
-
-        text = text
-            .replacingOccurrences(of: ", or ", with: " or ")
-            .replacingOccurrences(of: ", and ", with: " and ")
-            .replacingOccurrences(of: "; ", with: " - ")
-
-        let separators = [";"]
-        for separator in separators {
-            if let range = text.range(of: separator, options: [.caseInsensitive]) {
-                text = String(text[..<range.lowerBound])
-                break
-            }
-        }
-
-        return text.capitalizedWordPrefix(maxLength: maxLength)
-    }
-}
-
-private extension String {
-    func capitalizedWordPrefix(maxLength: Int) -> String {
-        guard count > maxLength else { return capitalizedFirst }
-
-        let words = split(separator: " ")
-        var result = ""
-        for word in words {
-            let candidate = result.isEmpty ? String(word) : "\(result) \(word)"
-            if candidate.count > maxLength { break }
-            result = candidate
-        }
-
-        return (result.isEmpty ? String(prefix(maxLength)) : result).capitalizedFirst
-    }
-
-    var capitalizedFirst: String {
-        guard let first else { return self }
-        return first.uppercased() + dropFirst()
-    }
 }
 
 struct WordDayWidget: Widget {
@@ -318,8 +220,8 @@ struct WordDayWidget: Widget {
         StaticConfiguration(kind: kind, provider: WordProvider()) { entry in
             WordDayWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("Word of the Day")
-        .description("Learn one new word every day, right on your Home Screen.")
+        .configurationDisplayName("Daily English Chunk")
+        .description("Practice one useful English phrase every day, right on your Home Screen.")
         .supportedFamilies([
             .systemSmall,
             .systemMedium,

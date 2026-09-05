@@ -1,92 +1,81 @@
 # WordDay
 
-An iPhone widget that teaches you one new word every day.
+An iPhone widget that gives you one useful English chunk every day.
 
-A word appears on your Home Screen (or Lock Screen) each morning — no tapping,
-no streaks to maintain, no account. Open the app when you want the full
-definition, an example sentence, or to mark the word as learned.
+A short phrase appears on your Home Screen or Lock Screen each morning. Open
+the app to see when to use it, business examples, natural variants, and whether
+the tone fits the conversation.
 
-## What's in the box
+## Features
 
-| | |
-|---|---|
-| **Home Screen widget** | Small, medium and large sizes. Word, pronunciation, part of speech, definition — and an example sentence on the large size. |
-| **Lock Screen widget** | Inline and rectangular accessory families. |
-| **App** | Today's word in full, a browsable/searchable list of every word, and a "learned" filter. |
-| **Adaptive design** | After Dark and its warm After Dawn counterpart automatically follow the iPhone system appearance. |
-| **Word list** | 61 words in `Shared/words.json`. Add your own — it's plain JSON. |
+| Feature | Description |
+| --- | --- |
+| **Home Screen widget** | Small, medium, and large sizes. The small widget stays focused: tiny context label plus the usable phrase. Medium and large widgets add meaning and examples. |
+| **Lock Screen widget** | Inline, circular, and rectangular accessory families for quick daily recall. |
+| **App** | Today's chunk in full, a browsable/searchable phrase bank, and a saved-chunks filter. |
+| **Phrase bank** | Practical business and daily conversation chunks in `Shared/phrases.json`. |
 
-The word for a given day is derived from the date itself, so the app and the
-widget always agree without any syncing. The widget builds a seven-day
-timeline and rolls over at midnight on its own.
+The phrase for a given day is derived from the date itself, so the app and
+widget always agree without syncing. The widget builds a seven-day timeline
+ahead of time and refreshes after the last entry.
 
 ## Requirements
 
 - Xcode 15 or later
-- iOS 17 or later (the widget uses `containerBackground`)
-- [XcodeGen](https://github.com/yonaskolb/XcodeGen) — the `.xcodeproj` is generated, not committed
+- iOS 17 or later
+- An Apple Developer team for signing on device
 
-## Getting started
+## Running
 
-```bash
-brew install xcodegen
-git clone https://github.com/<you>/wordday.git
-cd wordday
-xcodegen generate
+Open the generated project:
+
+```sh
 open WordDay.xcodeproj
 ```
 
-Then, before your first build:
+If you regenerate the project from `project.yml`, use XcodeGen:
 
-1. **Set your team.** Select the `WordDay` and `WordDayWidgetExtension` targets →
-   Signing & Capabilities → pick your Apple developer team.
-2. **Use your own bundle IDs.** `com.example.wordday` won't sign. Change it in
-   `project.yml` (both targets) and re-run `xcodegen generate`.
-3. **Update the App Group.** It has to match in three places:
-   - `Shared/LearnedStore.swift` → `appGroupID`
-   - `WordDay/WordDay.entitlements`
-   - `WordDayWidget/WordDayWidget.entitlements`
+```sh
+xcodegen generate
+```
 
-Build and run to the simulator or your phone, then long-press the Home Screen →
-**+** → search for **WordDay** to add the widget.
+## Adding Phrases
 
-## Adding your own words
-
-Append to `Shared/words.json`:
+Append to `Shared/phrases.json`:
 
 ```json
 {
-  "word": "petrichor",
-  "pronunciation": "PET-ri-kor",
-  "partOfSpeech": "noun",
-  "definition": "The earthy scent produced when rain falls on dry soil.",
-  "example": "The petrichor after the first storm of the season."
+  "phrase": "Let me make sure I understand.",
+  "label": "Business",
+  "intent": "Clarify",
+  "meaning": "Use this before responding, so you can confirm the point without sounding hesitant.",
+  "example": "Let me make sure I understand. The main concern is the timeline, right?",
+  "usageExamples": [
+    "Let me make sure I understand before we decide.",
+    "Let me make sure I understand the constraint first."
+  ],
+  "variants": [
+    "Just to make sure I got this right...",
+    "So what you're saying is...",
+    "Let me restate that quickly."
+  ],
+  "tone": "Calm, professional, careful",
+  "avoidWhen": "Avoid overusing it when the point is already obvious."
 }
 ```
 
-The list is shared by both targets, so the app and widget pick up new entries
-together. Order matters only in that it sets the rotation.
+Short phrases work best because the widget treats the chunk itself as the hero.
+The label and intent should stay tiny and contextual.
 
-## Project layout
+## Structure
 
+```text
+Shared/            model + phrase bank, compiled into both targets
+  Word.swift       phrase model with compatibility aliases
+  WordLibrary.swift
+  WordDayStyle.swift
+  LearnedStore.swift
+  phrases.json
+WordDay/           SwiftUI app
+WordDayWidget/     WidgetKit extension
 ```
-Shared/            model + word list, compiled into both targets
-  Word.swift
-  WordLibrary.swift    date → word mapping
-  LearnedStore.swift   App Group-backed "learned" set
-  words.json
-WordDay/           the SwiftUI app
-WordDayWidget/     the WidgetKit extension
-project.yml        XcodeGen project definition
-```
-
-## Ideas worth building next
-
-- Notifications at a time you choose
-- Pull words from a dictionary API instead of the bundled list
-- Spaced repetition instead of a straight rotation
-- A quiz that asks about words you marked as learned
-
-## License
-
-MIT — see [LICENSE](LICENSE).
