@@ -73,17 +73,25 @@ struct WordDayWidgetEntryView: View {
             }
             .foregroundStyle(WordDayStyle.accent)
 
-            Text(entry.word.phrase)
-                .font(WordDayStyle.displayFont(size: 28))
-                .fontWeight(.semibold)
-                .foregroundStyle(WordDayStyle.ink)
-                .minimumScaleFactor(0.52)
-                .lineLimit(4)
-                .allowsTightening(true)
+            ViewThatFits(in: .vertical) {
+                smallWidgetPhrase(size: 28)
+                smallWidgetPhrase(size: 24)
+                smallWidgetPhrase(size: 20)
+                smallWidgetPhrase(size: 17)
+            }
 
             Spacer(minLength: 0)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    private func smallWidgetPhrase(size: CGFloat) -> some View {
+        Text(entry.word.phrase)
+            .font(WordDayStyle.displayFont(size: size))
+            .fontWeight(.semibold)
+            .foregroundStyle(WordDayStyle.ink)
+            .lineLimit(nil)
+            .fixedSize(horizontal: false, vertical: true)
     }
 
     private var rectangularLockScreenWidget: some View {
@@ -101,12 +109,6 @@ struct WordDayWidgetEntryView: View {
                     .widgetAccentable()
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(entry.word.phrase)
-                        .font(.system(size: 13.4, weight: .black, design: .serif))
-                        .minimumScaleFactor(0.66)
-                        .lineLimit(1)
-                        .widgetAccentable()
-
                     Text(entry.word.contextLabel.uppercased())
                         .font(.system(size: 9.2, weight: .semibold, design: .rounded))
                         .foregroundStyle(.secondary)
@@ -114,6 +116,12 @@ struct WordDayWidgetEntryView: View {
                         .minimumScaleFactor(0.82)
                         .allowsTightening(true)
                         .lineLimit(2)
+
+                    Text(entry.word.phrase)
+                        .font(.system(size: 13.4, weight: .black, design: .serif))
+                        .minimumScaleFactor(0.66)
+                        .lineLimit(1)
+                        .widgetAccentable()
                 }
             }
             .padding(.horizontal, 7)
