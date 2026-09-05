@@ -82,10 +82,6 @@ struct WordDayWidgetEntryView: View {
                 .allowsTightening(true)
 
             Spacer(minLength: 0)
-
-            Capsule()
-                .fill(WordDayStyle.accent)
-                .frame(width: 32, height: 3)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
