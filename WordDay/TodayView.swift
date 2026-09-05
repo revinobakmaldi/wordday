@@ -382,11 +382,11 @@ private struct LearnedButton: View {
 struct LearnWithAIButton: View {
     let word: Word
 
-    @State private var isShowingAIOptions = false
+    @State private var isShowingShareSheet = false
 
     var body: some View {
         Button {
-            isShowingAIOptions = true
+            isShowingShareSheet = true
         } label: {
             HStack(spacing: 10) {
                 Image(systemName: "sparkles")
@@ -413,196 +413,51 @@ struct LearnWithAIButton: View {
         }
         .buttonStyle(.plain)
         .contentShape(Rectangle())
-        .sheet(isPresented: $isShowingAIOptions, onDismiss: {
-            isShowingAIOptions = false
+        .sheet(isPresented: $isShowingShareSheet, onDismiss: {
+            isShowingShareSheet = false
         }) {
-            LearnWithAISheet(word: word)
+            ActivityShareSheet(
+                item: word.aiLearningPrompt,
+                subject: "Learn this English chunk",
+                isPresented: $isShowingShareSheet
+            )
         }
         .accessibilityLabel("Share \(word.phrase) with an AI app")
-        .accessibilityHint("Copies a learning prompt and opens your selected AI app")
+        .accessibilityHint("Opens a focused share sheet with a learning prompt")
     }
 }
 
-private struct LearnWithAISheet: View {
-    let word: Word
+private struct ActivityShareSheet: UIViewControllerRepresentable {
+    let item: String
+    let subject: String
+    @Binding var isPresented: Bool
 
-    @Environment(\.dismiss) private var dismiss
-    @Environment(\.openURL) private var openURL
-    @State private var copiedLabel: String?
-
-    private let destinations = AIAppDestination.defaultDestinations
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            HStack {
-                VStack(alignment: .leading, spacing: 7) {
-                    Text("LEARN WITH AI")
-                        .font(WordDayStyle.labelFont(size: 9))
-                        .tracking(1.25)
-                        .foregroundStyle(WordDayStyle.accent)
-
-                    Text(word.phrase)
-                        .font(WordDayStyle.displayFont(size: 28))
-                        .fontWeight(.semibold)
-                        .foregroundStyle(WordDayStyle.ink)
-                        .lineLimit(2)
-                        .minimumScaleFactor(0.72)
-                }
-
-                Spacer()
-
-                Button {
-                    dismiss()
-                } label: {
-                    Image(systemName: "xmark")
-                        .font(.system(size: 12, weight: .black))
-                        .foregroundStyle(WordDayStyle.mutedInk)
-                        .frame(width: 38, height: 38)
-                        .background(WordDayStyle.surface, in: Circle())
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("Close")
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        let controller = UIActivityViewController(activityItems: [item], applicationActivities: nil)
+        controller.setValue(subject, forKey: "subject")
+        controller.excludedActivityTypes = [
+            .addToReadingList,
+            .assignToContact,
+            .markupAsPDF,
+            .openInIBooks,
+            .postToFacebook,
+            .postToFlickr,
+            .postToTencentWeibo,
+            .postToTwitter,
+            .postToVimeo,
+            .postToWeibo,
+            .print,
+            .saveToCameraRoll
+        ]
+        controller.completionWithItemsHandler = { _, _, _, _ in
+            DispatchQueue.main.async {
+                isPresented = false
             }
-            .padding(.bottom, 18)
-
-            Rectangle()
-                .fill(WordDayStyle.rule)
-                .frame(height: 1)
-
-            VStack(spacing: 0) {
-                ForEach(destinations) { destination in
-                    Button {
-                        copyPrompt()
-                        openURL(destination.url)
-                        dismissAfterOpening()
-                    } label: {
-                        destinationRow(destination)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("Copy prompt and open \(destination.name)")
-                }
-
-                Button {
-                    copyPrompt(label: "Copied")
-                } label: {
-                    HStack(spacing: 13) {
-                        Image(systemName: copiedLabel == "Copied" ? "checkmark" : "doc.on.doc")
-                            .font(.system(size: 16, weight: .bold))
-                            .foregroundStyle(WordDayStyle.accent)
-                            .frame(width: 28, height: 28)
-
-                        VStack(alignment: .leading, spacing: 3) {
-                            Text(copiedLabel ?? "Copy Prompt")
-                                .font(WordDayStyle.labelFont(size: 10))
-                                .tracking(0.75)
-                                .foregroundStyle(WordDayStyle.ink)
-
-                            Text("Paste it into any AI app")
-                                .font(WordDayStyle.bodyFont(size: 12))
-                                .foregroundStyle(WordDayStyle.mutedInk)
-                        }
-
-                        Spacer()
-                    }
-                    .frame(minHeight: 58)
-                    .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
-            }
-            .padding(.top, 6)
-
-            Spacer(minLength: 0)
-
-            Text("Prompt copied before opening.")
-                .font(WordDayStyle.labelFont(size: 8))
-                .tracking(0.85)
-                .foregroundStyle(WordDayStyle.mutedInk)
         }
-        .padding(.horizontal, 20)
-        .padding(.top, 22)
-        .padding(.bottom, 18)
-        .background(WordDayStyle.background)
-        .presentationDetents([.medium])
-        .presentationDragIndicator(.visible)
+        return controller
     }
 
-    private func destinationRow(_ destination: AIAppDestination) -> some View {
-        HStack(spacing: 13) {
-            Image(systemName: destination.systemImage)
-                .font(.system(size: 16, weight: .bold))
-                .foregroundStyle(WordDayStyle.accent)
-                .frame(width: 28, height: 28)
-
-            VStack(alignment: .leading, spacing: 3) {
-                Text(destination.name.uppercased())
-                    .font(WordDayStyle.labelFont(size: 10))
-                    .tracking(0.75)
-                    .foregroundStyle(WordDayStyle.ink)
-
-                Text(destination.subtitle)
-                    .font(WordDayStyle.bodyFont(size: 12))
-                    .foregroundStyle(WordDayStyle.mutedInk)
-            }
-
-            Spacer()
-
-            Image(systemName: "arrow.up.right")
-                .font(.system(size: 10, weight: .bold))
-                .foregroundStyle(WordDayStyle.mutedInk)
-        }
-        .frame(minHeight: 58)
-        .contentShape(Rectangle())
-    }
-
-    private func copyPrompt(label: String? = nil) {
-        UIPasteboard.general.string = word.aiLearningPrompt
-        copiedLabel = label
-    }
-
-    private func dismissAfterOpening() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-            dismiss()
-        }
-    }
-}
-
-private struct AIAppDestination: Identifiable {
-    let id: String
-    let name: String
-    let subtitle: String
-    let systemImage: String
-    let url: URL
-
-    static let defaultDestinations: [AIAppDestination] = [
-        AIAppDestination(
-            id: "chatgpt",
-            name: "ChatGPT",
-            subtitle: "Copy prompt, then open ChatGPT",
-            systemImage: "bubble.left.and.bubble.right.fill",
-            url: URL(string: "https://chatgpt.com/")!
-        ),
-        AIAppDestination(
-            id: "gemini",
-            name: "Gemini",
-            subtitle: "Copy prompt, then open Gemini",
-            systemImage: "sparkles",
-            url: URL(string: "https://gemini.google.com/app")!
-        ),
-        AIAppDestination(
-            id: "claude",
-            name: "Claude",
-            subtitle: "Copy prompt, then open Claude",
-            systemImage: "text.bubble.fill",
-            url: URL(string: "https://claude.ai/new")!
-        ),
-        AIAppDestination(
-            id: "perplexity",
-            name: "Perplexity",
-            subtitle: "Copy prompt, then open Perplexity",
-            systemImage: "magnifyingglass",
-            url: URL(string: "https://www.perplexity.ai/")!
-        )
-    ]
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }
 
 #Preview("After Dark") {
