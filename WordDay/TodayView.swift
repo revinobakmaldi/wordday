@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import UIKit
 
 struct TodayView: View {
     @EnvironmentObject private var learned: LearnedStore
@@ -381,11 +382,12 @@ private struct LearnedButton: View {
 struct LearnWithAIButton: View {
     let word: Word
 
+    @State private var isShowingShareSheet = false
+
     var body: some View {
-        ShareLink(
-            item: word.aiLearningPrompt,
-            subject: Text("Learn this English chunk")
-        ) {
+        Button {
+            isShowingShareSheet = true
+        } label: {
             HStack(spacing: 10) {
                 Image(systemName: "sparkles")
                     .font(.system(size: 12, weight: .black))
@@ -411,9 +413,37 @@ struct LearnWithAIButton: View {
         }
         .buttonStyle(.plain)
         .contentShape(Rectangle())
+        .sheet(isPresented: $isShowingShareSheet, onDismiss: {
+            isShowingShareSheet = false
+        }) {
+            ActivityShareSheet(
+                item: word.aiLearningPrompt,
+                subject: "Learn this English chunk",
+                isPresented: $isShowingShareSheet
+            )
+        }
         .accessibilityLabel("Share \(word.phrase) with an AI app")
         .accessibilityHint("Opens the share sheet with a learning prompt")
     }
+}
+
+private struct ActivityShareSheet: UIViewControllerRepresentable {
+    let item: String
+    let subject: String
+    @Binding var isPresented: Bool
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        let controller = UIActivityViewController(activityItems: [item], applicationActivities: nil)
+        controller.setValue(subject, forKey: "subject")
+        controller.completionWithItemsHandler = { _, _, _, _ in
+            DispatchQueue.main.async {
+                isPresented = false
+            }
+        }
+        return controller
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }
 
 #Preview("After Dark") {
