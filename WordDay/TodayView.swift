@@ -383,11 +383,18 @@ struct LearnWithAIButton: View {
     let word: Word
 
     var body: some View {
-        Button {
-            ActivitySharePresenter.present(
-                item: word.aiLearningPrompt,
-                subject: "Learn this English chunk"
-            )
+        Menu {
+            ShareLink(item: word.aiLearningPrompt) {
+                Label("Choose AI App", systemImage: "square.and.arrow.up")
+            }
+
+            Divider()
+
+            Button {
+                GeminiLauncher.open(prompt: word.aiLearningPrompt)
+            } label: {
+                Label("Gemini Compatibility Mode", systemImage: "wrench.and.screwdriver")
+            }
         } label: {
             HStack(spacing: 10) {
                 Image(systemName: "sparkles")
@@ -399,7 +406,7 @@ struct LearnWithAIButton: View {
 
                 Spacer()
 
-                Image(systemName: "square.and.arrow.up")
+                Image(systemName: "chevron.down")
                     .font(.system(size: 11, weight: .bold))
                     .accessibilityHidden(true)
             }
@@ -414,114 +421,22 @@ struct LearnWithAIButton: View {
         }
         .buttonStyle(.plain)
         .contentShape(Rectangle())
-        .accessibilityLabel("Share \(word.phrase) with an AI app")
-        .accessibilityHint("Opens a focused share sheet with a learning prompt")
+        .accessibilityLabel("Learn \(word.phrase) with an AI app")
+        .accessibilityHint("Choose Gemini or another AI app")
     }
 }
 
 @MainActor
-private enum ActivitySharePresenter {
-    private static weak var presentedController: UIActivityViewController?
-    private static var didBecomeActiveObserver: NSObjectProtocol?
+private enum GeminiLauncher {
+    private static let appURL = URL(string: "googlegemini://")!
+    private static let webURL = URL(string: "https://gemini.google.com/app")!
 
-    static func present(item: String, subject: String) {
-        guard let viewController = topViewController() else { return }
-
-        let controller = UIActivityViewController(activityItems: [item], applicationActivities: nil)
-        controller.setValue(subject, forKey: "subject")
-        controller.excludedActivityTypes = [
-            .addToReadingList,
-            .assignToContact,
-            .markupAsPDF,
-            .openInIBooks,
-            .postToFacebook,
-            .postToFlickr,
-            .postToTencentWeibo,
-            .postToTwitter,
-            .postToVimeo,
-            .postToWeibo,
-            .print,
-            .saveToCameraRoll
-        ]
-        controller.completionWithItemsHandler = { _, _, _, _ in
-            Task { @MainActor in
-                cleanupPresentedController()
-            }
+    static func open(prompt: String) {
+        UIPasteboard.general.string = prompt
+        UIApplication.shared.open(appURL) { opened in
+            guard !opened else { return }
+            UIApplication.shared.open(webURL)
         }
-
-        if let popover = controller.popoverPresentationController {
-            popover.sourceView = viewController.view
-            popover.sourceRect = CGRect(
-                x: viewController.view.bounds.midX,
-                y: viewController.view.bounds.midY,
-                width: 0,
-                height: 0
-            )
-            popover.permittedArrowDirections = []
-        }
-
-        presentedController = controller
-        installLifecycleCleanup()
-        viewController.present(controller, animated: true)
-    }
-
-    private static func installLifecycleCleanup() {
-        if let didBecomeActiveObserver {
-            NotificationCenter.default.removeObserver(didBecomeActiveObserver)
-        }
-
-        didBecomeActiveObserver = NotificationCenter.default.addObserver(
-            forName: UIApplication.didBecomeActiveNotification,
-            object: nil,
-            queue: .main
-        ) { _ in
-            Task { @MainActor in
-                cleanupPresentedController()
-            }
-        }
-    }
-
-    private static func cleanupPresentedController() {
-        if let controller = presentedController {
-            controller.dismiss(animated: false)
-            presentedController = nil
-        }
-
-        if let didBecomeActiveObserver {
-            NotificationCenter.default.removeObserver(didBecomeActiveObserver)
-            self.didBecomeActiveObserver = nil
-        }
-    }
-
-    private static func topViewController() -> UIViewController? {
-        guard let rootViewController = activeRootViewController() else { return nil }
-        return topViewController(from: rootViewController)
-    }
-
-    private static func topViewController(from viewController: UIViewController) -> UIViewController {
-        if let navigationController = viewController as? UINavigationController,
-           let visibleViewController = navigationController.visibleViewController {
-            return topViewController(from: visibleViewController)
-        }
-
-        if let tabBarController = viewController as? UITabBarController,
-           let selectedViewController = tabBarController.selectedViewController {
-            return topViewController(from: selectedViewController)
-        }
-
-        if let presentedViewController = viewController.presentedViewController {
-            return topViewController(from: presentedViewController)
-        }
-
-        return viewController
-    }
-
-    private static func activeRootViewController() -> UIViewController? {
-        UIApplication.shared.connectedScenes
-            .compactMap { $0 as? UIWindowScene }
-            .flatMap(\.windows)
-            .first { $0.isKeyWindow }?
-            .rootViewController
     }
 }
 
