@@ -73,25 +73,25 @@ struct WordDayWidgetEntryView: View {
             }
             .foregroundStyle(WordDayStyle.accent)
 
-            ViewThatFits(in: .vertical) {
-                smallWidgetPhrase(size: 28)
-                smallWidgetPhrase(size: 24)
-                smallWidgetPhrase(size: 20)
-                smallWidgetPhrase(size: 17)
-            }
+            Text(entry.word.phrase)
+                .font(WordDayStyle.displayFont(size: smallWidgetPhraseSize))
+                .fontWeight(.semibold)
+                .foregroundStyle(WordDayStyle.ink)
+                .lineLimit(nil)
+                .fixedSize(horizontal: false, vertical: true)
+                .layoutPriority(1)
 
             Spacer(minLength: 0)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
-    private func smallWidgetPhrase(size: CGFloat) -> some View {
-        Text(entry.word.phrase)
-            .font(WordDayStyle.displayFont(size: size))
-            .fontWeight(.semibold)
-            .foregroundStyle(WordDayStyle.ink)
-            .lineLimit(nil)
-            .fixedSize(horizontal: false, vertical: true)
+    private var smallWidgetPhraseSize: CGFloat {
+        switch entry.word.phrase.count {
+        case ...19: 28
+        case ...25: 24
+        default: 20
+        }
     }
 
     private var rectangularLockScreenWidget: some View {
@@ -110,23 +110,33 @@ struct WordDayWidgetEntryView: View {
 
                 VStack(alignment: .leading, spacing: 2) {
                     Text(entry.word.contextLabel.uppercased())
-                        .font(.system(size: 9.2, weight: .semibold, design: .rounded))
+                        .font(.system(size: 8.5, weight: .semibold, design: .rounded))
                         .foregroundStyle(.secondary)
                         .lineSpacing(0)
-                        .minimumScaleFactor(0.82)
+                        .minimumScaleFactor(0.72)
                         .allowsTightening(true)
-                        .lineLimit(2)
-
-                    Text(entry.word.phrase)
-                        .font(.system(size: 13.4, weight: .black, design: .serif))
-                        .minimumScaleFactor(0.66)
                         .lineLimit(1)
-                        .widgetAccentable()
+
+                    ViewThatFits(in: .vertical) {
+                        rectangularWidgetPhrase(size: 12)
+                        rectangularWidgetPhrase(size: 10)
+                        rectangularWidgetPhrase(size: 8)
+                        rectangularWidgetPhrase(size: 6)
+                    }
+                    .frame(height: 32, alignment: .topLeading)
                 }
             }
             .padding(.horizontal, 7)
             .padding(.vertical, 4)
         }
+    }
+
+    private func rectangularWidgetPhrase(size: CGFloat) -> some View {
+        Text(entry.word.phrase)
+            .font(.system(size: size, weight: .black, design: .serif))
+            .lineLimit(nil)
+            .fixedSize(horizontal: false, vertical: true)
+            .widgetAccentable()
     }
 
     private var circularWidget: some View {
