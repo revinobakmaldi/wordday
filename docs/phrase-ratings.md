@@ -1,105 +1,31 @@
 # All 365 phrases, rated
 
-Rated for a B1–B2 learner. Each line: number · phrase · level. Grouped by verdict, then by label.
+Rated for a B1–B2 learner. Each line: number · phrase · level. Grouped by verdict, then by label. _New_ marks a phrase added in the 29 Oct update.
 
-Core 242 · Stretch 90 · Swap 33
+Core 267 · Stretch 98 · Swap 0
 
-## Swap: not worth your time (33)
+## Stretch: useful, a level above you (98)
 
-### Phrase (11)
-
-- 12 · Never mind the cost. · B2  
-  _Sounds British and odd; 'forget the cost' or 'cost aside' is natural._
-- 99 · Ostensibly, it's about cost. · C1  
-  _Pompous in speech; 'supposedly' or 'on paper' is easier._
-- 138 · Conceivably, yes. · C1  
-  _Stiff as a spoken reply; 'Possibly' or 'I think we could' sounds natural._
-- 162 · Let's make an informed decision. · B2  
-  _Sounds like a brochure; 'Let's look at the numbers first' is natural._
-- 171 · Let me offer a counterpoint. · C1  
-  _Stiff; people say 'Let me push back a little'._
-- 214 · By the same token, it's risky. · C1  
-  _Mostly written; say 'same goes for' or 'likewise.'_
-- 215 · Unequivocally, yes. · C1  
-  _Sounds pompous in speech; say 'absolutely' or 'definitely.'_
-- 242 · As it happens, I agree. · C1  
-  _British-leaning; learners misuse it. 'Actually, I agree' does the job._
-- 294 · Tellingly, no one asked why. · C1  
-  _Mostly written; say 'And that is telling: no one asked why.'_
-- 329 · To use an analogy... · B2  
-  _Stiff in speech; Americans say 'It's kind of like...' or 'Think of it as...'_
-- 338 · I'll take that under advisement. · C1  
-  _Often heard as a polite brush-off or sarcasm; say 'I'll think about it.'_
-
-### Idiom (5)
-
-- 88 · It's a watershed moment. · C1  
-  _Mostly news writing; 'turning point' is the natural spoken phrase._
-- 97 · That's the long and short of it. · C1  
-  _Dated and a bit British; 'That's the gist' covers it._
-- 251 · You've given me pause. · C1  
-  _Formal and theatrical; 'That makes me think twice' is more natural._
-- 270 · Penny wise, pound foolish. · C1  
-  _Dated proverb; Americans rarely say it._
-- 323 · Color me skeptical. · C1  
-  _Dated, mock-casual; say 'I'm skeptical' or 'I have my doubts.'_
-
-### Logic (4)
-
-- 172 · That's a tautology. · C1  
-  _Pedantic in speech; 'that's circular' or 'that's obvious' is lighter._
-- 221 · It's a known unknown. · C1  
-  _Rumsfeld jargon; learner rarely needs it, and it confuses listeners._
-- 231 · That's a category error. · C2  
-  _Philosophy jargon; most listeners will not follow it._
-- 247 · Let me steelman their view. · C2  
-  _Online rationalist jargon; most people will not know it._
-
-### Allusion (13)
-
-- 13 · That's rather quixotic. · C1  
-  _Pompous in speech; 'unrealistic' or 'idealistic' does the job._
-- 21 · It's a fait accompli. · C1  
-  _French, hard to pronounce, formal; 'done deal' is natural._
-- 30 · We've crossed the Rubicon. · C2  
-  _Needs history knowledge; 'no turning back' says the same._
-- 77 · That's a Pyrrhic victory. · C2  
-  _Needs history knowledge; 'a win that cost too much' is plainer._
-- 81 · That's a Sisyphean task. · C2  
-  _Myth reference; 'endless, pointless task' is what people say._
-- 105 · It's all a bit Kafkaesque. · C2  
-  _Needs literature knowledge; 'bureaucratic nightmare' is clearer._
-- 112 · It's a Faustian bargain. · C2  
-  _Needs literary knowledge; 'a deal with the devil' is more common._
-- 176 · First, do no harm. · C1  
-  _Preachy outside medical or ethics talk; example sentence is clumsy._
-- 224 · Let's cut the Gordian knot. · C2  
-  _Classical allusion; sounds pretentious and is rare in speech._
-- 268 · The map is not the territory. · C2  
-  _Philosophy quote; sounds showy outside academic talk._
-- 349 · That's a Herculean effort. · C1  
-  _Bookish and grand; say 'huge effort' or 'massive lift.'_
-- 356 · History tends to rhyme. · C1  
-  _Cliche quote; sounds like performing wisdom, and the Twain link is false._
-- 362 · That opened Pandora's box. · C1  
-  _Overlaps 'can of worms' (351); more literary and dramatic._
-
-## Stretch: useful, a level above you (90)
-
-### Phrase (30)
+### Phrase (33)
 
 - 28 · It's more nuanced than that. · C1
 - 44 · That's a defensible position. · C1
 - 68 · Arguably, yes. · C1
 - 69 · That's one reading of it. · C1
+- 74 · Put another way, it's a tax. · B2
 - 80 · I'm agnostic on that. · C1
 - 86 · It's in flux. · C1
-- 94 · According to whom? · B2
+- 94 · According to whom? · B2  
+  _Careful: Can sound confrontational; safe only among equals with a smile._
+- 99 · On paper, it's about cost. · B2  
+  _New, replaces “Ostensibly, it's about cost.”_
 - 103 · Presumably, they knew. · C1
 - 127 · That's symptomatic of the culture. · C1
 - 129 · That's just semantics. · C1
 - 152 · Predictably, it backfired. · C1
 - 163 · What are we optimizing for? · C1
+- 171 · For my money, it's the best option. · C1  
+  _New, replaces “Let me offer a counterpoint.”_
 - 180 · The upshot is we wait. · C1
 - 196 · No pun intended. · C1
 - 207 · Touché. · C1
@@ -119,18 +45,27 @@ Core 242 · Stretch 90 · Swap 33
 - 353 · I'll defer to you on that. · C1
 - 358 · That's an oxymoron. · C1
 
-### Idiom (24)
+### Idiom (29)
 
+- 13 · That's a pipe dream. · C1  
+  _New, replaces “That's rather quixotic.”_
 - 16 · I'd hazard a guess. · C1
 - 17 · It's a thorny issue. · C1
 - 25 · That's a self-fulfilling prophecy. · C1
 - 49 · That's the crux of it. · C1
 - 63 · It's the path of least resistance. · C1
+- 77 · It's a hollow victory. · C1  
+  _New, replaces “That's a Pyrrhic victory.”_
 - 110 · That's no small feat. · C1
+- 112 · It's a deal with the devil. · C1  
+  _New, replaces “It's a Faustian bargain.”_
 - 134 · That's a cop-out. · C1
-- 142 · Let's table that for now. · C1
+- 142 · Let's table that for now. · C1  
+  _Careful: US means postpone, UK means discuss now; easy to confuse._
 - 151 · It's a virtuous cycle. · C1
 - 168 · That's rather heavy-handed. · C1
+- 176 · Let's tread carefully here. · C1  
+  _New, replaces “First, do no harm.”_
 - 213 · That's a moot point now. · C1
 - 255 · I'd err on the side of caution. · C1
 - 278 · That's a fool's errand. · C1
@@ -144,6 +79,8 @@ Core 242 · Stretch 90 · Swap 33
 - 327 · Let's not mince words. · C1
 - 341 · That's a red herring. · C1
 - 348 · It's a foregone conclusion. · C1
+- 356 · We've seen this movie before. · C1  
+  _New, replaces “History tends to rhyme.”_
 - 361 · It stands to reason. · C1
 
 ### Logic (28)
@@ -164,7 +101,10 @@ Core 242 · Stretch 90 · Swap 33
 - 139 · That's a false economy. · C1
 - 167 · It's not a zero-sum game. · C1
 - 169 · That's a false dichotomy. · C1
-- 190 · There's a selection bias here. · C1
+- 172 · That's true by definition. · B2  
+  _New, replaces “That's a tautology.”_
+- 190 · There's selection bias here. · C1  
+  _New, replaces “There's a selection bias here.”_
 - 198 · That's an empirical question. · C1  
   _Kept: useful in Revino's analytics work._
 - 203 · That's an ad hominem. · C1
@@ -176,7 +116,6 @@ Core 242 · Stretch 90 · Swap 33
   _Kept: useful in Revino's analytics work._
 - 301 · That's confirmation bias. · C1
 - 331 · That's a sunk cost. · C1
-- 344 · That's just herd behavior. · C1
 - 352 · That's a second-order effect. · C1
 
 ### Allusion (8)
@@ -191,11 +130,13 @@ Core 242 · Stretch 90 · Swap 33
   _Kept: useful in Revino's analytics work._
 - 175 · There's a method to the madness. · C1
 
-## Core: learn these now (242)
+## Core: learn these now (267)
 
-### Phrase (111)
+### Phrase (128)
 
 - 9 · If you ask me, it's premature. · B2
+- 12 · Setting cost aside, would it work? · B2  
+  _New, replaces “Never mind the cost.”_
 - 14 · I misspoke. · B2
 - 19 · To be honest, I don't know. · B1
 - 20 · Last I checked, it was fine. · B2
@@ -213,7 +154,6 @@ Core 242 · Stretch 90 · Swap 33
 - 59 · That's a common pitfall. · B2
 - 61 · For what it's worth, I agree. · B2
 - 62 · Then again, it might work. · B2
-- 74 · Put another way, it's a tax. · B2
 - 76 · Here's a concrete example. · B2
 - 78 · That's a common misconception. · B2
 - 82 · That's beside the point. · B2
@@ -221,10 +161,16 @@ Core 242 · Stretch 90 · Swap 33
 - 84 · That's a fair point. · B1
 - 85 · It's a textbook case. · B2
 - 87 · I'm cautiously optimistic. · B2
+- 88 · It's a turning point. · B2  
+  _New, replaces “It's a watershed moment.”_
 - 89 · In what sense? · B2
 - 92 · To a degree, yes. · B2
 - 95 · In my experience, it rarely works. · B2
+- 97 · All in all, it went well. · B2  
+  _New, replaces “That's the long and short of it.”_
 - 102 · That's outside my expertise. · B2
+- 105 · It's a bureaucratic nightmare. · B2  
+  _New, replaces “It's all a bit Kafkaesque.”_
 - 107 · I'd want to see the evidence. · B2
 - 109 · That about sums it up. · B2
 - 114 · That's hard to argue with. · B2
@@ -235,6 +181,8 @@ Core 242 · Stretch 90 · Swap 33
 - 128 · That's a loaded question. · C1
 - 130 · That's an open question. · B2
 - 133 · Not necessarily. · B1
+- 138 · Even so, it's worth a try. · B2  
+  _New, replaces “Conceivably, yes.”_
 - 140 · It's a reversible decision. · B2
 - 143 · Speaking of which... · B2
 - 145 · Fair enough. · B2
@@ -246,6 +194,8 @@ Core 242 · Stretch 90 · Swap 33
 - 156 · It remains to be seen. · B2
 - 160 · That raises the question of... · C1
 - 161 · Technically true, but misleading. · B2
+- 162 · Let's look at the numbers first. · B1  
+  _New, replaces “Let's make an informed decision.”_
 - 173 · As I understand it, it's paused. · B2
 - 183 · Hypothetically, what if it fails? · B2
 - 185 · With respect, I disagree. · B2
@@ -258,17 +208,31 @@ Core 242 · Stretch 90 · Swap 33
 - 208 · What do you mean by that, exactly? · B1
 - 210 · You've changed my mind. · B1
 - 212 · Ultimately, it's your call. · B2
+- 214 · The same goes for the budget. · B2  
+  _New, replaces “By the same token, it's risky.”_
+- 215 · No doubt about it. · B1  
+  _New, replaces “Unequivocally, yes.”_
 - 216 · That's a recurring theme. · B2
 - 217 · How so? · B2
 - 222 · I'm inclined to agree. · B2
+- 224 · That's overkill. · B2  
+  _New, replaces “Let's cut the Gordian knot.”_
 - 225 · What would change your mind? · B2
 - 226 · There's no right answer here. · B1
+- 231 · That doesn't match my experience. · B2  
+  _New, replaces “That's a category error.”_
 - 233 · There's a case to be made. · B2
 - 234 · Where does that leave us? · B2
 - 235 · That's an educated guess. · B2
+- 242 · As a matter of fact, it's done. · B2  
+  _New, replaces “As it happens, I agree.”_
 - 244 · From what I gather, it's done. · B2
 - 245 · That's open to interpretation. · B2
+- 247 · If it were up to me, I'd wait. · B2  
+  _New, replaces “Let me steelman their view.”_
 - 248 · Contrary to popular belief, no. · B2
+- 251 · That makes me think twice. · B2  
+  _New, replaces “You've given me pause.”_
 - 253 · On the contrary. · B2
 - 256 · It's a classic trade-off. · B2
 - 258 · Strictly speaking, no. · B2
@@ -277,6 +241,8 @@ Core 242 · Stretch 90 · Swap 33
 - 263 · That's my working theory. · B2
 - 264 · I hadn't considered that. · B1
 - 265 · On the other hand, it's cheap. · B1
+- 270 · That's short-sighted. · B2  
+  _New, replaces “Penny wise, pound foolish.”_
 - 271 · I'd frame it differently. · B2
 - 274 · Put simply, it's too slow. · B2
 - 275 · That's an elegant solution. · B2
@@ -286,6 +252,8 @@ Core 242 · Stretch 90 · Swap 33
 - 285 · If anything, it's worse. · B2
 - 289 · Let's not overthink it. · B1
 - 292 · It's a judgment call. · B2
+- 294 · Interestingly, no one asked why. · B2  
+  _New, replaces “Tellingly, no one asked why.”_
 - 296 · There's something to that. · B2
 - 298 · That came out wrong. · B1
 - 300 · That's a reasonable compromise. · B1
@@ -296,18 +264,24 @@ Core 242 · Stretch 90 · Swap 33
 - 315 · In hindsight, we moved too fast. · B2
 - 320 · I'd argue the opposite. · B2
 - 322 · Not to mention the cost. · B2
+- 323 · I have my doubts. · B2  
+  _New, replaces “Color me skeptical.”_
 - 326 · Up to a point. · B2
 - 328 · In my view, it's premature. · B2
+- 329 · Think of it as a filter. · B2  
+  _New, replaces “To use an analogy...”_
 - 333 · I don't have a strong view. · B2
 - 336 · That's my reading of it. · B2
 - 337 · That's a bold assumption. · B2
+- 338 · I'll be the first to admit it. · B2  
+  _New, replaces “I'll take that under advisement.”_
 - 346 · I'll grant you that. · B2
 - 350 · That's well put. · B2
 - 355 · I could be wrong here. · B1
 - 357 · That's a matter of taste. · B2
 - 359 · It's a cautionary tale. · B2
 
-### Idiom (101)
+### Idiom (106)
 
 - 0 · That sounds like wishful thinking. · B2
 - 1 · Better safe than sorry. · B1
@@ -316,12 +290,17 @@ Core 242 · Stretch 90 · Swap 33
 - 5 · It's come full circle. · B2
 - 6 · It's a long shot. · B2
 - 7 · The devil is in the details. · B2
-- 11 · It's a vicious circle. · B2
+- 11 · It's a vicious cycle. · B2  
+  _New, replaces “It's a vicious circle.”_
 - 15 · That rings true. · B2
 - 18 · There's a grain of truth there. · B2
+- 21 · It's a done deal. · B2  
+  _New, replaces “It's a fait accompli.”_
 - 23 · It's an acquired taste. · B2
 - 24 · Let's play it by ear. · B2
 - 27 · I need to sit with that. · B2
+- 30 · That's a hard pill to swallow. · B2  
+  _New, replaces “We've crossed the Rubicon.”_
 - 32 · It's a non-starter. · B2
 - 34 · That's a bit of a stretch. · B2
 - 38 · When all is said and done, yes. · B2
@@ -335,6 +314,8 @@ Core 242 · Stretch 90 · Swap 33
 - 67 · It's the lesser of two evils. · B2
 - 72 · Less is more. · B2
 - 75 · Let's find a middle ground. · B2
+- 81 · That's an uphill battle. · B2  
+  _New, replaces “That's a Sisyphean task.”_
 - 90 · I'll play devil's advocate. · B2
 - 91 · Let's not get ahead of ourselves. · B2
 - 98 · That's uncharted territory. · B2
@@ -407,12 +388,16 @@ Core 242 · Stretch 90 · Swap 33
 - 343 · That cuts both ways. · B2
 - 345 · That's easier said than done. · B2
 - 347 · That hasn't aged well. · B2
+- 349 · That's a no-brainer. · B2  
+  _New, replaces “That's a Herculean effort.”_
 - 351 · That opens a can of worms. · B2
 - 360 · Let me mull it over. · B2
+- 362 · A step in the right direction. · B2  
+  _New, replaces “That opened Pandora's box.”_
 - 363 · That's apples and oranges. · B2
 - 364 · That's a tough nut to crack. · B2
 
-### Logic (28)
+### Logic (31)
 
 - 10 · That's a leap of logic. · B2
 - 43 · What's the counterargument? · B2
@@ -433,14 +418,20 @@ Core 242 · Stretch 90 · Swap 33
 - 181 · That's a slippery slope. · B2
 - 182 · Correlation isn't causation. · B2
 - 184 · We've hit diminishing returns. · B2
+- 221 · We don't know what we don't know. · B2  
+  _New, replaces “It's a known unknown.”_
 - 240 · Let's run a small experiment. · B2
 - 243 · That's within the margin of error. · B2
 - 266 · What's the evidence for that? · B2
+- 268 · In theory, yes. In practice, no. · B2  
+  _New, replaces “The map is not the territory.”_
 - 313 · What's the underlying assumption? · B2
 - 317 · Define "better." · B2
 - 321 · That's a hypothesis, not a fact. · B2
 - 339 · Let's test that hypothesis. · B2
 - 342 · The logic holds up. · B2
+- 344 · That's just herd mentality. · B2  
+  _New, replaces “That's just herd behavior.”_
 - 354 · All else being equal, yes. · B2
 
 ### Allusion (2)

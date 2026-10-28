@@ -198,58 +198,58 @@
     "avoidWhen": "Avoid it as an insult; name the missing step, or it sounds like you're calling them illogical."
   },
   {
-    "phrase": "It's a vicious circle.",
+    "phrase": "It's a vicious cycle.",
     "label": "Idiom",
     "intent": "Observe",
     "meaning": "Each problem makes the next worse, so it feeds itself. Use it for a bad loop.",
-    "example": "No time to plan means more fires, which means no time to plan. It's a vicious circle.",
+    "example": "No time to plan means more fires, which means no time to plan. It's a vicious cycle.",
     "usageExamples": [
-      "He sleeps badly, drinks coffee, then sleeps worse. It's a vicious circle.",
-      "Low pay means high turnover, which means more training costs. It's a vicious circle."
+      "He sleeps badly, drinks coffee, then sleeps worse. It's a vicious cycle.",
+      "Low pay means high turnover, which means more training costs. It's a vicious cycle."
     ],
     "variants": [
       "It's a downward spiral.",
       "It keeps feeding itself.",
-      "It's a self-reinforcing trap."
+      "Each problem makes the next worse."
     ],
     "tone": "Frustrated, descriptive, serious",
-    "avoidWhen": "Avoid it for a one-way problem; a vicious circle needs causes and effects that feed each other."
+    "avoidWhen": "Avoid it for a one-way problem; a vicious cycle needs causes and effects that feed each other."
   },
   {
-    "phrase": "Never mind the cost.",
+    "phrase": "Setting cost aside, would it work?",
     "label": "Phrase",
     "intent": "Connect",
-    "meaning": "Forget the cost for now; something bigger matters. Use it to wave off a factor.",
-    "example": "Never mind the cost. Can we even get the parts by June?",
+    "meaning": "Puts one factor on hold to test the idea itself. Use it to ask the real question first.",
+    "example": "Setting cost aside, would it work? If not, the price doesn't matter.",
     "usageExamples": [
-      "Never mind the cost. The real question is whether anyone will use it.",
-      "Never mind the cost of the trip; the visa alone could take months."
+      "Setting cost aside, would it work for a team our size?",
+      "Setting cost aside, would it work on older phones?"
     ],
     "variants": [
-      "Forget the cost for now.",
-      "Set the cost aside.",
-      "Cost is beside the point."
+      "Ignoring the price, does it work?",
+      "Leave cost out of it for a second.",
+      "Price aside, is it any good?"
     ],
-    "tone": "Dismissive, brisk, casual",
-    "avoidWhen": "Avoid it with someone who holds the budget; it can sound careless about money that matters."
+    "tone": "Practical, focused, calm",
+    "avoidWhen": "Avoid it when cost is the deciding factor; it can sound like you're dodging the budget."
   },
   {
-    "phrase": "That's rather quixotic.",
-    "label": "Allusion",
+    "phrase": "That's a pipe dream.",
+    "label": "Idiom",
     "intent": "Judge",
-    "meaning": "Idealistic but impractical. From Don Quixote; use it gently for long shots.",
-    "example": "Fixing all our data quality in a month? That's rather quixotic.",
+    "meaning": "A hope or plan that will almost surely never happen. Use it for unrealistic ideas.",
+    "example": "Launching in all ten markets by March? That's a pipe dream.",
     "usageExamples": [
-      "Walking the whole coast in a week? That's rather quixotic, my friend.",
-      "Ending world hunger with one bake sale? That's rather quixotic."
+      "Owning a house in the city on one salary? That's a pipe dream now.",
+      "Zero bugs at launch is a pipe dream, but we can aim for zero critical ones."
     ],
     "variants": [
-      "That's a bit idealistic.",
-      "That's a noble long shot.",
-      "That's tilting at windmills."
+      "That's not going to happen.",
+      "That's unrealistic.",
+      "That's a fantasy."
     ],
-    "tone": "Gentle, literary, wry",
-    "avoidWhen": "Avoid it when you simply mean foolish; it can sound patronizing about someone's sincere ideals."
+    "tone": "Blunt, skeptical, casual",
+    "avoidWhen": "Avoid it about someone's personal dream; it can sound crushing."
   },
   {
     "phrase": "I misspoke.",
@@ -378,22 +378,22 @@
     "avoidWhen": "Avoid it to reassure someone in a crisis; it's a hedge that may sound like you didn't verify."
   },
   {
-    "phrase": "It's a fait accompli.",
-    "label": "Allusion",
+    "phrase": "It's a done deal.",
+    "label": "Idiom",
     "intent": "Observe",
-    "meaning": "Already done and hard to undo. From French; use it when it's too late to object.",
-    "example": "They already signed the contract. It's a fait accompli.",
+    "meaning": "Already decided or finished, so it can't change now. Use it to close a debate.",
+    "example": "No point arguing about the vendor. It's a done deal; they signed yesterday.",
     "usageExamples": [
-      "The renovation was finished before we were asked. It's a fait accompli.",
-      "The merger was announced on Monday. It's a fait accompli now."
+      "The merger is a done deal. Now we figure out the details.",
+      "We booked the flights, so the trip is a done deal."
     ],
     "variants": [
-      "It's already done.",
-      "It's a done deal.",
-      "It's too late to change."
+      "It's settled.",
+      "It's already decided.",
+      "That's final."
     ],
-    "tone": "Formal, resigned, literary",
-    "avoidWhen": "Avoid it in casual chat, where it sounds pretentious, or when the thing can still be undone."
+    "tone": "Matter-of-fact, firm, casual",
+    "avoidWhen": "Avoid it when things are still open; it can shut people out of a real discussion."
   },
   {
     "phrase": "Granted, it's not perfect.",
@@ -454,7 +454,7 @@
     "label": "Idiom",
     "intent": "Reason",
     "meaning": "A belief that causes its own truth. Use it when expectation shapes the outcome.",
-    "example": "If you expect the meeting to fail, that's a self-fulfilling prophecy.",
+    "example": "Expect the meeting to fail and you'll prepare less. That's a self-fulfilling prophecy.",
     "usageExamples": [
       "Everyone fears a bank run, so they withdraw money. That's a self-fulfilling prophecy.",
       "He thinks he's bad at math, so he avoids it. That's a self-fulfilling prophecy."
@@ -540,22 +540,22 @@
     "avoidWhen": "Avoid it for urgent decisions; an imagined scenario can feel like a detour when people want answers."
   },
   {
-    "phrase": "We've crossed the Rubicon.",
-    "label": "Allusion",
+    "phrase": "That's a hard pill to swallow.",
+    "label": "Idiom",
     "intent": "Judge",
-    "meaning": "We've passed the point of no return. From Caesar's river crossing in 49 BC.",
-    "example": "We've crossed the Rubicon. The press release is out, so we can't go back.",
+    "meaning": "An unpleasant truth you have to accept. Use it for bad news people must face.",
+    "example": "We lost the client because we were slow. That's a hard pill to swallow.",
     "usageExamples": [
-      "Now that the lease is signed, we've crossed the Rubicon.",
-      "We sold the house and booked the flights. We've crossed the Rubicon."
+      "Hearing that my code caused the outage was a hard pill to swallow.",
+      "The survey says users find us confusing. That's a hard pill to swallow."
     ],
     "variants": [
-      "There's no turning back now.",
-      "We've passed the point of no return.",
-      "The die is cast."
+      "That's tough to accept.",
+      "That's hard to hear.",
+      "That one stings."
     ],
-    "tone": "Weighty, decisive, a bit grand",
-    "avoidWhen": "Avoid it for easily reversed choices; it sounds overblown for small decisions."
+    "tone": "Honest, sober, sympathetic",
+    "avoidWhen": "Avoid it about someone else's bad news while they're upset; it can sound like gloating."
   },
   {
     "phrase": "That's a bit of a tangent.",
@@ -1336,7 +1336,7 @@
     "label": "Phrase",
     "intent": "Connect",
     "meaning": "A rewording that sharpens the point. Use it to restate more bluntly.",
-    "example": "Put another way, it's a tax. We all pay it, and nobody voted on it.",
+    "example": "The new fee hits everyone who pays late. Put another way, it's a tax on being busy.",
     "usageExamples": [
       "Put another way, it's a tax on everyone who forgets to cancel the free trial.",
       "Put another way, it's a tax on slow decisions. Every week of delay costs us."
@@ -1386,22 +1386,22 @@
     "avoidWhen": "Avoid it when the example is vague or hypothetical; the label promises something real."
   },
   {
-    "phrase": "That's a Pyrrhic victory.",
-    "label": "Allusion",
+    "phrase": "It's a hollow victory.",
+    "label": "Idiom",
     "intent": "Judge",
-    "meaning": "A win that costs so much it feels like a loss. From King Pyrrhus.",
-    "example": "We won the contract but lost three key people. That's a Pyrrhic victory.",
+    "meaning": "A win that feels empty because of what it cost. Use it when winning brings no joy.",
+    "example": "We hit the deadline, but half the team quit. It's a hollow victory.",
     "usageExamples": [
-      "He won the argument and lost the friendship. That's a Pyrrhic victory.",
-      "The team won the title, but five starters are injured. That's a Pyrrhic victory."
+      "He won the argument and lost the friend. It's a hollow victory.",
+      "Sales went up only because we cut prices. It's a hollow victory."
     ],
     "variants": [
       "We won, but at what cost?",
-      "A hollow win.",
-      "The win cost too much."
+      "The win doesn't feel like one.",
+      "It cost more than it gained."
     ],
-    "tone": "Wry, scholarly, sober",
-    "avoidWhen": "Avoid it for a narrow win; the cost must be heavy, or it just means a close victory."
+    "tone": "Sober, reflective, wry",
+    "avoidWhen": "Avoid it in front of the people who won; it can sound like you're belittling their effort."
   },
   {
     "phrase": "That's a common misconception.",
@@ -1458,22 +1458,22 @@
     "avoidWhen": "Avoid it when someone wants your view on something you care about; it sounds like a shrug."
   },
   {
-    "phrase": "That's a Sisyphean task.",
-    "label": "Allusion",
+    "phrase": "That's an uphill battle.",
+    "label": "Idiom",
     "intent": "Judge",
-    "meaning": "An endless, futile job. From Sisyphus, forever pushing a boulder uphill.",
-    "example": "Clearing the backlog while orders keep coming? That's a Sisyphean task.",
+    "meaning": "A task that is hard because everything works against you. Use it to set expectations.",
+    "example": "Changing the policy without the director's support? That's an uphill battle.",
     "usageExamples": [
-      "Keeping the toddler's toys tidy is a Sisyphean task.",
-      "Sweeping the beach before the tide returns is a Sisyphean task."
+      "Learning a language in your forties is an uphill battle, but it's doable.",
+      "Getting people back to the office is an uphill battle."
     ],
     "variants": [
-      "That's a never-ending grind.",
-      "It's like rolling a boulder uphill.",
-      "That's endless and futile."
+      "That's going to be tough.",
+      "The odds are against us.",
+      "That'll take a lot of work."
     ],
-    "tone": "Wry, literary, weary",
-    "avoidWhen": "Avoid it for hard but finishable work; it means endless and futile, not just difficult."
+    "tone": "Realistic, serious, steady",
+    "avoidWhen": "Avoid it as an excuse to give up; say what would make the battle easier."
   },
   {
     "phrase": "That's beside the point.",
@@ -1584,22 +1584,22 @@
     "avoidWhen": "Avoid it when you're truly worried or very confident; it blurs your stance and can sound like PR."
   },
   {
-    "phrase": "It's a watershed moment.",
-    "label": "Idiom",
+    "phrase": "It's a turning point.",
+    "label": "Phrase",
     "intent": "Observe",
-    "meaning": "A turning point after which things are clearly different. Use it for a truly pivotal event.",
-    "example": "For our industry, it's a watershed moment.",
+    "meaning": "A moment when things start to change direction. Use it for a clear shift.",
+    "example": "We just signed our first big client. It's a turning point for us.",
     "usageExamples": [
-      "My daughter's first day of school? It's a watershed moment for us.",
-      "Electric cars outselling gas-powered ones? It's a watershed moment for the industry."
+      "Moving abroad was a turning point in my career.",
+      "If the vote passes, it's a turning point for the city."
     ],
     "variants": [
-      "It's a turning point.",
-      "It's a defining moment.",
-      "It's a real inflection point."
+      "Things change from here.",
+      "It's a real shift.",
+      "Nothing will be the same after this."
     ],
-    "tone": "Serious, significant, formal",
-    "avoidWhen": "Avoid it for routine events; overusing watershed makes real turning points lose their weight."
+    "tone": "Thoughtful, serious, clear",
+    "avoidWhen": "Avoid it for small changes; overusing it makes every update sound dramatic."
   },
   {
     "phrase": "In what sense?",
@@ -1695,7 +1695,7 @@
     "phrase": "According to whom?",
     "label": "Phrase",
     "intent": "Clarify",
-    "meaning": "Challenges the source of a claim stated as fact. Use it to ask who says so, politely.",
+    "meaning": "Challenges the source of a claim stated as fact. It often sounds pointed, so smile.",
     "example": "They say it's the best ramen in town. According to whom?",
     "usageExamples": [
       "The article says the market is saturated. According to whom? I saw no source.",
@@ -1746,22 +1746,22 @@
     "avoidWhen": "Avoid it without naming which assumptions; vague use sounds like blaming earlier work."
   },
   {
-    "phrase": "That's the long and short of it.",
-    "label": "Idiom",
+    "phrase": "All in all, it went well.",
+    "label": "Phrase",
     "intent": "Summarize",
-    "meaning": "The whole story in brief; the main point. Use it to wrap up with a concise summary.",
-    "example": "No budget, no staff, no timeline. That's the long and short of it.",
+    "meaning": "A summary after weighing the good and the bad. Use it to give an overall verdict.",
+    "example": "A few hiccups with the projector, but all in all, it went well.",
     "usageExamples": [
-      "We lost the bid. That's the long and short of it.",
-      "The flight's canceled, so we're driving. That's the long and short of it."
+      "All in all, it went well, though we ran ten minutes over.",
+      "The food was late, but all in all, it went well."
     ],
     "variants": [
-      "That's the whole story in brief.",
-      "That's the short version.",
-      "That's all there is to it."
+      "Overall, it went well.",
+      "On the whole, it was good.",
+      "All things considered, it went well."
     ],
-    "tone": "Plain, informal, slightly old-fashioned",
-    "avoidWhen": "Avoid it in formal writing; it can sound dated, and some listeners may not know it."
+    "tone": "Balanced, relaxed, warm",
+    "avoidWhen": "Avoid it when the problems were serious; it can sound like you're brushing them off."
   },
   {
     "phrase": "That's uncharted territory.",
@@ -1782,22 +1782,22 @@
     "avoidWhen": "Avoid it for ordinary tasks that merely feel new to you; others may know the path well."
   },
   {
-    "phrase": "Ostensibly, it's about cost.",
+    "phrase": "On paper, it's about cost.",
     "label": "Phrase",
     "intent": "Connect",
-    "meaning": "That's the stated reason, but the real one may differ. Use it to hint at a hidden motive.",
-    "example": "Ostensibly, it's about cost. In practice, it's about control.",
+    "meaning": "What something seems to be officially, maybe not in reality. Use it to hint at more.",
+    "example": "On paper, it's about cost. In practice, they want more control.",
     "usageExamples": [
-      "Ostensibly, it's about cost, but the vendor was also the CEO's friend.",
-      "Ostensibly, it's about cost, but the school just doesn't want parents on the field."
+      "On paper, it's about cost, but I think they're tired of the vendor.",
+      "On paper, it's about cost. Really, it's about who controls the data."
     ],
     "variants": [
-      "Supposedly, it's about cost.",
-      "On paper, it's about cost.",
-      "Officially, it's about cost."
+      "Officially, it's about cost.",
+      "In theory, it's about cost.",
+      "The stated reason is cost."
     ],
-    "tone": "Skeptical, formal, wry",
-    "avoidWhen": "Avoid it when you can't back up the hidden motive; it quietly accuses someone of not being honest."
+    "tone": "Analytical, wry, measured",
+    "avoidWhen": "Avoid it when you have no reason to doubt the stated reason; it can sound cynical."
   },
   {
     "phrase": "How would we know?",
@@ -1890,22 +1890,22 @@
     "avoidWhen": "Avoid it for ordinary flaws; it needs a reward that truly pushes the wrong behavior."
   },
   {
-    "phrase": "It's all a bit Kafkaesque.",
-    "label": "Allusion",
+    "phrase": "It's a bureaucratic nightmare.",
+    "label": "Phrase",
     "intent": "Judge",
-    "meaning": "Absurdly bureaucratic and baffling, with no way out. From Franz Kafka.",
-    "example": "Three forms to cancel a form? It's all a bit Kafkaesque.",
+    "meaning": "A process with too many rules, forms and approvals. Use it for red tape.",
+    "example": "Five offices and three weeks to renew a visa. It's a bureaucratic nightmare.",
     "usageExamples": [
-      "The refund process? It's all a bit Kafkaesque; every desk sends you to another.",
-      "I needed a password to reset my password. It's all a bit Kafkaesque."
+      "Getting a refund from the airline was a bureaucratic nightmare.",
+      "Every purchase needs four signatures. It's a bureaucratic nightmare."
     ],
     "variants": [
-      "It's bureaucracy at its most absurd.",
-      "It's a maze of red tape.",
-      "It's like a bad bureaucratic dream."
+      "It's all red tape.",
+      "There's so much paperwork.",
+      "The process is a maze."
     ],
-    "tone": "Dry, wry, literary",
-    "avoidWhen": "Avoid it for plain inconvenience; it means absurd, hopeless systems, not just slow ones."
+    "tone": "Exasperated, wry, casual",
+    "avoidWhen": "Avoid it in front of the people who run the process; it can sound like a personal attack."
   },
   {
     "phrase": "That's a sweeping generalization.",
@@ -2016,22 +2016,22 @@
     "avoidWhen": "Avoid it for small decisions; reasoning from scratch is slow and can sound pretentious."
   },
   {
-    "phrase": "It's a Faustian bargain.",
-    "label": "Allusion",
+    "phrase": "It's a deal with the devil.",
+    "label": "Idiom",
     "intent": "Judge",
-    "meaning": "A deal that trades your ethics for power or success. From Faust.",
-    "example": "Taking the investor's money meant giving up control. It's a Faustian bargain.",
+    "meaning": "A deal that brings a gain now but a bigger cost later. Use it for a risky trade-off.",
+    "example": "Taking their money means they control the roadmap. It's a deal with the devil.",
     "usageExamples": [
-      "Free apps that harvest your data are a Faustian bargain.",
-      "He made a Faustian bargain: fame now, privacy never."
+      "Cheap debt to grow fast can be a deal with the devil.",
+      "The job pays well, but no weekends ever. It's a deal with the devil."
     ],
     "variants": [
-      "It's a deal with the devil.",
-      "It comes at a heavy price.",
-      "A pact with the devil."
+      "It'll cost us later.",
+      "It's a risky trade.",
+      "The price is too high."
     ],
-    "tone": "Literary, grave, wry",
-    "avoidWhen": "Avoid it for ordinary trade-offs; it implies a moral cost, so it can sound overblown."
+    "tone": "Dramatic, cautionary, wry",
+    "avoidWhen": "Avoid it for ordinary trade-offs; it makes small compromises sound sinister."
   },
   {
     "phrase": "As a rule of thumb, yes.",
@@ -2092,10 +2092,10 @@
     "label": "Phrase",
     "intent": "Observe",
     "meaning": "The current state of things. Use it for existing arrangements, often challenged.",
-    "example": "Why do we do it this way? Because that's the status quo.",
+    "example": "Nobody likes the weekly report, but that's the status quo, and no one will challenge it.",
     "usageExamples": [
       "Nobody questions it. That's the status quo around here.",
-      "Dinner at six, TV at seven. That's the status quo in my house."
+      "Paper forms for every request? That's the status quo, sadly."
     ],
     "variants": [
       "That's how things stand.",
@@ -2484,22 +2484,22 @@
     "avoidWhen": "Avoid it about people or their work; it can sound like you're using or devaluing them."
   },
   {
-    "phrase": "Conceivably, yes.",
+    "phrase": "Even so, it's worth a try.",
     "label": "Phrase",
     "intent": "Connect",
-    "meaning": "It's possible, though not certain or likely. Use it as a cautious, hedged yes.",
-    "example": "Could we ship by Friday? Conceivably, yes, if nothing else breaks.",
+    "meaning": "Accepts the problem just mentioned but still supports the idea. Use it after a doubt.",
+    "example": "The odds aren't great. Even so, it's worth a try.",
     "usageExamples": [
-      "Could the delay be our fault? Conceivably, yes.",
-      "Would she move abroad? Conceivably, yes, if the right offer came along."
+      "It might not get approved. Even so, it's worth a try.",
+      "The new tool takes time to learn. Even so, it's worth a try."
     ],
     "variants": [
-      "It's possible, yes.",
-      "Possibly, yes.",
-      "I could see that, yes."
+      "Still, it's worth trying.",
+      "That said, why not try?",
+      "Despite that, let's try it."
     ],
-    "tone": "Hedged, thoughtful, careful",
-    "avoidWhen": "Avoid it when you mean probably yes; it signals a weak possibility, not a confident answer."
+    "tone": "Hopeful, balanced, practical",
+    "avoidWhen": "Avoid it when the risk is real and costly; trying may not be cheap."
   },
   {
     "phrase": "That's a false economy.",
@@ -2916,29 +2916,29 @@
     "avoidWhen": "Avoid it as a charge of lying; it says the framing misleads, not that the speaker meant to."
   },
   {
-    "phrase": "Let's make an informed decision.",
+    "phrase": "Let's look at the numbers first.",
     "label": "Phrase",
     "intent": "Decide",
-    "meaning": "Let's decide with the facts in hand, not on a hunch. Use it to slow a rushed choice.",
-    "example": "Before we sign, let's make an informed decision. Can we see the numbers?",
+    "meaning": "Asks to check the data before choosing. Use it to slow a decision based on feelings.",
+    "example": "Before we hire two more people, let's look at the numbers first.",
     "usageExamples": [
-      "Let's make an informed decision on the phone plan, not just pick the cheapest.",
-      "Let's make an informed decision about the school. I'd like to visit first."
+      "Everyone likes the new design, but let's look at the numbers first.",
+      "Let's look at the numbers first, then argue about the plan."
     ],
     "variants": [
-      "Let's decide with the facts.",
-      "Let's choose on the evidence.",
-      "Let's not guess."
+      "Let's check the data.",
+      "What do the numbers say?",
+      "Let's see the facts first."
     ],
-    "tone": "Calm, rational, collaborative",
-    "avoidWhen": "Avoid it when time is short; it can sound like stalling when someone needs a quick answer."
+    "tone": "Practical, calm, grounded",
+    "avoidWhen": "Avoid it when there are no useful numbers; it can stall a decision that needs judgment."
   },
   {
     "phrase": "What are we optimizing for?",
     "label": "Phrase",
     "intent": "Clarify",
     "meaning": "Asks which goal should guide a choice among competing ones. Use it before debating.",
-    "example": "Before we pick a route, what are we optimizing for: speed, cost, or views?",
+    "example": "Before we pick a route, what are we optimizing for: speed, cost, or scenery?",
     "usageExamples": [
       "Cheap vacation or relaxing one? What are we optimizing for?",
       "Our dashboard has twelve KPIs. What are we optimizing for?"
@@ -3078,40 +3078,40 @@
     "avoidWhen": "Avoid it with non-technical listeners unless you explain it; it can sound like name-dropping."
   },
   {
-    "phrase": "Let me offer a counterpoint.",
+    "phrase": "For my money, it's the best option.",
     "label": "Phrase",
     "intent": "Opinion",
-    "meaning": "I'll present a view that challenges the previous one. Use it to disagree politely in a discussion.",
-    "example": "Let me offer a counterpoint: faster delivery may cost us quality.",
+    "meaning": "Gives your personal view after weighing things. Use it to state a preference firmly.",
+    "example": "All three vendors are fine, but for my money, it's the best option.",
     "usageExamples": [
-      "Let me offer a counterpoint. The survey only covers urban customers.",
-      "Let me offer a counterpoint to the book: the author ignores rural areas."
+      "For my money, the older model is still the best option.",
+      "For my money, the second draft is clearer."
     ],
     "variants": [
-      "Let me push back a little.",
-      "Here's another way to see it.",
-      "May I offer a different angle?"
+      "In my view, it's the best.",
+      "If it were my call, I'd pick it.",
+      "I'd go with this one."
     ],
-    "tone": "Polite, formal, constructive",
-    "avoidWhen": "Avoid it in casual chat with friends; it can sound like a debate-club move."
+    "tone": "Confident, casual, personal",
+    "avoidWhen": "Avoid it when the choice isn't yours to make; it can sound like you're overruling others."
   },
   {
-    "phrase": "That's a tautology.",
+    "phrase": "That's true by definition.",
     "label": "Logic",
     "intent": "Reason",
-    "meaning": "A statement true by definition that tells you nothing. Use it to point out circular reasoning.",
-    "example": "'Winning teams win games.' That's a tautology.",
+    "meaning": "True only because of how the words are defined. Use it when a claim says nothing new.",
+    "example": "\"Our best customers buy the most.\" That's true by definition.",
     "usageExamples": [
-      "Our best plan is the one that works best? That's a tautology.",
-      "He says business is business. That's a tautology, not an answer."
+      "\"Winners win more often.\" Well, that's true by definition.",
+      "\"Bigger teams have more people.\" Sure, that's true by definition."
     ],
     "variants": [
       "That's circular.",
-      "It says nothing new.",
-      "It's true by definition."
+      "That doesn't tell us anything.",
+      "That's built into the words."
     ],
-    "tone": "Dry, precise, scholarly",
-    "avoidWhen": "Avoid it for merely obvious points; a tautology is true by form, not just common sense."
+    "tone": "Analytical, dry, precise",
+    "avoidWhen": "Avoid it as a gotcha in casual talk; it can sound pedantic."
   },
   {
     "phrase": "As I understand it, it's paused.",
@@ -3168,22 +3168,22 @@
     "avoidWhen": "Avoid it when the chaos really is just chaos; it vouches for a logic you may not have checked."
   },
   {
-    "phrase": "First, do no harm.",
-    "label": "Allusion",
+    "phrase": "Let's tread carefully here.",
+    "label": "Idiom",
     "intent": "Caution",
-    "meaning": "Before helping, avoid making things worse. Linked to Hippocrates and medicine.",
-    "example": "Before touching the live system, first, do no harm. Test it somewhere safe.",
+    "meaning": "Asks the group to move slowly and avoid mistakes. Use it on a sensitive topic.",
+    "example": "This affects people's bonuses, so let's tread carefully here.",
     "usageExamples": [
-      "With a struggling teammate, first, do no harm: listen before advising.",
-      "First, do no harm, so let's not change the recipe until we taste it."
+      "Legal hasn't reviewed it yet, so let's tread carefully here.",
+      "She's still upset about last time. Let's tread carefully here."
     ],
     "variants": [
-      "Don't make things worse.",
-      "Avoid causing damage.",
-      "Primum non nocere."
+      "Let's be careful.",
+      "Let's go slowly on this.",
+      "Let's handle this with care."
     ],
-    "tone": "Serious, ethical, measured",
-    "avoidWhen": "Avoid it for trivial choices; the medical-ethics weight can sound pompous."
+    "tone": "Careful, calm, diplomatic",
+    "avoidWhen": "Avoid it as a reason never to act; say what risk you are worried about."
   },
   {
     "phrase": "Let's think about the incentives.",
@@ -3420,14 +3420,14 @@
     "avoidWhen": "Avoid it for a plain factual error; a polite pushback understates a flat mistake."
   },
   {
-    "phrase": "There's a selection bias here.",
+    "phrase": "There's selection bias here.",
     "label": "Logic",
     "intent": "Reason",
     "meaning": "The sample was picked in a way that skews results. Use it to question a self-chosen group.",
-    "example": "Only happy customers answered the survey. There's a selection bias here.",
+    "example": "Only happy customers answered the survey. There's selection bias here.",
     "usageExamples": [
-      "Gym members say gyms work. There's a selection bias here.",
-      "Online reviews come from the extremes, so there's a selection bias here."
+      "Gym members say gyms work. There's selection bias here.",
+      "Online reviews come from the extremes, so there's selection bias here."
     ],
     "variants": [
       "The sample isn't representative.",
@@ -3852,40 +3852,40 @@
     "avoidWhen": "Avoid saying 'mute point,' and avoid it to close a topic someone still cares about."
   },
   {
-    "phrase": "By the same token, it's risky.",
+    "phrase": "The same goes for the budget.",
     "label": "Phrase",
     "intent": "Connect",
-    "meaning": "For the same reason, the next point also holds. Use it to extend your logic to a parallel case.",
-    "example": "One supplier for chips is risky. By the same token, it's risky to have one for packaging.",
+    "meaning": "Says the point just made also applies to something else. Use it to extend an argument.",
+    "example": "The timeline is too tight. The same goes for the budget.",
     "usageExamples": [
-      "Hiking alone is risky. By the same token, it's risky to swim alone.",
-      "One person can't approve payments. By the same token, it's risky to let one approve code."
+      "Be on time tomorrow. The same goes for you, Dan.",
+      "The app needs a redesign. The same goes for the website."
     ],
     "variants": [
-      "Likewise, it's risky.",
-      "For the same reason, it's risky.",
-      "In the same vein, it's risky."
+      "That applies to the budget too.",
+      "Likewise for the budget.",
+      "The budget has the same problem."
     ],
-    "tone": "Logical, formal, parallel",
-    "avoidWhen": "Avoid it when the next point is actually the opposite; it extends the logic, not contrasts it."
+    "tone": "Plain, connecting, brisk",
+    "avoidWhen": "Avoid it when the two cases differ in an important way; check the comparison first."
   },
   {
-    "phrase": "Unequivocally, yes.",
+    "phrase": "No doubt about it.",
     "label": "Phrase",
     "intent": "Agree",
-    "meaning": "Without any doubt, yes. Use it to give a firm, formal answer when you want no ambiguity.",
-    "example": "Would I recommend it? Unequivocally, yes.",
+    "meaning": "Strong agreement with full confidence. Use it when you are sure something is true.",
+    "example": "She's the best person for the role. No doubt about it.",
     "usageExamples": [
-      "Is the data reliable? Unequivocally, yes.",
-      "Unequivocally, yes; the results held in every test."
+      "That was the best meal of the trip. No doubt about it.",
+      "No doubt about it, the new process is faster."
     ],
     "variants": [
-      "Without a doubt, yes.",
-      "Absolutely, yes.",
-      "Yes, without reservation."
+      "Absolutely.",
+      "Without question.",
+      "Definitely."
     ],
-    "tone": "Firm, formal, confident",
-    "avoidWhen": "Avoid it unless you are truly certain; it's strong and can sound pompous on small matters."
+    "tone": "Confident, warm, emphatic",
+    "avoidWhen": "Avoid it when you're only fairly sure; it leaves no room to back down."
   },
   {
     "phrase": "That's a recurring theme.",
@@ -3978,22 +3978,22 @@
     "avoidWhen": "Avoid it in formal writing or with clients; it's conversational and a bit blunt."
   },
   {
-    "phrase": "It's a known unknown.",
+    "phrase": "We don't know what we don't know.",
     "label": "Logic",
     "intent": "Reason",
-    "meaning": "A risk you know exists but can't yet measure. Use it to separate known gaps from surprises.",
-    "example": "How the new law applies to us? It's a known unknown.",
+    "meaning": "Some risks are invisible to us right now. Use it to argue for caution or research.",
+    "example": "It's our first launch in Japan. We don't know what we don't know.",
     "usageExamples": [
-      "Weather on summit day is a known unknown. Pack for both.",
-      "Whether he'll accept the offer is a known unknown."
+      "Let's pilot it first. We don't know what we don't know.",
+      "I've never renovated a house. We don't know what we don't know."
     ],
     "variants": [
-      "We know what we don't know.",
-      "It's an open question.",
-      "A risk we can name."
+      "There may be risks we can't see.",
+      "We could be missing things.",
+      "There are blind spots here."
     ],
-    "tone": "Candid, measured, analytical",
-    "avoidWhen": "Avoid it for risks nobody has thought of yet; those are 'unknown unknowns,' a different thing."
+    "tone": "Humble, cautious, thoughtful",
+    "avoidWhen": "Avoid it as a reason to never decide; say how you'll find the gaps."
   },
   {
     "phrase": "I'm inclined to agree.",
@@ -4032,22 +4032,22 @@
     "avoidWhen": "Avoid it when a decision is truly yes or no, like signing a contract; it can seem evasive."
   },
   {
-    "phrase": "Let's cut the Gordian knot.",
-    "label": "Allusion",
+    "phrase": "That's overkill.",
+    "label": "Phrase",
     "intent": "Judge",
-    "meaning": "Solve a tangled problem with one bold move. From Alexander's sword.",
-    "example": "We've argued for weeks. Let's cut the Gordian knot and just buy the license.",
+    "meaning": "Much more effort or force than the situation needs. Use it to suggest something simpler.",
+    "example": "A full audit for a two-line change? That's overkill.",
     "usageExamples": [
-      "Rather than reconcile both systems, let's cut the Gordian knot and migrate everything.",
-      "Too many opinions on the menu. Let's cut the Gordian knot and order pizza."
+      "Renting a truck for three boxes is overkill.",
+      "A 40-slide deck for a ten-minute update? That's overkill."
     ],
     "variants": [
-      "Let's take the direct route.",
-      "Let's just cut through this.",
-      "Let's solve this the bold way."
+      "That's too much.",
+      "We don't need all that.",
+      "That's more than it needs."
     ],
-    "tone": "Decisive, bold, literary",
-    "avoidWhen": "Avoid it when the shortcut skips real due diligence; it praises boldness over careful work."
+    "tone": "Casual, blunt, practical",
+    "avoidWhen": "Avoid it when the risk is high; extra care may be the right call."
   },
   {
     "phrase": "What would change your mind?",
@@ -4158,22 +4158,22 @@
     "avoidWhen": "Avoid it in formal reports or when details matter; it can sound like you're skipping the proof."
   },
   {
-    "phrase": "That's a category error.",
-    "label": "Logic",
+    "phrase": "That doesn't match my experience.",
+    "label": "Phrase",
     "intent": "Disagree",
-    "meaning": "It treats something as the wrong kind of thing. Use it when a question mixes up levels.",
-    "example": "Asking what color justice is? That's a category error.",
+    "meaning": "Disagrees by pointing to what you have seen yourself. Use it to push back gently.",
+    "example": "People say remote teams are slower. That doesn't match my experience.",
     "usageExamples": [
-      "Judging a novel by its word count is a category error.",
-      "That's a category error; a budget is not a strategy."
+      "That doesn't match my experience; our users read the manual.",
+      "You say the city is unsafe at night. That doesn't match my experience."
     ],
     "variants": [
-      "That mixes up two kinds of things.",
-      "That's comparing apples and oranges.",
-      "That's the wrong kind of question."
+      "I've seen the opposite.",
+      "That's not what I've found.",
+      "My experience says otherwise."
     ],
-    "tone": "Scholarly, crisp, precise",
-    "avoidWhen": "Avoid it for ordinary mistakes; it's philosophy jargon and may need a quick explanation."
+    "tone": "Polite, firm, personal",
+    "avoidWhen": "Avoid it as your only argument; one person's experience can be the exception."
   },
   {
     "phrase": "It's not black and white.",
@@ -4356,22 +4356,22 @@
     "avoidWhen": "Avoid overusing this consultant-style phrase; to some ears it sounds trendy or like a challenge."
   },
   {
-    "phrase": "As it happens, I agree.",
+    "phrase": "As a matter of fact, it's done.",
     "label": "Phrase",
     "intent": "Connect",
-    "meaning": "By coincidence or luck, it turns out I do. Reveals a shared view, often a surprise.",
-    "example": "You think we should cut the meeting? As it happens, I agree.",
+    "meaning": "Adds a fact, often a surprising one, to correct or confirm. Use it to say what's true.",
+    "example": "You think the report is late? As a matter of fact, it's done.",
     "usageExamples": [
-      "As it happens, I agree. I read the same paper last week.",
-      "As it happens, I agree with your mom. The pasta needs more salt."
+      "As a matter of fact, I was there when it happened.",
+      "As a matter of fact, the store opens at eight now."
     ],
     "variants": [
-      "Funnily enough, I agree.",
-      "It so happens I agree.",
-      "Actually, I do agree."
+      "Actually, it's done.",
+      "In fact, it's finished.",
+      "It's already done, actually."
     ],
-    "tone": "Light, conversational, wry",
-    "avoidWhen": "Avoid it when agreement is expected anyway; it implies a surprise that may not exist."
+    "tone": "Assured, casual, slightly pointed",
+    "avoidWhen": "Avoid a sharp tone; it can sound like 'you're wrong' when you only want to inform."
   },
   {
     "phrase": "That's within the margin of error.",
@@ -4446,22 +4446,22 @@
     "avoidWhen": "Avoid it without explaining what it reveals; it can sound like gossip or insinuation."
   },
   {
-    "phrase": "Let me steelman their view.",
-    "label": "Logic",
+    "phrase": "If it were up to me, I'd wait.",
+    "label": "Phrase",
     "intent": "Opinion",
-    "meaning": "I'll state the opposing side at its strongest before replying. Be fair.",
-    "example": "Let me steelman their view: switching tools now would save us a year of upkeep.",
+    "meaning": "Gives your view while admitting the decision isn't yours. Use it to advise politely.",
+    "example": "It's your project, but if it were up to me, I'd wait until the data is in.",
     "usageExamples": [
-      "Let me steelman their view before I critique it.",
-      "Let me steelman their view: some parents really do want phones banned at school."
+      "If it were up to me, I'd wait for the next model.",
+      "If it were up to me, I'd hire someone senior first."
     ],
     "variants": [
-      "Let me state their case fairly.",
-      "Let me give their side its best shot.",
-      "I'll argue their side honestly."
+      "Personally, I'd hold off.",
+      "My advice? Wait.",
+      "I'd give it more time."
     ],
-    "tone": "Scholarly, fair-minded, careful",
-    "avoidWhen": "Avoid it with people who don't know the term, or to set up a view you plan to mock."
+    "tone": "Polite, honest, measured",
+    "avoidWhen": "Avoid it when the decision really is yours; then just decide."
   },
   {
     "phrase": "Contrary to popular belief, no.",
@@ -4518,22 +4518,22 @@
     "avoidWhen": "Avoid it for a name that's merely imperfect; a misnomer is truly wrong, and it can sound pedantic."
   },
   {
-    "phrase": "You've given me pause.",
-    "label": "Idiom",
+    "phrase": "That makes me think twice.",
+    "label": "Phrase",
     "intent": "Admit",
-    "meaning": "What you said made me stop and reconsider. A good point, not a concession yet.",
-    "example": "You've given me pause. I hadn't thought about the downside for smaller clients.",
+    "meaning": "Admits that a point made you less sure. Use it when new information changes your view.",
+    "example": "I was ready to sign, but those reviews? That makes me think twice.",
     "usageExamples": [
-      "You've given me pause with that last chart; the trend isn't as clean as I thought.",
-      "You've given me pause. Maybe we shouldn't book the flights just yet."
+      "That makes me think twice about driving there in winter.",
+      "Hearing about the delays makes me think twice."
     ],
     "variants": [
-      "That makes me reconsider.",
-      "You've made me think twice.",
-      "That gives me something to chew on."
+      "That gives me second thoughts.",
+      "Now I'm less sure.",
+      "That changes things for me."
     ],
-    "tone": "Thoughtful, measured, courteous",
-    "avoidWhen": "Avoid it for trivial points; it sounds theatrical and a little formal for casual chat."
+    "tone": "Honest, open, reflective",
+    "avoidWhen": "Avoid it if you've already decided; it invites people to keep arguing."
   },
   {
     "phrase": "That's a chicken-and-egg problem.",
@@ -4824,22 +4824,22 @@
     "avoidWhen": "Avoid it so often that every task sounds hard; it loses weight when used on routine work."
   },
   {
-    "phrase": "The map is not the territory.",
-    "label": "Allusion",
+    "phrase": "In theory, yes. In practice, no.",
+    "label": "Logic",
     "intent": "Reason",
-    "meaning": "A model isn't reality and misses detail. Korzybski's line; use it to say metrics simplify.",
-    "example": "The dashboard looks green, but the map is not the territory.",
+    "meaning": "An idea works on paper but fails in real life. Use it to separate the plan from reality.",
+    "example": "Can one person cover both teams? In theory, yes. In practice, no.",
     "usageExamples": [
-      "My GPS says ten minutes. The map is not the territory; there's a parade.",
-      "Her resume is great, but the map is not the territory. Let's meet her."
+      "Is the gym open to everyone? In theory, yes. In practice, no.",
+      "Will the new rule cut costs? In theory, yes. In practice, no."
     ],
     "variants": [
-      "A model is not reality.",
-      "Don't confuse the model with reality.",
-      "The metric isn't the thing itself."
+      "It works on paper, not in real life.",
+      "Nice idea, hard to do.",
+      "Theory and practice differ."
     ],
-    "tone": "Reflective, scholarly, measured",
-    "avoidWhen": "Avoid it as a shrug at all data; it warns about models, not a reason to ignore them."
+    "tone": "Wry, practical, dry",
+    "avoidWhen": "Avoid it without saying why it fails in practice; give the reason."
   },
   {
     "phrase": "Counterintuitively, it helped.",
@@ -4860,22 +4860,22 @@
     "avoidWhen": "Avoid it for mere surprise; use it only when logic would predict the opposite result."
   },
   {
-    "phrase": "Penny wise, pound foolish.",
-    "label": "Idiom",
+    "phrase": "That's short-sighted.",
+    "label": "Phrase",
     "intent": "Judge",
-    "meaning": "Careful with small sums, careless with big ones. Use it for risky savings.",
-    "example": "Haggling over pens while overpaying the vendor? Penny wise, pound foolish.",
+    "meaning": "A choice that helps now but hurts later. Use it to warn about long-term costs.",
+    "example": "Cutting the training budget to save money this year? That's short-sighted.",
     "usageExamples": [
-      "He drove across town to save two dollars, then lost an hour. Penny wise, pound foolish.",
-      "We argued over license fees and ignored a huge cloud bill. Penny wise, pound foolish."
+      "Skipping maintenance to save money is short-sighted.",
+      "Hiring only juniors is cheaper now, but it's short-sighted."
     ],
     "variants": [
-      "Saving pennies, losing dollars.",
-      "Penny-pinching on the wrong things.",
-      "Cutting corners in the wrong place."
+      "That ignores the long run.",
+      "That'll cost us later.",
+      "That's not thinking ahead."
     ],
-    "tone": "Wry, proverbial, mildly critical",
-    "avoidWhen": "Avoid it for people who are simply frugal; it should point to a real mismatch of priorities."
+    "tone": "Critical, direct, serious",
+    "avoidWhen": "Avoid it about a person's choice in front of them; criticize the plan, not the person."
   },
   {
     "phrase": "I'd frame it differently.",
@@ -5292,22 +5292,22 @@
     "avoidWhen": "Avoid it for a small shift; the image implies a large swing between two opposite extremes."
   },
   {
-    "phrase": "Tellingly, no one asked why.",
+    "phrase": "Interestingly, no one asked why.",
     "label": "Phrase",
     "intent": "Connect",
-    "meaning": "What happened reveals something deeper. Use it to flag a telling small detail.",
-    "example": "Tellingly, no one asked why. Everyone already knew.",
+    "meaning": "Points out a detail you find meaningful. Use it to invite people to look closer.",
+    "example": "We spent an hour on the fix. Interestingly, no one asked why it broke.",
     "usageExamples": [
-      "Tellingly, no one asked why the deadline moved. They'd seen it coming.",
-      "Tellingly, no one asked why he left. The room just went quiet."
+      "Interestingly, sales went up after we raised the price.",
+      "Interestingly, the quietest team had the fewest bugs."
     ],
     "variants": [
-      "Revealingly, no one asked why.",
-      "Notably, nobody asked why.",
-      "It says a lot that no one asked why."
+      "Curiously, no one asked why.",
+      "Oddly enough, nobody asked why.",
+      "What's interesting is..."
     ],
-    "tone": "Perceptive, dry, analytical",
-    "avoidWhen": "Avoid it when the detail is merely notable; it implies a hidden meaning you can defend."
+    "tone": "Curious, observant, light",
+    "avoidWhen": "Avoid it as a hidden criticism; say the point openly if you mean it."
   },
   {
     "phrase": "That's a tall order.",
@@ -5814,22 +5814,22 @@
     "avoidWhen": "Avoid it for your lead argument; it's meant for an extra point and weakens a main one."
   },
   {
-    "phrase": "Color me skeptical.",
-    "label": "Idiom",
+    "phrase": "I have my doubts.",
+    "label": "Phrase",
     "intent": "Doubt",
-    "meaning": "I doubt it. A dry, slightly playful way to say you're skeptical and need convincing.",
-    "example": "He says he'll quit sugar for good. Color me skeptical.",
+    "meaning": "Says you are not convinced, without saying you're sure it's wrong. Use it to signal doubt.",
+    "example": "They say it'll be ready by Friday. I have my doubts.",
     "usageExamples": [
-      "A startup that profits in month one? Color me skeptical.",
-      "Color me skeptical about the forecast; the data only goes back a year."
+      "The plan sounds great, but I have my doubts about the timeline.",
+      "I have my doubts that he'll show up on time."
     ],
     "variants": [
-      "I have my doubts.",
-      "I'm not buying it.",
-      "Forgive my skepticism."
+      "I'm not so sure.",
+      "I'm skeptical.",
+      "I'm not convinced."
     ],
-    "tone": "Wry, dry, playful",
-    "avoidWhen": "Avoid it in formal writing or with a boss you barely know; it's chatty and a bit theatrical."
+    "tone": "Reserved, honest, calm",
+    "avoidWhen": "Avoid it without a reason when asked; people will want to know why."
   },
   {
     "phrase": "What gets measured gets managed.",
@@ -5922,22 +5922,22 @@
     "avoidWhen": "Avoid it in casual chat with friends; it can sound stiff or lecture-like."
   },
   {
-    "phrase": "To use an analogy...",
+    "phrase": "Think of it as a filter.",
     "label": "Phrase",
     "intent": "Connect",
-    "meaning": "I'll explain by comparing it to something familiar. Use it for a tricky idea.",
-    "example": "To use an analogy, a data model is like the floor plan of a house.",
+    "meaning": "Introduces a simple comparison to explain an idea. Use it to make something abstract clear.",
+    "example": "The approval step isn't a wall. Think of it as a filter.",
     "usageExamples": [
-      "To use an analogy, think of compound interest as a snowball rolling downhill.",
-      "To use an analogy, bread dough needs time, and so does a good team."
+      "Think of it as a filter: only urgent requests get through.",
+      "Don't see the budget as a limit. Think of it as a plan."
     ],
     "variants": [
-      "Think of it this way...",
-      "It's a bit like...",
-      "Here's a comparison..."
+      "It's kind of like a filter.",
+      "Picture it as a filter.",
+      "It works like a filter."
     ],
-    "tone": "Explanatory, patient, thoughtful",
-    "avoidWhen": "Avoid it with a strained comparison; a bad analogy confuses more than it clarifies."
+    "tone": "Explanatory, friendly, clear",
+    "avoidWhen": "Avoid comparisons that don't fit; a wrong analogy confuses more than it helps."
   },
   {
     "phrase": "The irony isn't lost on me.",
@@ -6084,22 +6084,22 @@
     "avoidWhen": "Avoid it with someone sensitive about their idea; 'bold' can sound sarcastic."
   },
   {
-    "phrase": "I'll take that under advisement.",
+    "phrase": "I'll be the first to admit it.",
     "label": "Phrase",
     "intent": "Admit",
-    "meaning": "I'll consider it, though I'm not promising to act. Polite but can sound dismissive.",
-    "example": "I'll take that under advisement, but I can't promise the scope will change.",
+    "meaning": "Openly accepts a weakness or mistake before others point it out. Use it to own a flaw.",
+    "example": "The first version was rough. I'll be the first to admit it.",
     "usageExamples": [
-      "Thanks for the feedback. I'll take that under advisement and see where it lands.",
-      "Your restaurant tip? I'll take that under advisement, though I'm still sold on the ramen place."
+      "I'm not a natural speaker, and I'll be the first to admit it.",
+      "We got the timing wrong. I'll be the first to admit it."
     ],
     "variants": [
-      "I'll think it over.",
-      "Noted. I'll consider it.",
-      "I'll weigh that."
+      "I'll own that.",
+      "I won't deny it.",
+      "Guilty as charged."
     ],
-    "tone": "Formal, noncommittal, polite",
-    "avoidWhen": "Avoid it with people expecting action; it often sounds like a polite brush-off."
+    "tone": "Candid, humble, relaxed",
+    "avoidWhen": "Avoid it right before an excuse; admitting then excusing undoes the admission."
   },
   {
     "phrase": "Let's test that hypothesis.",
@@ -6192,14 +6192,14 @@
     "avoidWhen": "Avoid it without naming the two sides; the phrase alone leaves the listener unsure."
   },
   {
-    "phrase": "That's just herd behavior.",
+    "phrase": "That's just herd mentality.",
     "label": "Logic",
     "intent": "Observe",
     "meaning": "People copy the crowd instead of thinking. Use it to explain trends or panic.",
-    "example": "Everyone's buying it because everyone's buying it. That's just herd behavior.",
+    "example": "Everyone's buying it because everyone's buying it. That's just herd mentality.",
     "usageExamples": [
-      "Half the class chose the same thesis topic. That's just herd behavior.",
-      "Stampeding to the same restaurant? That's just herd behavior; the place next door is empty."
+      "Half the class chose the same thesis topic. That's just herd mentality.",
+      "Everyone rushed to the same restaurant? That's just herd mentality; next door is empty."
     ],
     "variants": [
       "Everyone's following the crowd.",
@@ -6282,22 +6282,22 @@
     "avoidWhen": "Avoid it if the outcome could still change; saying it's certain can dishearten people early."
   },
   {
-    "phrase": "That's a Herculean effort.",
-    "label": "Allusion",
+    "phrase": "That's a no-brainer.",
+    "label": "Idiom",
     "intent": "Judge",
-    "meaning": "It took enormous strength or labor. From the twelve labors of Hercules.",
-    "example": "Rebuilding the site in a week? That's a Herculean effort.",
+    "meaning": "A choice so clearly right that it needs no thought. Use it when the answer is obvious.",
+    "example": "Same price, twice the storage? That's a no-brainer.",
     "usageExamples": [
-      "Raising three kids alone is a Herculean effort.",
-      "Getting the whole family to the airport at 4 a.m. took a Herculean effort."
+      "Free training for the whole team? That's a no-brainer.",
+      "If the shorter route is also cheaper, it's a no-brainer."
     ],
     "variants": [
-      "That's an enormous undertaking.",
-      "That took superhuman effort.",
-      "That's a monumental effort."
+      "That's an easy call.",
+      "That's obvious.",
+      "There's nothing to think about."
     ],
-    "tone": "Admiring, literary, warm",
-    "avoidWhen": "Avoid it for routine tasks; it's grand and can sound sarcastic or overblown."
+    "tone": "Casual, confident, upbeat",
+    "avoidWhen": "Avoid it when others are still unsure; it can make their doubts sound silly."
   },
   {
     "phrase": "That's well put.",
@@ -6408,22 +6408,22 @@
     "avoidWhen": "Avoid it before every statement; constant hedging makes you sound unsure of everything."
   },
   {
-    "phrase": "History tends to rhyme.",
-    "label": "Allusion",
+    "phrase": "We've seen this movie before.",
+    "label": "Idiom",
     "intent": "Reason",
-    "meaning": "Events echo past ones without repeating. Often misattributed to Twain.",
-    "example": "Another bubble, another crash. History tends to rhyme.",
+    "meaning": "This situation looks like an old one, and we know how it ends. Use it to warn from history.",
+    "example": "Big promises, no budget, tight deadline. We've seen this movie before.",
     "usageExamples": [
-      "I read about the 1920s boom; history tends to rhyme.",
-      "The same family feud again? History tends to rhyme."
+      "Prices up, everyone buying, nobody worried. We've seen this movie before.",
+      "Another reorg to fix morale? We've seen this movie before."
     ],
     "variants": [
-      "The past echoes.",
-      "Patterns repeat, loosely.",
-      "We've seen this before."
+      "This has happened before.",
+      "We know how this ends.",
+      "Same story, different year."
     ],
-    "tone": "Reflective, wry, scholarly",
-    "avoidWhen": "Avoid pinning it on Mark Twain; there's no good evidence he said it. Also not a forecast."
+    "tone": "Wry, knowing, cautionary",
+    "avoidWhen": "Avoid it when the situation is truly new; it can shut down fresh ideas."
   },
   {
     "phrase": "That's a matter of taste.",
@@ -6516,22 +6516,22 @@
     "avoidWhen": "Avoid it when the conclusion isn't truly obvious; it can pass an assumption off as fact."
   },
   {
-    "phrase": "That opened Pandora's box.",
-    "label": "Allusion",
+    "phrase": "A step in the right direction.",
+    "label": "Idiom",
     "intent": "Judge",
-    "meaning": "An action unleashed a flood of unforeseen problems. From Greek myth.",
-    "example": "Once they published salaries, that opened Pandora's box. Everyone wanted a raise.",
+    "meaning": "Progress that is good but not enough yet. Use it to praise a start while asking for more.",
+    "example": "Two remote days a week? That's a step in the right direction.",
     "usageExamples": [
-      "Changing the schema at the last minute? That opened Pandora's box.",
-      "Asking about her salary at dinner? That opened Pandora's box for the whole family."
+      "The new policy isn't perfect, but it's a step in the right direction.",
+      "He apologized. That's a step in the right direction."
     ],
     "variants": [
-      "That opened a can of worms.",
-      "That set off a chain reaction.",
-      "There was no going back after that."
+      "It's progress.",
+      "It's a good start.",
+      "We're moving the right way."
     ],
-    "tone": "Wry, cautionary, literary",
-    "avoidWhen": "Avoid it for small side effects; it suggests serious, hard-to-undo consequences."
+    "tone": "Encouraging, balanced, measured",
+    "avoidWhen": "Avoid it when the change is the full answer; it can sound like faint praise."
   },
   {
     "phrase": "That's apples and oranges.",

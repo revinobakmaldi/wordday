@@ -35,6 +35,12 @@ listed = {int(n) for n in re.findall(r"^\| (\d+) \| .+ \| swap-row \|", report, 
 swaps = {r["i"] for r in ratings if r["final"] == "swap"}
 if listed != swaps:
     problems.append(f"swap list differs: missing {sorted(swaps - listed)}, extra {sorted(listed - swaps)}")
+# Every phrase changed since the original rating is in the report's change table.
+changed = {r["i"]: (r["replaced"], r["phrase"]) for r in ratings if "replaced" in r}
+rows = {int(n): (old, new) for n, old, new in
+        re.findall(r"^\| (\d+) \| (.+?) \| (.+?) \| change-row \|", report, re.M)}
+if rows != changed:
+    problems.append(f"change table differs: {sorted(set(rows.items()) ^ set(changed.items()))}")
 # The phone-readable list shows every phrase once, under its final verdict.
 section, seen = None, {}
 for line in (ROOT / "docs/phrase-ratings.md").read_text().splitlines():
