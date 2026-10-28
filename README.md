@@ -3,7 +3,7 @@
 An iPhone widget that gives you one useful English chunk every day.
 
 A short phrase appears on your Home Screen or Lock Screen each morning. Open
-the app to see when to use it, business examples, natural variants, and whether
+the app to see what it means, when to use it, examples, natural variants, and whether
 the tone fits the conversation.
 
 ## Features
@@ -13,7 +13,7 @@ the tone fits the conversation.
 | **Home Screen widget** | Small, medium, and large sizes. The small widget stays focused: tiny context label plus the usable phrase. Medium and large widgets add meaning and examples. |
 | **Lock Screen widget** | Inline, circular, and rectangular accessory families for quick daily recall. |
 | **App** | Today's chunk in full, a browsable/searchable phrase bank, and a saved-chunks filter. |
-| **Phrase bank** | Practical business and daily conversation chunks in `Shared/phrases.json`. |
+| **Phrase bank** | 365 phrases that sound casual but well-read (idioms, reasoning terms, allusions, everyday connectors) in `Shared/phrases.json`, so nothing repeats within a year. |
 
 The phrase for a given day is derived from the date itself, so the app and
 widget always agree without syncing. The widget builds a seven-day timeline
@@ -45,27 +45,35 @@ Append to `Shared/phrases.json`:
 
 ```json
 {
-  "phrase": "Let me make sure I understand.",
-  "label": "Business",
-  "intent": "Clarify",
-  "meaning": "Use this before responding, so you can confirm the point without sounding hesitant.",
-  "example": "Let me make sure I understand. The main concern is the timeline, right?",
+  "phrase": "Take that with a grain of salt.",
+  "label": "Idiom",
+  "intent": "Doubt",
+  "meaning": "Don't fully trust it. Use it to signal doubt about a claim without calling it false.",
+  "example": "The survey had forty replies, so take that with a grain of salt.",
   "usageExamples": [
-    "Let me make sure I understand before we decide.",
-    "Let me make sure I understand the constraint first."
+    "He's selling the product, so take that with a grain of salt.",
+    "It's one study. I'd take that with a grain of salt for now."
   ],
   "variants": [
-    "Just to make sure I got this right...",
-    "So what you're saying is...",
-    "Let me restate that quickly."
+    "I wouldn't read too much into it.",
+    "I'd be a little skeptical of that.",
+    "That needs a caveat."
   ],
-  "tone": "Calm, professional, careful",
-  "avoidWhen": "Avoid overusing it when the point is already obvious."
+  "tone": "Measured, skeptical, relaxed",
+  "avoidWhen": "Avoid it when the source is solid; it can sound dismissive of good evidence."
 }
 ```
 
 Short phrases work best because the widget treats the chunk itself as the hero.
 The label and intent should stay tiny and contextual.
+
+`label` is one of `Idiom`, `Logic`, `Allusion`, `Phrase`; `intent` is a single word
+such as `Doubt`, `Nuance` or `Reason`. After editing the list, check it against the
+widget limits:
+
+```sh
+python3 scripts/check_phrases.py
+```
 
 ## Structure
 
@@ -78,4 +86,5 @@ Shared/            model + phrase bank, compiled into both targets
   phrases.json
 WordDay/           SwiftUI app
 WordDayWidget/     WidgetKit extension
+scripts/           check_phrases.py validates the phrase bank
 ```

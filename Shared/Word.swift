@@ -1,6 +1,6 @@
 import Foundation
 
-/// A reusable English chunk for daily and business conversation.
+/// A reusable English chunk that sounds relaxed but well-read, at work or in daily conversation.
 struct Phrase: Decodable, Identifiable, Hashable {
     let phrase: String
     let label: String
@@ -32,7 +32,7 @@ struct Phrase: Decodable, Identifiable, Hashable {
 
     var aiLearningPrompt: String {
         [
-            "I am learning practical English for daily and business conversations.",
+            "I am learning English that sounds casual but well-read, for work and everyday conversations.",
             "",
             "Please teach me how to naturally use this English chunk:",
             "",
@@ -40,7 +40,7 @@ struct Phrase: Decodable, Identifiable, Hashable {
             "",
             "Context: \(contextLabel)",
             "",
-            "Explain the nuance, when to use it, when not to use it, common mistakes, 5 natural business examples, 3 casual examples, and a short practice exercise.",
+            "Explain the nuance, when to use it, when not to use it, common mistakes, 5 natural examples at work, 3 in everyday conversation, and a short practice exercise.",
             "",
             "If helpful, compare the nuance with Indonesian."
         ].joined(separator: "\n")
@@ -56,22 +56,22 @@ struct Phrase: Decodable, Identifiable, Hashable {
 
     /// Shown when the bundled phrase list is missing or unreadable.
     static let placeholder = Phrase(
-        phrase: "Let me make sure I understand.",
-        label: "Business",
-        intent: "Clarify",
-        meaning: "Use this before responding, so you can confirm the point without sounding hesitant.",
-        example: "Let me make sure I understand. The main concern is the timeline, right?",
+        phrase: "Take that with a grain of salt.",
+        label: "Idiom",
+        intent: "Doubt",
+        meaning: "Don't fully trust it. Use it to signal doubt about a claim without calling it false.",
+        example: "The survey had forty replies, so take that with a grain of salt.",
         usageExamples: [
-            "Let me make sure I understand before we decide.",
-            "Let me make sure I understand the constraint first."
+            "He's selling the product, so take that with a grain of salt.",
+            "It's one study. I'd take that with a grain of salt for now."
         ],
         variants: [
-            "Just to make sure I got this right...",
-            "So what you're saying is...",
-            "Let me restate that quickly."
+            "I wouldn't read too much into it.",
+            "I'd be a little skeptical of that.",
+            "That needs a caveat."
         ],
-        tone: "Calm, professional, careful",
-        avoidWhen: "Avoid overusing it when the point is already obvious."
+        tone: "Measured, skeptical, relaxed",
+        avoidWhen: "Avoid it when the source is solid; it can sound dismissive of good evidence."
     )
 
     init(
