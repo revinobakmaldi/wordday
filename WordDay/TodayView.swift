@@ -39,6 +39,8 @@ struct TodayView: View {
                             .padding(.top, 34)
                     }
                     .padding(.horizontal, 20)
+                    // Pin to the scroll view's width; sub-point rounding otherwise lets the page drift sideways.
+                    .containerRelativeFrame(.horizontal)
                     .padding(.top, 14)
                     .padding(.bottom, 38)
                     .opacity(appeared ? 1 : 0)
