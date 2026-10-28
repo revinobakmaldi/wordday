@@ -103,4 +103,4 @@ The reviewers marked these as swaps. I kept them:
 | 190 | There's a selection bias here. | Drop "a": "There's selection bias here." |
 | 344 | That's just herd behavior. | "Herd mentality" is more common. |
 
-Check this file against the data with `python3 scripts/check_ratings.py`.
+The full list of 365 is in `docs/phrase-ratings.md`. Check both files against the data with `python3 scripts/check_ratings.py`.

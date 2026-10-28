@@ -35,5 +35,15 @@ listed = {int(n) for n in re.findall(r"^\| (\d+) \| .+ \| swap-row \|", report, 
 swaps = {r["i"] for r in ratings if r["final"] == "swap"}
 if listed != swaps:
     problems.append(f"swap list differs: missing {sorted(swaps - listed)}, extra {sorted(listed - swaps)}")
+# The phone-readable list shows every phrase once, under its final verdict.
+section, seen = None, {}
+for line in (ROOT / "docs/phrase-ratings.md").read_text().splitlines():
+    if m := re.match(r"## (Core|Stretch|Swap)\b", line):
+        section = m.group(1).lower()
+    elif m := re.match(r"- (\d+) · (.+) · (B1|B2|C1|C2)$", line.rstrip()):
+        seen.setdefault(int(m.group(1)), []).append((section, m.group(2)))
+for r in ratings:
+    if seen.get(r["i"]) != [(r["final"], r["phrase"])]:
+        problems.append(f"#{r['i']}: phrase-ratings.md shows {seen.get(r['i'])}, expected {r['final']}")
 print("\n".join(problems) or f"OK: {len(ratings)} ratings, {len(swaps)} swaps")
 sys.exit(1 if problems else 0)
